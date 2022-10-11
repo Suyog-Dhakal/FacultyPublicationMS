@@ -14,6 +14,14 @@ FPMS> npm install
              python manage.py makemigrations papers
              python manage.py migrate
 FPMS/proj_fpms>python manage.py runserver
+main_dir>  npm install
+              npm run dev
+main_dir>  cd proj_fpms
+              pip install -r requirements.txt
+              python manage.py makemigrations accounts
+              python manage.py makemigrations papers
+              python manage.py migrate
+main_dir/proj_fpms>python manage.py runserver
 ```
 
 If on linux use command 'npm rebuild' before 'npm run dev'
