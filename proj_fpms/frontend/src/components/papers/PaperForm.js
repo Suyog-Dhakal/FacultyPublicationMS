@@ -1,279 +1,424 @@
-import React, { Component, Fragment } from 'react'
-import { connect } from 'react-redux'
-import PropTypes from 'prop-types'
-import { addPapers } from '../../actions/papers';
-import bibtexParse from '@orcid/bibtex-parse-js'
+import React, { Component, Fragment } from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { addPapers } from "../../actions/papers";
+import bibtexParse from "@orcid/bibtex-parse-js";
 
 export class PaperForm extends Component {
-
   static propTypes = {
     addPapers: PropTypes.func.isRequired,
-    user: PropTypes.object.isRequired
-
-  }
+    user: PropTypes.object.isRequired,
+  };
 
   state = {
-    title: '',
-    description: '',
-    group: '',
-    paper_link: '',
-    publisher: '',
+    title: "",
+    description: "",
+    group: "",
+    paper_link: "",
+    publisher: "",
     publication_date: "",
-    status: '',
+    status: "",
 
-    volume: '',
-    peer_reviewed: '',
-    issn: '',
-    issue: '',
-    pages: '',
+    volume: "",
+    peer_reviewed: "",
+    issn: "",
+    issue: "",
+    pages: "",
 
-    DOI: '',
-    journal: '',
-    edition: '',
-    isbn: '',
-    level: '',
-    chapters: '',
-    authors: '',
-    author_status: '',
-    impact_factor_journal: '',
-    SJR_rating: '',
+    DOI: "",
+    journal: "",
+    edition: "",
+    isbn: "",
+    level: "",
+    chapters: "",
+    authors: "",
+    author_status: "",
+    impact_factor_journal: "",
+    SJR_rating: "",
 
-    conference_name: '',
-    location: '',
+    conference_name: "",
+    location: "",
     organised_date: null,
 
-    isBibtex: 'Import from BibTex',
-    bibtext: '',
-
-  }
-
+    isBibtex: "Import from BibTex",
+    bibtext: "",
+  };
 
   onChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   onBibtex = (e) => {
     this.setState({
-      isBibtex: ''
-    })
-  }
+      isBibtex: "",
+    });
+  };
 
-  handleFileChosen = (file) =>{
-   
-    let fileReader = new FileReader()
-    fileReader.onloadend = (e) =>{
+  handleFileChosen = (file) => {
+    let fileReader = new FileReader();
+    fileReader.onloadend = (e) => {
       const content = fileReader.result;
       this.setState({
-        bibtext: content
-      })
-    }
+        bibtext: content,
+      });
+    };
     fileReader.readAsText(file);
-
-  }
+  };
 
   onSubmitBibtex = (e) => {
     e.preventDefault();
 
     const sample = bibtexParse.toJSON(this.state.bibtext);
-    console.log(sample)
+    console.log(sample);
 
     this.setState({
-      title: '',
-      publisher: '',
-      volume: '',
-      peer_reviewed: '',
-      issn: '',
-      issue: '',
-      pages: '',
-      paper_link: '',
-      publication_date: '',
-      description: '',
-      DOI: '',
-      journal: '',
-      edition: '',
-      isbn: '',
-      level: '',
-      chapters: '',
-      authors: '',
-      author_status: '',
-      SJR_rating: '',
-      impact_factor_journal: '',
-      group: '',
-      status: '',
+      title: "",
+      publisher: "",
+      volume: "",
+      peer_reviewed: "",
+      issn: "",
+      issue: "",
+      pages: "",
+      paper_link: "",
+      publication_date: "",
+      description: "",
+      DOI: "",
+      journal: "",
+      edition: "",
+      isbn: "",
+      level: "",
+      chapters: "",
+      authors: "",
+      author_status: "",
+      SJR_rating: "",
+      impact_factor_journal: "",
+      group: "",
+      status: "",
 
-      conference_name: '',
-      location: '',
+      conference_name: "",
+      location: "",
       organised_date: null,
-      bibtext: ""
+      bibtext: "",
+    });
 
-    })
-
-
-
-    let { title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, level, chapters, authors, author_status, SJR_rating, impact_factor_journal, conference_name, location, organised_date } = this.state
+    let {
+      title,
+      publisher,
+      volume,
+      peer_reviewed,
+      issn,
+      issue,
+      pages,
+      paper_link,
+      publication_date,
+      status,
+      group,
+      description,
+      DOI,
+      journal,
+      edition,
+      isbn,
+      level,
+      chapters,
+      authors,
+      author_status,
+      SJR_rating,
+      impact_factor_journal,
+      conference_name,
+      location,
+      organised_date,
+    } = this.state;
     if (sample.length > 1) {
-
       for (let i = 0; i < sample.length; i++) {
+        console.log(sample[i].entryTags);
+        const year = sample[i].entryTags.year + "-01-01";
 
-        console.log(sample[i].entryTags)
-        const year = sample[i].entryTags.year + "-01-01"
-
-        const name = this.props.user.profile.full_name.split(" ").reverse().join(", ");
+        const name = this.props.user.profile.full_name
+          .split(" ")
+          .reverse()
+          .join(", ");
         const coauthors = sample[i].entryTags.author.split(" and ");
         if (coauthors.includes(name)) {
           let index = coauthors.indexOf(name);
-          coauthors.splice(index, 1)
+          coauthors.splice(index, 1);
         }
 
-        coauthors = coauthors.join(" and ")
+        coauthors = coauthors.join(" and ");
 
+        group = "misc_paper";
+        if (
+          sample[i].entryType == "inproceedings" ||
+          sample[i].entryType == "conference" ||
+          sample[i].entryType == "proceedings"
+        ) {
+          group = "conference_article";
+        }
+        if (sample[i].entryType == "article") {
+          group = "journal";
+        }
 
-        group = "misc_paper"
-        if (sample[i].entryType == "inproceedings" || sample[i].entryType == "conference" || sample[i].entryType == "proceedings") { group = "conference_article" }
-        if (sample[i].entryType == "article") { group = "journal" }
+        title = sample[i].entryTags.title;
+        authors = coauthors;
+        publisher = sample[i].entryTags.publisher
+          ? sample[i].entryTags.publisher
+          : sample[i].entryTags.organization
+          ? sample[i].entryTags.organization
+          : "";
+        conference_name = sample[i].entryTags.booktitle
+          ? sample[i].entryTags.booktitle
+          : "";
+        volume = sample[i].entryTags.volume ? sample[i].entryTags.volume : "";
+        journal = sample[i].entryTags.journal;
+        publication_date = year;
+        pages = sample[i].entryTags.pages ? sample[i].entryTags.pages : "";
+        status = "published";
 
-        title = sample[i].entryTags.title
-        authors = coauthors
-        publisher = sample[i].entryTags.publisher ? sample[i].entryTags.publisher : (sample[i].entryTags.organization ? sample[i].entryTags.organization : "")
-        conference_name = sample[i].entryTags.booktitle ? sample[i].entryTags.booktitle : ""
-        volume = sample[i].entryTags.volume ? sample[i].entryTags.volume : ""
-        journal = sample[i].entryTags.journal
-        publication_date = year
-        pages = sample[i].entryTags.pages ? sample[i].entryTags.pages : ""
-        status = "published"
-
-
-        const paper = { title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, level, chapters, authors, author_status, SJR_rating, impact_factor_journal, conference_name, location, organised_date }
-        this.props.addPapers(paper)
-
+        const paper = {
+          title,
+          publisher,
+          volume,
+          peer_reviewed,
+          issn,
+          issue,
+          pages,
+          paper_link,
+          publication_date,
+          status,
+          group,
+          description,
+          DOI,
+          journal,
+          edition,
+          isbn,
+          level,
+          chapters,
+          authors,
+          author_status,
+          SJR_rating,
+          impact_factor_journal,
+          conference_name,
+          location,
+          organised_date,
+        };
+        this.props.addPapers(paper);
       }
       this.setState({
-        bibtext: ""
-      })
+        bibtext: "",
+      });
+    } else {
+      const year = sample[0].entryTags.year + "-01-01";
 
-    }
-
-    else {
-      const year = sample[0].entryTags.year + "-01-01"
-
-      const name = this.props.user.profile.full_name.split(" ").reverse().join(", ");
+      const name = this.props.user.profile.full_name
+        .split(" ")
+        .reverse()
+        .join(", ");
       let coauthors = sample[0].entryTags.author.split(" and ");
       if (coauthors.includes(name)) {
         let index = coauthors.indexOf(name);
-        coauthors.splice(index, 1)
+        coauthors.splice(index, 1);
       }
 
-      coauthors = coauthors.join(" and ")
-
+      coauthors = coauthors.join(" and ");
 
       this.setState({
         title: sample[0].entryTags.title,
         authors: coauthors,
-        publisher: sample[0].entryTags.publisher ? sample[0].entryTags.publisher : (sample[0].entryTags.organization ? sample[0].entryTags.organization : ""),
-        conference_name: sample[0].entryTags.booktitle ? sample[0].entryTags.booktitle : "",
+        publisher: sample[0].entryTags.publisher
+          ? sample[0].entryTags.publisher
+          : sample[0].entryTags.organization
+          ? sample[0].entryTags.organization
+          : "",
+        conference_name: sample[0].entryTags.booktitle
+          ? sample[0].entryTags.booktitle
+          : "",
         volume: sample[0].entryTags.volume ? sample[0].entryTags.volume : "",
         journal: sample[0].entryTags.journal,
         publication_date: year,
-        pages: sample[0].entryTags.pages ? sample[0].entryTags.pages : ""
-
-      })
+        pages: sample[0].entryTags.pages ? sample[0].entryTags.pages : "",
+      });
     }
-
-  }
+  };
 
   onSubmit = (e) => {
     e.preventDefault();
-    const { title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, level, chapters, authors, author_status, SJR_rating, impact_factor_journal, conference_name, location, organised_date } = this.state
-    const paper = { title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, level, chapters, authors, author_status, SJR_rating, impact_factor_journal, conference_name, location, organised_date }
-    this.props.addPapers(paper)
-    console.log(paper)
+    const {
+      title,
+      publisher,
+      volume,
+      peer_reviewed,
+      issn,
+      issue,
+      pages,
+      paper_link,
+      publication_date,
+      status,
+      group,
+      description,
+      DOI,
+      journal,
+      edition,
+      isbn,
+      level,
+      chapters,
+      authors,
+      author_status,
+      SJR_rating,
+      impact_factor_journal,
+      conference_name,
+      location,
+      organised_date,
+    } = this.state;
+    const paper = {
+      title,
+      publisher,
+      volume,
+      peer_reviewed,
+      issn,
+      issue,
+      pages,
+      paper_link,
+      publication_date,
+      status,
+      group,
+      description,
+      DOI,
+      journal,
+      edition,
+      isbn,
+      level,
+      chapters,
+      authors,
+      author_status,
+      SJR_rating,
+      impact_factor_journal,
+      conference_name,
+      location,
+      organised_date,
+    };
+    this.props.addPapers(paper);
+    console.log(paper);
     this.setState({
-      title: '',
-      publisher: '',
-      volume: '',
-      peer_reviewed: '',
-      issn: '',
-      issue: '',
-      pages: '',
-      paper_link: '',
-      publication_date: '',
-      description: '',
-      DOI: '',
-      journal: '',
-      edition: '',
-      isbn: '',
-      level: '',
-      chapters: '',
-      authors: '',
-      author_status: '',
-      SJR_rating: '',
-      impact_factor_journal: '',
-      group: '',
-      status: '',
+      title: "",
+      publisher: "",
+      volume: "",
+      peer_reviewed: "",
+      issn: "",
+      issue: "",
+      pages: "",
+      paper_link: "",
+      publication_date: "",
+      description: "",
+      DOI: "",
+      journal: "",
+      edition: "",
+      isbn: "",
+      level: "",
+      chapters: "",
+      authors: "",
+      author_status: "",
+      SJR_rating: "",
+      impact_factor_journal: "",
+      group: "",
+      status: "",
 
-      conference_name: '',
-      location: '',
+      conference_name: "",
+      location: "",
       organised_date: null,
-      bibtext: ""
-
-    })
-  }
+      bibtext: "",
+    });
+  };
 
   render() {
-
-    const { title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, chapters, authors, author_status, SJR_rating, impact_factor_journal, conference_name, location, organised_date, level } = this.state
+    const {
+      title,
+      publisher,
+      volume,
+      peer_reviewed,
+      issn,
+      issue,
+      pages,
+      paper_link,
+      publication_date,
+      status,
+      group,
+      description,
+      DOI,
+      journal,
+      edition,
+      isbn,
+      chapters,
+      authors,
+      author_status,
+      SJR_rating,
+      impact_factor_journal,
+      conference_name,
+      location,
+      organised_date,
+      level,
+    } = this.state;
     return (
       <div className="card card-body my-5 ">
+        {this.state.isBibtex == "" ? (
+          <div className="container">
+            <h3>Import from BibTex</h3>
+            <form className="my-3" onSubmit={this.onSubmitBibtex}>
+              <div className="mb-3">
+                <label htmlFor="formFile" className="form-label">
+                  Upload your BibTex file.
+                </label>
+                <input
+                  className="form-control"
+                  type="file"
+                  id="formFile"
+                  accept=".bib"
+                  onChange={(e) => this.handleFileChosen(e.target.files[0])}
+                />
+              </div>
 
-        {(this.state.isBibtex == '') ? (<div className="container">
-          <h3>Import from BibTex</h3>
-          <form className='my-3' onSubmit={this.onSubmitBibtex}>
+              <div className="form-group my-2">
+                <label> OR Copy your BibTex here.</label>
+                <textarea
+                  className="form-control"
+                  type="text"
+                  name="bibtext"
+                  placeholder=""
+                  onChange={this.onChange}
+                  value={this.state.bibtext}
+                />
+              </div>
 
-            <div className="mb-3">
-              <label htmlFor="formFile" className="form-label">Upload your BibTex file.</label>
-              <input className="form-control" type="file" id="formFile" accept=".bib"  onChange={e => this.handleFileChosen(e.target.files[0])}/>
-
-            </div>
-
-            <div className="form-group my-2">
-              <label> OR Copy your BibTex here.</label>
-              <textarea
-                className="form-control"
-                type="text"
-                name="bibtext"
-                placeholder=""
-                onChange={this.onChange}
-                value={this.state.bibtext}
-              />
-            </div>
-
-            <div className="form-group my-2">
-              <button type="submit" className="btn btn-primary">
-                Import
-              </button>
-            </div>
-          </form>
-
-
-        </div>) : (<div className="text-right" style={{ textAlign: "right" }}>
-          <button type="button" onClick={this.onBibtex} className="btn btn-primary float-right"> {this.state.isBibtex}</button>
-        </div>)}
-
-
+              <div className="form-group my-2">
+                <button type="submit" className="btn btn-primary">
+                  Import
+                </button>
+              </div>
+            </form>
+          </div>
+        ) : (
+          <div className="text-right" style={{ textAlign: "right" }}>
+            <button
+              type="button"
+              onClick={this.onBibtex}
+              className="btn btn-primary float-right"
+            >
+              {" "}
+              {this.state.isBibtex}
+            </button>
+          </div>
+        )}
 
         <h2 className="my-4">Add Papers</h2>
         <form onSubmit={this.onSubmit}>
-
-
-
           <div className="form-group my-2">
             <label>Group</label>
-            <select className="form-control"
+            <select
+              className="form-control"
               onChange={this.onChange}
               name="group"
-              value={group}>
+              value={group}
+            >
               <option value="">---</option>
               <option value="journal">Journal Article</option>
               <option value="publication">Publication</option>
@@ -297,10 +442,12 @@ export class PaperForm extends Component {
 
           <div className="form-group my-2">
             <label>Contribution Status</label>
-            <select className="form-control"
+            <select
+              className="form-control"
               onChange={this.onChange}
               name="author_status"
-              value={author_status}>
+              value={author_status}
+            >
               <option value="">---</option>
               <option value="chief">Chief Author</option>
               <option value="co-author">Co-author</option>
@@ -353,7 +500,7 @@ export class PaperForm extends Component {
             />
           </div>
 
-          {(group == "journal" || group == "book") ? (
+          {group == "journal" || group == "book" ? (
             <div className="form-group my-2">
               <label>Volume</label>
               <input
@@ -363,60 +510,62 @@ export class PaperForm extends Component {
                 onChange={this.onChange}
                 value={volume}
               />
-            </div>) : ""}
-
-          {(group == "journal") ? (<>
-            <div className="form-group my-2">
-              <label>Journal</label>
-              <input
-                className="form-control"
-                type="text"
-                name="journal"
-                onChange={this.onChange}
-                value={journal}
-              />
             </div>
+          ) : (
+            ""
+          )}
 
-            <div className="form-group my-2">
-              <label>SJR Index</label>
-              <input
-                className="form-control"
-                type="text"
-                name="SJR_rating"
-                onChange={this.onChange}
-                value={SJR_rating}
-              />
-            </div>
+          {group == "journal" ? (
+            <>
+              <div className="form-group my-2">
+                <label>Journal</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="journal"
+                  onChange={this.onChange}
+                  value={journal}
+                />
+              </div>
 
-            <div className="form-group my-2">
-              <label>Journal Impact Factor</label>
-              <input
-                className="form-control"
-                type="text"
-                name="impact_factor_journal"
-                onChange={this.onChange}
-                value={impact_factor_journal}
-              />
-            </div></>
+              <div className="form-group my-2">
+                <label>SJR Index</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="SJR_rating"
+                  onChange={this.onChange}
+                  value={SJR_rating}
+                />
+              </div>
 
+              <div className="form-group my-2">
+                <label>Journal Impact Factor</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="impact_factor_journal"
+                  onChange={this.onChange}
+                  value={impact_factor_journal}
+                />
+              </div>
+            </>
+          ) : (
+            ""
+          )}
 
-          ) : ""}
-
-
-
-          {(group == "journal" || group == "conference_article") ? (
-            <><div className="form-group my-2">
-              <label>Issue</label>
-              <input
-                className="form-control"
-                type="text"
-                name="issue"
-                onChange={this.onChange}
-                value={issue}
-              />
-            </div>
-
-
+          {group == "journal" || group == "conference_article" ? (
+            <>
+              <div className="form-group my-2">
+                <label>Issue</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="issue"
+                  onChange={this.onChange}
+                  value={issue}
+                />
+              </div>
               <div className="form-group my-2">
                 <label>Pages</label>
                 <input
@@ -426,8 +575,11 @@ export class PaperForm extends Component {
                   onChange={this.onChange}
                   value={pages}
                 />
-              </div> </>) : ""}
-
+              </div>{" "}
+            </>
+          ) : (
+            ""
+          )}
 
           <div className="form-group my-2">
             <label>DOI</label>
@@ -472,24 +624,25 @@ export class PaperForm extends Component {
             />
           </div>
 
-          {(group == "book") ? (<>
-            <div className="form-group my-2">
-              <label>Chapters</label>
-              <input
-                className="form-control"
-                type="text"
-                name="chapters"
-                onChange={this.onChange}
-                value={chapters}
-              />
-            </div>
-
-          </>) : ""
-          }
-
-          {(group == "conference_article") ? (
+          {group == "book" ? (
             <>
+              <div className="form-group my-2">
+                <label>Chapters</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="chapters"
+                  onChange={this.onChange}
+                  value={chapters}
+                />
+              </div>
+            </>
+          ) : (
+            ""
+          )}
 
+          {group == "conference_article" ? (
+            <>
               <div className="form-group my-2">
                 <label>Conference</label>
                 <input
@@ -511,7 +664,10 @@ export class PaperForm extends Component {
                   value={organised_date}
                 />
               </div>
-            </>) : ""}
+            </>
+          ) : (
+            ""
+          )}
 
           <div className="form-group my-2">
             <label>Location</label>
@@ -523,8 +679,6 @@ export class PaperForm extends Component {
               value={location}
             />
           </div>
-
-
 
           <div className="form-group my-2">
             <label>Paper's Link</label>
@@ -550,10 +704,12 @@ export class PaperForm extends Component {
 
           <div className="form-group my-2">
             <label>Level</label>
-            <select className="form-control"
+            <select
+              className="form-control"
               onChange={this.onChange}
               name="level"
-              value={level}>
+              value={level}
+            >
               <option value="">---</option>
               <option value="national">National</option>
               <option value="international">International</option>
@@ -562,16 +718,17 @@ export class PaperForm extends Component {
 
           <div className="form-group my-2">
             <label>Status</label>
-            <select className="form-control"
+            <select
+              className="form-control"
               onChange={this.onChange}
               name="status"
-              value={status}>
+              value={status}
+            >
               <option value="">---</option>
               <option value="draft">Draft</option>
               <option value="published">Published</option>
             </select>
           </div>
-
 
           <div className="form-group my-2">
             <button type="submit" className="btn btn-primary">
@@ -580,14 +737,11 @@ export class PaperForm extends Component {
           </div>
         </form>
       </div>
-    )
+    );
   }
 }
-const mapStateToProps = state => ({
-  user: state.auth.user
+const mapStateToProps = (state) => ({
+  user: state.auth.user,
+});
 
-})
-
-
-
-export default connect(mapStateToProps, { addPapers })(PaperForm)
+export default connect(mapStateToProps, { addPapers })(PaperForm);
