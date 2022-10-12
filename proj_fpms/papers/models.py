@@ -1,3 +1,7 @@
+from email.policy import default
+from random import choices
+from secrets import choice
+from unittest.util import _MAX_LENGTH
 from django.db import models
 from accounts.models import User
 from django.utils import timezone
@@ -22,6 +26,8 @@ class Paper(models.Model):
 
     levels = (("","None"),("national", "National"), ("international", "International"))
     author_levels =(("", "None"),("chief","Chief"),("correspondence","Correspondence"),("co-author","Co-Author"))
+    approval_status = (("","None"),("approved", "Approved"), ("pending", "Pending"))
+  
    
     title = models.CharField(max_length=250)
     author = models.ForeignKey(
@@ -30,6 +36,7 @@ class Paper(models.Model):
     publisher = models.CharField(max_length=50, null=True, blank=True)
     paper_link = models.CharField(max_length=250, null=True, blank=True)
     status = models.CharField(max_length=10, choices=options)
+    approval_status = models.CharField(max_length=10, choices=approval_status, default="pending")
     group = models.CharField(max_length=20, choices=category)
     level = models.CharField(max_length=20, null =True, choices = levels, default = "national" )
     description = models.CharField(max_length=1000, null=True, blank=True)
