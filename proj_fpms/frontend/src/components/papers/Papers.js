@@ -1,10 +1,9 @@
-import React, { Component, Fragment } from 'react'
-import { connect } from 'react-redux'
-import { Redirect, Link } from 'react-router-dom'
-import PropTypes from 'prop-types'
-import { getPapers, deletePapers, putPapers } from '../../actions/papers'
-import { getProfile } from '../../actions/profiles'
-
+import React, { Component, Fragment } from "react";
+import { connect } from "react-redux";
+import { Redirect, Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { getPapers, deletePapers, putPapers } from "../../actions/papers";
+import { getProfile } from "../../actions/profiles";
 
 export class Papers extends Component {
   static propTypes = {
@@ -13,49 +12,49 @@ export class Papers extends Component {
     getPapers: PropTypes.func.isRequired,
     deletePapers: PropTypes.func.isRequired,
     putPapers: PropTypes.func.isRequired,
-    getProfile: PropTypes.func.isRequired
-  }
-
+    getProfile: PropTypes.func.isRequired,
+  };
 
   state = {
-    id: '',
-    title: '',
-    description: '',
-    group: '',
-    paper_link: '',
-    publisher: '',
+    id: "",
+    title: "",
+    description: "",
+    group: "",
+    paper_link: "",
+    publisher: "",
     publication_date: "",
-    status: '',
+    status: "",
 
-    volume: '',
-    peer_reviewed: '',
-    issn: '',
-    issue: '',
-    pages: '',
+    volume: "",
+    peer_reviewed: "",
+    issn: "",
+    issue: "",
+    pages: "",
 
-    DOI: '',
-    journal: '',
-    edition: '',
-    isbn: '',
-    level: '',
-    chapters: '',
-    authors: '',
-    author_status:'',
-    SJR_rating:'',
-    impact_factor_journal:'',
+    DOI: "",
+    journal: "",
+    edition: "",
+    isbn: "",
+    level: "",
+    approval_status: "",
+    chapters: "",
+    authors: "",
+    author_status: "",
+    SJR_rating: "",
+    impact_factor_journal: "",
 
-    conference_name: '',
-    location: '',
+    conference_name: "",
+    location: "",
     organised_date: null,
-  }
+  };
 
   componentDidMount() {
     this.props.getPapers(this.props.id);
   }
 
   getUser = (id) => {
-    this.props.getProfile(id)
-  }
+    this.props.getProfile(id);
+  };
 
   edit = (paper) => {
     this.setState({
@@ -79,98 +78,179 @@ export class Papers extends Component {
       edition: paper.edition,
       isbn: paper.isbn,
       level: paper.level,
+      approval_status: paper.approval_status,
       chapters: paper.chapters,
       authors: paper.authors,
-      author_status:paper.author_status,
+      author_status: paper.author_status,
       SJR_rating: paper.SJR_rating,
-      impact_factor_journal:paper.impact_factor_journal,
+      impact_factor_journal: paper.impact_factor_journal,
 
       conference_name: paper.conference_name,
       location: paper.location,
       organised_date: paper.organised_date,
-
-    })
-  }
+    });
+  };
   onEditClose = (e) => {
     this.setState({
-      id: '',
-      title: '',
-      publisher: '',
-      volume: '',
-      peer_reviewed: '',
-      issn: '',
-      issue: '',
-      pages: '',
-      paper_link: '',
-      publication_date: '',
-      status: '',
-      group: '',
-      description: '',
-      DOI: '',
-      journal: '',
-      edition: '',
-      isbn: '',
-      level: '',
-      chapters: '',
-      authors: '',
-      author_status:'',
-      SJR_rating:'',
-      impact_factor_journal:'',
-      conference_name: '',
-      location: '',
+      id: "",
+      title: "",
+      publisher: "",
+      volume: "",
+      peer_reviewed: "",
+      issn: "",
+      issue: "",
+      pages: "",
+      paper_link: "",
+      publication_date: "",
+      status: "",
+      group: "",
+      description: "",
+      DOI: "",
+      journal: "",
+      edition: "",
+      isbn: "",
+      level: "",
+      chapters: "",
+      authors: "",
+      author_status: "",
+      approval_status: "",
+      SJR_rating: "",
+      impact_factor_journal: "",
+      conference_name: "",
+      location: "",
       organised_date: null,
-    })
-  }
+    });
+  };
 
   onChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   onSubmit = (e) => {
     e.preventDefault();
-    const { id, title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, level, chapters, authors, author_status, SJR_rating, impact_factor_journal,conference_name, location, organised_date } = this.state
-    const paper = { title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, level, chapters, authors, author_status, SJR_rating, impact_factor_journal, conference_name, location, organised_date }
-    this.props.putPapers(id, paper)
-    console.log(paper)
+    const {
+      id,
+      title,
+      publisher,
+      volume,
+      peer_reviewed,
+      issn,
+      issue,
+      pages,
+      paper_link,
+      publication_date,
+      status,
+      group,
+      description,
+      DOI,
+      journal,
+      edition,
+      isbn,
+      level,
+      chapters,
+      authors,
+      author_status,
+      approval_status,
+      SJR_rating,
+      impact_factor_journal,
+      conference_name,
+      location,
+      organised_date,
+    } = this.state;
+    const paper = {
+      title,
+      publisher,
+      volume,
+      peer_reviewed,
+      issn,
+      issue,
+      pages,
+      paper_link,
+      publication_date,
+      status,
+      group,
+      description,
+      DOI,
+      journal,
+      edition,
+      isbn,
+      level,
+      chapters,
+      authors,
+      approval_status,
+      author_status,
+      SJR_rating,
+      impact_factor_journal,
+      conference_name,
+      location,
+      organised_date,
+    };
+    this.props.putPapers(id, paper);
+    console.log(paper);
     this.setState({
-      id: '',
-      title: '',
-      publisher: '',
-      volume: '',
-      peer_reviewed: '',
-      issn: '',
-      issue: '',
-      pages: '',
-      paper_link: '',
-      publication_date: '',
-      status: '',
-      group: '',
-      description: '',
-      DOI: '',
-      journal: '',
-      edition: '',
-      isbn: '',
-      level: '',
-      chapters: '',
-      authors: '',
-      author_status:'',
-      SJR_rating:'',
-      impact_factor_journal:'',
-      conference_name: '',
-      location: '',
+      id: "",
+      title: "",
+      publisher: "",
+      volume: "",
+      peer_reviewed: "",
+      issn: "",
+      issue: "",
+      pages: "",
+      paper_link: "",
+      publication_date: "",
+      status: "",
+      group: "",
+      description: "",
+      DOI: "",
+      journal: "",
+      edition: "",
+      isbn: "",
+      level: "",
+      chapters: "",
+      authors: "",
+      author_status: "",
+      approval_status: "",
+      SJR_rating: "",
+      impact_factor_journal: "",
+      conference_name: "",
+      location: "",
       organised_date: null,
-      bibtext: ""
-
-    })
-  }
-
-
+      bibtext: "",
+    });
+  };
 
   render() {
-
-    const { id, title, publisher, volume, peer_reviewed, issn, issue, pages, paper_link, publication_date, status, group, description, DOI, journal, edition, isbn, level, chapters, authors, author_status, SJR_rating, impact_factor_journal, conference_name, location, organised_date } = this.state
+    const {
+      id,
+      title,
+      publisher,
+      volume,
+      peer_reviewed,
+      issn,
+      issue,
+      pages,
+      paper_link,
+      publication_date,
+      status,
+      group,
+      description,
+      DOI,
+      journal,
+      edition,
+      isbn,
+      level,
+      chapters,
+      authors,
+      author_status,
+      approval_status,
+      SJR_rating,
+      impact_factor_journal,
+      conference_name,
+      location,
+      organised_date,
+    } = this.state;
     return (
       <Fragment>
         <h2 className="mt-3">Publications</h2>
@@ -190,46 +270,98 @@ export class Papers extends Component {
               {this.props.papers.map((paper) => (
                 <tr key={paper.id}>
                   <td>{paper.publication_date}</td>
-                  <td><Link to={"/paper/" + paper.id} className="">{paper.title}</Link></td>
-                  <td><Link to={"/user/" + paper.author.id} onClick={() => this.getUser(paper.author.id)} className="">{(paper.author.profile) ? paper.author.profile.full_name : ""}</Link>
-                    {(paper.authors !== "") ? " and " + paper.authors : ""}</td>
+                  <td>
+                    <Link to={"/paper/" + paper.id} className="">
+                      {paper.title}
+                    </Link>
+                  </td>
+                  <td>
+                    <Link
+                      to={"/user/" + paper.author.id}
+                      onClick={() => this.getUser(paper.author.id)}
+                      className=""
+                    >
+                      {paper.author.profile
+                        ? paper.author.profile.full_name
+                        : ""}
+                    </Link>
+                    {paper.authors !== "" ? " and " + paper.authors : ""}
+                  </td>
                   {/* <td >{paper.publisher}</td>
                                 <td>{paper.group}</td> */}
-                  {(this.props.id == this.props.user.id) ?
-                    (<td><button type="button" className="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick={() => this.edit(paper)}><i className="far fa-edit"></i></button></td>
-                    ) : ""}
+                  {this.props.id == this.props.user.id ? (
+                    <td>
+                      <button
+                        type="button"
+                        className="btn btn-warning btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        onClick={() => this.edit(paper)}
+                      >
+                        <i className="far fa-edit"></i>
+                      </button>
+                    </td>
+                  ) : (
+                    ""
+                  )}
 
-                  {(this.props.id == this.props.user.id) ?
-                    (<td><button className="btn btn-danger btn-sm" onClick={this.props.deletePapers.bind(this, paper.id)}><i className="fas fa-trash-alt"></i></button></td>
-                    ) : ""}
+                  {this.props.id == this.props.user.id ? (
+                    <td>
+                      <button
+                        className="btn btn-danger btn-sm"
+                        onClick={this.props.deletePapers.bind(this, paper.id)}
+                      >
+                        <i className="fas fa-trash-alt"></i>
+                      </button>
+                    </td>
+                  ) : (
+                    ""
+                  )}
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-
-        <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div
+          className="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabIndex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
           <div className="modal-dialog modal-lg">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="staticBackdropLabel"><i className="far fa-edit">  Edit</i></h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={this.onEditClose}></button>
+                <h5 className="modal-title" id="staticBackdropLabel">
+                  <i className="far fa-edit"> Edit</i>
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  onClick={this.onEditClose}
+                ></button>
               </div>
               <div className="modal-body">
-
                 <form onSubmit={this.onSubmit}>
-
                   <div className="form-group my-2">
                     <label>Group</label>
-                    <select className="form-control"
+                    <select
+                      className="form-control"
                       onChange={this.onChange}
                       name="group"
-                      value={group}>
+                      value={group}
+                    >
                       <option value="journal">Journal Article</option>
                       <option value="publication">Publication</option>
                       <option value="report">Report</option>
-                      <option value="conference_article">Conference Article</option>
+                      <option value="conference_article">
+                        Conference Article
+                      </option>
                       <option value="book">Book</option>
                       <option value="misc_paper">Miscellaneous Papers</option>
                     </select>
@@ -248,14 +380,18 @@ export class Papers extends Component {
 
                   <div className="form-group my-2">
                     <label>Contribution Status</label>
-                    <select className="form-control"
+                    <select
+                      className="form-control"
                       onChange={this.onChange}
                       name="author_status"
-                      value={author_status}>
+                      value={author_status}
+                    >
                       <option value="">---</option>
                       <option value="chief">Chief Author</option>
                       <option value="co-author">Co-author</option>
-                      <option value="correspondence">Correspondence Author</option>
+                      <option value="correspondence">
+                        Correspondence Author
+                      </option>
                     </select>
                   </div>
 
@@ -347,7 +483,6 @@ export class Papers extends Component {
                     />
                   </div>
 
-
                   <div className="form-group my-2">
                     <label>Issue</label>
                     <input
@@ -369,7 +504,6 @@ export class Papers extends Component {
                       value={pages}
                     />
                   </div>
-
 
                   <div className="form-group my-2">
                     <label>DOI</label>
@@ -414,7 +548,6 @@ export class Papers extends Component {
                     />
                   </div>
 
-
                   <div className="form-group my-2">
                     <label>Chapters</label>
                     <input
@@ -425,9 +558,6 @@ export class Papers extends Component {
                       value={chapters}
                     />
                   </div>
-
-
-
 
                   <div className="form-group my-2">
                     <label>Conference</label>
@@ -462,7 +592,6 @@ export class Papers extends Component {
                     />
                   </div>
 
-
                   <div className="form-group my-2">
                     <label>Paper's Link</label>
                     <input
@@ -487,11 +616,13 @@ export class Papers extends Component {
 
                   <div className="form-group my-2">
                     <label>Level</label>
-                    <select className="form-control"
+                    <select
+                      className="form-control"
                       onChange={this.onChange}
                       name="level"
-                      value={level}>
-                      <option value=''>---</option>
+                      value={level}
+                    >
+                      <option value="">---</option>
                       <option value="national">National</option>
                       <option value="international">International</option>
                     </select>
@@ -499,37 +630,53 @@ export class Papers extends Component {
 
                   <div className="form-group my-2">
                     <label>Status</label>
-                    <select className="form-control"
+                    <select
+                      className="form-control"
                       onChange={this.onChange}
                       name="status"
-                      value={status}>
-                      <option value=''>---</option>
+                      value={status}
+                    >
+                      <option value="">---</option>
                       <option value="draft">Draft</option>
                       <option value="published">Published</option>
                     </select>
                   </div>
 
                   <div className="modal-footer">
-                    <button type="button" className="btn btn-danger" data-bs-dismiss="modal" onClick={this.onEditClose}>Close</button>
-                    <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                    <button
+                      type="button"
+                      className="btn btn-danger"
+                      data-bs-dismiss="modal"
+                      onClick={this.onEditClose}
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="submit"
+                      className="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Save changes
+                    </button>
                   </div>
-
                 </form>
-
               </div>
             </div>
           </div>
         </div>
-
       </Fragment>
-    )
+    );
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   user: state.auth.user,
-  papers: state.papers.papers
-})
+  papers: state.papers.papers,
+});
 
-export default connect(mapStateToProps, { getPapers, deletePapers, putPapers, getProfile })(Papers);
-
+export default connect(mapStateToProps, {
+  getPapers,
+  deletePapers,
+  putPapers,
+  getProfile,
+})(Papers);
