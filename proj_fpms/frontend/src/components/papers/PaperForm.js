@@ -490,7 +490,7 @@ export class PaperForm extends Component {
           </div>
 
           <div className="form-group my-2">
-            <label>Peer Reviewed Reviewed</label>
+            <label>Peer Reviewed</label>
             <input
               className="form-control"
               type="text"

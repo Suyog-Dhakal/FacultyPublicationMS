@@ -168,12 +168,7 @@ export class DetailPaper extends Component {
                   ) : (
                     ""
                   )}
-                  {
-                    <tr>
-                      <td>Approval Status</td>
-                      <td>{this.props.approval_status}</td>
-                    </tr>
-                  }
+
                   {this.props.paper.peer_reviewed ? (
                     <tr>
                       <td>Peer Reviewed</td>
@@ -233,6 +228,12 @@ export class DetailPaper extends Component {
                   ) : (
                     ""
                   )}
+                  {
+                    <tr>
+                      <td>Approval Status</td>
+                      <td>{this.props.paper.approval_status}</td>
+                    </tr>
+                  }
                 </tbody>
               </table>
             </div>

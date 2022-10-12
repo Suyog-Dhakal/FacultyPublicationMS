@@ -261,6 +261,7 @@ export class Papers extends Component {
                 <th>Date</th>
                 <th>Papers</th>
                 <th>Authors</th>
+                <th>Approval status</th>
                 {/* <th>Publishers</th>
                             <th>Class</th> */}
                 <th />
@@ -287,6 +288,7 @@ export class Papers extends Component {
                     </Link>
                     {paper.authors !== "" ? " and " + paper.authors : ""}
                   </td>
+                  <td>{paper.approval_status.toUpperCase()}</td>
                   {/* <td >{paper.publisher}</td>
                                 <td>{paper.group}</td> */}
                   {this.props.id == this.props.user.id ? (
