@@ -6,8 +6,12 @@ module.exports = {
     filename: "index.bundle.js",
   },
   devServer: {
-    port: 3010,
-    watchContentBase: true,
+    proxy: {
+      "/api": {
+        target: "http://127.0.0.1:8000/",
+      },
+    },
+    liveReload: true,
   },
   module: {
     rules: [

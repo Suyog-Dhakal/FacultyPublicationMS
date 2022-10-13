@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { capitalize } from "lodash";
 
 import { getPaper } from "../../actions/papers";
+import { Box } from "@mui/system";
+import { Button, Typography } from "@mui/material";
+import { ThumbUpAlt, ThumbUpOffAlt } from "@mui/icons-material";
 export class DetailPaper extends Component {
   static propTypes = {
     user: PropTypes.object.isRequired,
@@ -14,10 +18,17 @@ export class DetailPaper extends Component {
     this.props.getPaper(this.props.match.params.id);
   }
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      liked: false,
+    };
+  }
+
   render() {
     // const paper = (this.props.paper)? this.props.paper:{}
     return (
-      <div className="container">
+      <Box className="container">
         <div
           className="card card-body my-4 mx-auto"
           style={{ maxWidth: "800px" }}
@@ -231,15 +242,32 @@ export class DetailPaper extends Component {
                   {
                     <tr>
                       <td>Approval Status</td>
-                      <td>{this.props.paper.approval_status}</td>
+                      <td style={{ color: "red" }}>
+                        {capitalize(this.props.paper.approval_status)}
+                      </td>
                     </tr>
                   }
                 </tbody>
               </table>
             </div>
+            <Button
+              sx={{ display: "flex" }}
+              onClick={() => {
+                this.setState({
+                  liked: !this.state.liked,
+                });
+              }}
+            >
+              <ThumbUpOffAlt />
+              <Typography>
+                {this.state.liked
+                  ? this.props.paper.likes_count + 1
+                  : this.props.paper.likes_count}
+              </Typography>
+            </Button>
           </div>
         </div>
-      </div>
+      </Box>
     );
   }
 }

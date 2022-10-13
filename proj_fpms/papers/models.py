@@ -68,6 +68,9 @@ class Paper(models.Model):
     organised_date = models.DateField(
         null=True, blank=True, default=publication_date)
 
+    #searching and sorting specific
+    likes_count = models.IntegerField(default=0)
+
     class JournalPapers(models.Manager):
         def get_queryset(self):
             return super().get_queryset().filter(category='journal')
