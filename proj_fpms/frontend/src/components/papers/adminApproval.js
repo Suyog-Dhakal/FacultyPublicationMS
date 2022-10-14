@@ -1,11 +1,23 @@
-import React, { Component, Fragment } from "react";
-import { connect } from "react-redux";
-import { Redirect, Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { getPapers, deletePapers, putPapers } from "../../actions/papers";
-import { getProfile } from "../../actions/profiles";
+import React from "react";
+
+import { Link } from "react-router-dom";
 
 const adminApproval = () => {
+  let papers = [
+    {
+      id: 1,
+      publication_date: "13/13",
+      author: {
+        id: 1,
+        profile: {
+          full_name: "ram",
+        },
+      },
+      authors: ["hari", "shyam", "sita"],
+      title: "lstm",
+    },
+  ];
+
   const approve = () => {
     console.log("paper approved");
   };
@@ -25,7 +37,7 @@ const adminApproval = () => {
           </tr>
         </thead>
         <tbody>
-          {this.props.papers.map((paper) => (
+          {papers.map((paper) => (
             <tr key={paper.id}>
               <td>{paper.publication_date}</td>
               <td>
@@ -36,10 +48,9 @@ const adminApproval = () => {
               <td>
                 <Link
                   to={"/user/" + paper.author.id}
-                  onClick={() => this.getUser(paper.author.id)}
+                  onClick={() => getUser(paper.author.id)}
                   className=""
                 >
-                  {/* no routing through name link */}
                   {paper.author.profile ? paper.author.profile.full_name : ""}
                 </Link>
                 {paper.authors !== "" ? " and " + paper.authors : ""}
@@ -48,7 +59,7 @@ const adminApproval = () => {
               <td>
                 <button
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-success"
                   onClick={approve}
                 >
                   Approve
@@ -58,7 +69,7 @@ const adminApproval = () => {
               <td>
                 <button
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-danger"
                   onClick={reject}
                 >
                   Reject
