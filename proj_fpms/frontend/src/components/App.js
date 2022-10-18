@@ -28,7 +28,7 @@ import { loadUser } from "../actions/auth";
 import DetailPaper from "./papers/DetailPaper.js";
 import PaperList from "./papers/PaperList.js";
 import DetailUser from "./papers/DetailUser";
-import adminApproval from "./papers/adminApproval.js";
+import AdminApproval from "./papers/adminApproval.js";
 
 //Alerts
 const alertOptions = {
@@ -69,7 +69,7 @@ class App extends Component {
                   <PrivateRoute
                     exact
                     path="/superadmin"
-                    component={adminApproval}
+                    component={AdminApproval}
                   />
                 </Switch>
               </div>

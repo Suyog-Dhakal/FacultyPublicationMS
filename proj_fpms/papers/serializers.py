@@ -9,6 +9,7 @@ class PaperSerializer(serializers.ModelSerializer):
     class Meta:
         model = Paper
         fields = '__all__'
+        #fields = ['publication_date', 'title','author','approval_status']
 
     def get_author(self, obj):
         return UserSerializer(obj.author).data
