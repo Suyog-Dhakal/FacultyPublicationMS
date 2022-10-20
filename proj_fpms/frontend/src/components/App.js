@@ -66,11 +66,11 @@ class App extends Component {
                     path="/password-reset"
                     component={PasswordReset}
                   />
-                  <PrivateRoute
+                  {/* <PrivateRoute
                     exact
                     path="/superadmin"
                     component={AdminApproval}
-                  />
+                  /> */}
                 </Switch>
               </div>
             </Fragment>

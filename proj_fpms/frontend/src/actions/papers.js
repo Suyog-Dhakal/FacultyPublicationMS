@@ -27,6 +27,20 @@ export const getPapers = (id) => (dispatch, getState) => {
     );
 };
 
+export const getPaper = (id) => (dispatch, getState) => {
+  axios
+    .get(`/api/papers/${id}`, tokenConfig(getState))
+    .then((res) => {
+      dispatch({
+        type: GET_PAPER,
+        payload: res.data,
+      });
+    })
+    .catch((err) =>
+      dispatch(returnErrors(err.response.data, err.response.status))
+    );
+};
+
 export const getAllPapers = () => (dispatch) => {
   axios
     .get(`/api/getAllPapers/`)
