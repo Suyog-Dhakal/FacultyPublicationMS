@@ -138,24 +138,36 @@
 // })(AdminApproval);
 
 import React from "react";
+import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
 const AdminApproval = () => {
-  let papers = [
-    {
-      id: 1,
-      publication_date: "13/13",
-      author: {
-        id: 1,
-        profile: {
-          full_name: "ram",
-        },
-      },
-      authors: ["hari", "shyam", "sita"],
-      title: "lstm",
-    },
-  ];
+  // let papers = [
+  //   {
+  //     id: 1,
+  //     publication_date: "12/13",
+  //     author: {
+  //       id: 1,
+  //       profile: {
+  //         full_name: "ram",
+  //       },
+  //     },
+  //     authors: ["suraj", "shyam", "sita"],
+  //     title: "lstm",
+  //   },
+  // ];
+
+  const [papers, setPapers] = useState([]);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/getAllPapers/")
+      .then((response) => response.json())
+      .then((papers) => {
+        console.log(papers);
+        setPapers(papers.paper);
+      });
+  }, []);
 
   const approve = () => {
     console.log("paper approved");
@@ -175,7 +187,7 @@ const AdminApproval = () => {
           </tr>
         </thead>
         <tbody>
-          {papers.map((paper) => (
+          {papers?.map((paper) => (
             <tr key={paper.id}>
               <td>{paper.publication_date}</td>
               <td>

@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { getPapers, deletePapers, putPapers } from "../../actions/papers";
 import { getProfile } from "../../actions/profiles";
 import AdminApproval from "./adminApproval";
+import "regenerator-runtime/runtime";
 
 export class Papers extends Component {
   static propTypes = {
