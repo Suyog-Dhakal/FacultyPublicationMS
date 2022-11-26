@@ -26,7 +26,7 @@ class Paper(models.Model):
 
     levels = (("","None"),("national", "National"), ("international", "International"))
     author_levels =(("", "None"),("chief","Chief"),("correspondence","Correspondence"),("co-author","Co-Author"))
-    approval_status = (("","None"),("approved", "Approved"), ("pending", "Pending"))
+    approval_status = (("","None"),("approved", "Approved"), ("pending", "Pending"),("rejected", "Rejected"))
   
    
     title = models.CharField(max_length=250)

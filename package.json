@@ -34,6 +34,7 @@
     "caniuse-lite": "^1.0.30001418",
     "file-saver": "^2.0.5",
     "google-search-results-nodejs": "^2.0.1",
+    "immer": "^9.0.16",
     "jquery": "^3.6.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",

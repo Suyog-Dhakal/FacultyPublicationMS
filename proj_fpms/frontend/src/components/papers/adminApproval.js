@@ -139,9 +139,11 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
+import produce from "immer";
 
 import { Link } from "react-router-dom";
 
+import { putPapers } from "../../actions/papers";
 const AdminApproval = () => {
   // let papers = [
   //   {
@@ -164,19 +166,22 @@ const AdminApproval = () => {
     fetch("http://127.0.0.1:8000/api/getAllPapers/")
       .then((response) => response.json())
       .then((papers) => {
-        console.log(papers);
-        setPapers(papers.paper);
+        console.log(papers, "here");
+        setPapers(papers["paper detail"]);
       });
   }, []);
 
-  const approve = () => {
+  const approve = (paper) => {
     console.log("paper approved");
+    paper[approval_status] = "approved";
   };
+
   const reject = () => {
     console.log("paper rejected");
   };
   return (
     <div className="table-responsive">
+      {console.log(papers)}
       <table className="table table-striped table-hover table-sm">
         <thead>
           <tr>
@@ -209,7 +214,12 @@ const AdminApproval = () => {
                 <button
                   type="button"
                   className="btn btn-success"
-                  onClick={approve}
+                  onClick={putPapers(
+                    paper.id,
+                    produce(paper, (draft) => {
+                      draft["approved_status"] = "approved";
+                    })
+                  )}
                 >
                   Approve
                 </button>
@@ -218,7 +228,12 @@ const AdminApproval = () => {
                 <button
                   type="button"
                   className="btn btn-danger"
-                  onClick={reject}
+                  onClick={putPapers(
+                    paper.id,
+                    produce(paper, (draft) => {
+                      draft["approved_status"] = "rejected";
+                    })
+                  )}
                 >
                   Reject
                 </button>
