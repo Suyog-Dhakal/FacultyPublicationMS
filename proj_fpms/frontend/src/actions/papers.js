@@ -41,9 +41,9 @@ export const getPaper = (id) => (dispatch, getState) => {
     );
 };
 
-export const getAllPapers = () => (dispatch) => {
+export const getAllPapers = () => (dispatch, getState) => {
   axios
-    .get(`/api/getAllPapers/`)
+    .get(`/api/getAllPapers/`, tokenConfig(getState))
     .then((res) => {
       dispatch({
         type: GET_ALL_PAPERS,
@@ -122,6 +122,7 @@ export const deletePapers = (id) => (dispatch, getState) => {
 };
 
 export const putPapers = (id, paper) => (dispatch, getState) => {
+  console.log({ getState });
   const body = JSON.stringify(paper);
   console.log("The body is ", body);
 

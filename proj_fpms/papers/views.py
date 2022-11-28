@@ -12,7 +12,7 @@ from rest_framework import status
 def paper_list(request):
 
   if request.method == 'GET':
-    adminviewpapers = Paper.objects.all()
+    adminviewpapers = Paper.objects.exclude(approval_status="approved")
     serializer = PaperSerializer(adminviewpapers, many=True)
     return JsonResponse({'paper detail':serializer.data})
 

@@ -143,7 +143,7 @@ import produce from "immer";
 
 import { Link } from "react-router-dom";
 
-import { putPapers } from "../../actions/papers";
+import { putPapers, getAllPapers } from "../../actions/papers";
 const AdminApproval = () => {
   // let papers = [
   //   {
@@ -171,14 +171,14 @@ const AdminApproval = () => {
       });
   }, []);
 
-  const approve = (paper) => {
-    console.log("paper approved");
-    paper[approval_status] = "approved";
-  };
+  // const approve = (paper) => {
+  //   console.log("paper approved");
+  //   paper[approval_status] = "approved";
+  // };
 
-  const reject = () => {
-    console.log("paper rejected");
-  };
+  // const reject = () => {
+  //   console.log("paper rejected");
+  // };
   return (
     <div className="table-responsive">
       {console.log(papers)}
@@ -192,54 +192,58 @@ const AdminApproval = () => {
           </tr>
         </thead>
         <tbody>
-          {papers?.map((paper) => (
-            <tr key={paper.id}>
-              <td>{paper.publication_date}</td>
-              <td>
-                <Link to={"/paper/" + paper.id} className="">
-                  {paper.title}
-                </Link>
-              </td>
-              <td>
-                <Link
-                  to={"/user/" + paper.author.id}
-                  onClick={() => getUser(paper.author.id)}
-                  className=""
-                >
-                  {paper.author.profile ? paper.author.profile.full_name : ""}
-                </Link>
-                {paper.authors !== "" ? " and " + paper.authors : ""}
-              </td>
-              <td>
-                <button
-                  type="button"
-                  className="btn btn-success"
-                  onClick={putPapers(
-                    paper.id,
-                    produce(paper, (draft) => {
-                      draft["approved_status"] = "approved";
-                    })
-                  )}
-                >
-                  Approve
-                </button>
-              </td>
-              <td>
-                <button
-                  type="button"
-                  className="btn btn-danger"
-                  onClick={putPapers(
-                    paper.id,
-                    produce(paper, (draft) => {
-                      draft["approved_status"] = "rejected";
-                    })
-                  )}
-                >
-                  Reject
-                </button>
-              </td>
-            </tr>
-          ))}
+          {papers?.map((paper) => {
+            console.log({ paper: paper });
+            return (
+              <tr key={paper.id}>
+                <td>{paper.publication_date}</td>
+                <td>
+                  <Link to={"/paper/" + paper.id} className="">
+                    {paper.title}
+                  </Link>
+                </td>
+                <td>
+                  <Link
+                    to={"/user/" + paper.author.id}
+                    onClick={() => getUser(paper.author.id)}
+                    className=""
+                  >
+                    {paper.author.profile ? paper.author.profile.full_name : ""}
+                  </Link>
+                  {paper.authors !== "" ? " and " + paper.authors : ""}
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    className="btn btn-success"
+                    onClick={putPapers(
+                      paper.id,
+                      produce(paper, (draft) => {
+                        draft["approval_status"] = "approved";
+                      })
+                      // { ...paper, approval_status: "approved" }
+                    )}
+                  >
+                    Approve
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    className="btn btn-danger"
+                    onClick={putPapers(
+                      paper.id,
+                      produce(paper, (draft) => {
+                        draft["approval_status"] = "rejected";
+                      })
+                    )}
+                  >
+                    Reject
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
