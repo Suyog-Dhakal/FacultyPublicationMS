@@ -204,16 +204,18 @@ export class Register extends Component {
                   />
                 </div>
 
-                {/* <div className="form-group mt-2">
-                <label>Profile Avatar</label>
-                <input type="file"
-                 accept="image/*"
-                 className="form-control" 
-                 placeholder=""
-                 name="image"
-                 onChange={this.onChange}
-                 value={this.state.image} />
-            </div> */}
+                <div className="form-group mt-2">
+                  <label>Profile Avatar</label>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    className="form-control"
+                    placeholder=""
+                    name="image"
+                    onChange={this.onChange}
+                    value={this.state.image}
+                  />
+                </div>
 
                 <button
                   type="submit"
