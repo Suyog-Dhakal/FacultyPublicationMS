@@ -46,9 +46,9 @@ class App extends Component {
         <AlertProvider template={AlertTemplate} {...alertOptions}>
           <Router>
             <Fragment>
+              <Header />
               <div className="container">
                 <Alerts />
-                <Header />
                 <Switch>
                   <PrivateRoute exact path="/profile" component={DashBoard} />
                   <PrivateRoute exact path="/papers" s component={PaperList} />
