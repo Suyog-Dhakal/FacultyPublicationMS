@@ -11,7 +11,7 @@ export class Profile extends Component {
   render() {
     return (
       <div className="content-section">
-        <div className="media mt-2">
+        <div className="media mt-2" style={{ display: "inline" }}>
           <img
             className="rounded-circle account-img"
             src={this.props.user?.profile?.image}
@@ -21,7 +21,7 @@ export class Profile extends Component {
               {this.props.user?.profile?.full_name}
             </h4>
             <p className=" fs-6 d-inline text-secondary mx-3">
-              #{this.props.user?.id}
+              Serial No. {this.props.user?.id}
             </p>
             <h6 className="text-secondary">
               {this.props.user?.profile?.about_me}
@@ -30,17 +30,38 @@ export class Profile extends Component {
               {this.props.user?.profile?.institute}
             </h6>
             <h6 className="text-secondary">
-              {this.props.user?.profile?.address}
+              @{this.props.user?.profile?.address}
+            </h6>
+            <h6
+              style={{
+                color: "green",
+              }}
+            >
+              <a
+                className="text-secondary"
+                href={this.props.user?.profile?.website}
+                target="/"
+              >
+                Go to Personal Website
+              </a>
             </h6>
           </div>
         </div>
 
-        {this.props.user.username !== "superadmin" &&
-        this.props.user.id == this.props.owner?.id ? (
-          <Link to="/papers">Export Papers</Link>
-        ) : (
-          ""
-        )}
+        <div
+          style={{
+            textAlign: "right",
+          }}
+        >
+          {this.props.user.username !== "superadmin" &&
+          this.props.user.id == this.props.owner?.id ? (
+            <Link style={{ textDecoration: "none" }} to="/papers">
+              Export Papers
+            </Link>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     );
   }

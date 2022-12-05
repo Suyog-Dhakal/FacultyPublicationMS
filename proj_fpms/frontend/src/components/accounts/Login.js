@@ -35,7 +35,14 @@ export class Login extends Component {
       <div className="col-md-6 m-auto">
         <div className="card card body mt-5">
           <div className="container">
-            <h3 className="text-center mt-3">Sign In</h3>
+            <h3
+              className="text-center mt-3"
+              style={{
+                color: "green",
+              }}
+            >
+              Sign In
+            </h3>
             <form onSubmit={this.onSubmit}>
               <div className="form-group mt-2">
                 <label>Email</label>
@@ -77,12 +84,20 @@ export class Login extends Component {
                 </div>
               </div>
               <div className="form-group mt-4">
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-success">
                   Login
                 </button>
               </div>
-              <p className="text-right mt-3">
-                Don't have an account ?<Link to="/register">Sign Up </Link>
+              <p className="text-right mt-3 ">
+                Don't have an account ?
+                <Link
+                  style={{
+                    color: "green",
+                  }}
+                  to="/register"
+                >
+                  Sign Up{" "}
+                </Link>
               </p>
             </form>
           </div>

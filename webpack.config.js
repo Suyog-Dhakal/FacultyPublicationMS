@@ -17,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jpg|png)$/,
         exclude: /node_module/,
         use: {
           loader: "babel-loader",

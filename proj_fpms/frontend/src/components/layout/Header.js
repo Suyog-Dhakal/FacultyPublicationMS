@@ -44,6 +44,15 @@ export class Header extends Component {
                   <a
                     className="nav-link active text-white"
                     aria-current="page"
+                    href="#/addPaper"
+                  >
+                    Add Paper
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link active text-white"
+                    aria-current="page"
                     href="#/profile"
                   >
                     Profile

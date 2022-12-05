@@ -18,6 +18,8 @@ export class Register extends Component {
     about_me: "",
     institute: "",
     address: "",
+    website: "",
+    image: null,
   };
 
   static propTypes = {
@@ -38,8 +40,10 @@ export class Register extends Component {
       about_me,
       institute,
       address,
+      website,
+      image,
     } = this.state;
-    const profile = { full_name, about_me, institute, address };
+    const profile = { full_name, about_me, institute, address,website, image };
     if (password !== password2) {
       this.props.createMessages({ passwordNotMatch: "Passwords do not match" });
     } else {
@@ -61,6 +65,29 @@ export class Register extends Component {
     this.setState({
       is_profile: true,
     });
+  };
+
+  imageUploaded = (e) => {
+    let base64String = "";
+    let imageBase64Stringsep = "";
+
+    var file = document.querySelector("input[type=file]")["files"][0];
+
+    var reader = new FileReader();
+    console.log("next");
+
+    reader.onload = function () {
+      base64String = reader.result.replace("data:", "").replace(/^.+,/, "");
+
+      imageBase64Stringsep = base64String;
+
+      // alert(imageBase64Stringsep);
+      console.log({ base64String });
+      this.setState({
+        [e.target.name]: base64String,
+      });
+    };
+    reader.readAsDataURL(file);
   };
 
   onChange = (e) => {
@@ -203,17 +230,30 @@ export class Register extends Component {
                     value={this.state.address}
                   />
                 </div>
-
                 <div className="form-group mt-2">
-                  <label>Profile Avatar</label>
+                  <label>Personal Website</label>
                   <input
-                    type="file"
-                    accept="image/*"
+                    type="text"
                     className="form-control"
                     placeholder=""
+                    name="website"
+                    onChange={this.onChange}
+                    value={this.state.website}
+                  />
+                </div>
+
+                <div className="form-group mt-2">
+                  <label htmlFor="profile-image">Profile Avatar</label>
+                  <input
+                    id="profile-image"
+                    type="file"
+                    // accept="image/*"
+                    className="form-control"
+                    // placeholder=""
                     name="image"
                     onChange={this.onChange}
                     value={this.state.image}
+                    //form data
                   />
                 </div>
 

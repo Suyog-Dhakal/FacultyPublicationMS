@@ -29,6 +29,7 @@ import DetailPaper from "./papers/DetailPaper.js";
 import PaperList from "./papers/PaperList.js";
 import DetailUser from "./papers/DetailUser";
 import AdminApproval from "./papers/adminApproval.js";
+import PaperForm from "./papers/PaperForm.js";
 
 //Alerts
 const alertOptions = {
@@ -66,6 +67,7 @@ class App extends Component {
                     path="/password-reset"
                     component={PasswordReset}
                   />
+                  <PrivateRoute exact path="/addPaper" component={PaperForm} />
                   {/* <PrivateRoute
                     exact
                     path="/superadmin"
