@@ -1,11 +1,11 @@
 {
-  "name": "proj-fpms",
+  "name": "research-repository",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --watch ./proj_fpms/frontend/src/index.js --output-path ./proj_fpms/frontend/static/frontend/",
-    "build": "webpack --mode production ./proj_fpms/frontend/src/index.js --output-path ./proj_fpms/frontend/static/frontend/"
+    "dev": "webpack --mode development --watch ./source/frontend/src/index.js --output-path ./source/frontend/static/frontend/",
+    "build": "webpack --mode production ./source/frontend/src/index.js --output-path ./source/frontend/static/frontend/"
   },
   "author": "",
   "license": "ISC",
