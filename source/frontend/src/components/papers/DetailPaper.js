@@ -33,7 +33,13 @@ export class DetailPaper extends Component {
           className="card card-body my-4 mx-auto"
           style={{ maxWidth: "800px" }}
         >
-          <h3>{this.props.paper.title}</h3>
+          <h3
+            style={{
+              color: "green",
+            }}
+          >
+            {this.props.paper.title}
+          </h3>
           <hr className="my-2" />
 
           {/* {
@@ -52,7 +58,11 @@ export class DetailPaper extends Component {
                   {this.props.paper.author ? (
                     <tr>
                       <td>Authors</td>
-                      <td>
+                      <td
+                        style={{
+                          color: "green",
+                        }}
+                      >
                         {this.props.paper.author.profile.full_name}
                         {this.props.paper.authors !== ""
                           ? " and " + this.props.paper.authors

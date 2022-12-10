@@ -253,7 +253,14 @@ export class PaperList extends Component {
 
     return (
       <Fragment>
-        <h4 className="mt-3">Publications & Appearances</h4>
+        <h4
+          className="mt-3"
+          style={{
+            color: "green",
+          }}
+        >
+          Publications & Appearances
+        </h4>
         <div className="text-right" style={{ textAlign: "right" }}>
           <button
             className="btn btn-danger ms-auto mx-2 d-print-none"

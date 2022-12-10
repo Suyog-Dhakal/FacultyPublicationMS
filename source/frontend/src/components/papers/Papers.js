@@ -262,7 +262,14 @@ export class Papers extends Component {
             </div>
           ) : (
             <div>
-              <h2 className="mt-3">Publications</h2>
+              <h2
+                className="mt-3"
+                style={{
+                  color: "green",
+                }}
+              >
+                Publications
+              </h2>
               <div className="table-responsive">
                 <table className="table table-striped table-hover table-sm">
                   <thead>
@@ -669,7 +676,7 @@ export class Papers extends Component {
                           </button>
                           <button
                             type="submit"
-                            className="btn btn-primary"
+                            className="btn btn-success"
                             data-bs-dismiss="modal"
                           >
                             Save changes

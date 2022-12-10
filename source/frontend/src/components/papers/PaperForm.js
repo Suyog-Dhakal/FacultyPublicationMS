@@ -369,7 +369,13 @@ export class PaperForm extends Component {
           <div className="card card-body my-5 ">
             {this.state.isBibtex == "" ? (
               <div className="container">
-                <h3>Import from BibTex</h3>
+                <h3
+                  style={{
+                    color: "green",
+                  }}
+                >
+                  Import from BibTex
+                </h3>
                 <form className="my-3" onSubmit={this.onSubmitBibtex}>
                   <div className="mb-3">
                     <label htmlFor="formFile" className="form-label">
@@ -397,7 +403,7 @@ export class PaperForm extends Component {
                   </div>
 
                   <div className="form-group my-2">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-success">
                       Import
                     </button>
                   </div>
@@ -408,7 +414,7 @@ export class PaperForm extends Component {
                 <button
                   type="button"
                   onClick={this.onBibtex}
-                  className="btn btn-primary float-right"
+                  className="btn btn-success float-right"
                 >
                   {" "}
                   {this.state.isBibtex}
@@ -416,7 +422,14 @@ export class PaperForm extends Component {
               </div>
             )}
 
-            <h2 className="my-4">Add Papers</h2>
+            <h2
+              className="my-4"
+              style={{
+                color: "green",
+              }}
+            >
+              Add Papers
+            </h2>
             <form onSubmit={this.onSubmit}>
               <div className="form-group my-2">
                 <label>Group</label>
@@ -738,7 +751,7 @@ export class PaperForm extends Component {
               </div>
 
               <div className="form-group my-2">
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-success">
                   Submit
                 </button>
               </div>

@@ -13,6 +13,9 @@ import {
   PASSWORD_RESET,
   RESET_FAIL,
   PASSWORD_RESET_CONFIRM,
+  EDIT_PROFILE,
+  EDIT_PROFILE_SUCCESS,
+  EDIT_PROFILE_FAIL,
 } from "./types";
 
 export const loadUser = () => (dispatch, getState) => {
@@ -99,6 +102,36 @@ export const register =
         dispatch(returnErrors(err.response.data, err.response.status));
         dispatch({
           type: REGISTER_FAIL,
+        });
+      });
+  };
+
+export const editProfile =
+  ({ username, password, email, profile }) =>
+  (dispatch) => {
+    // Headers
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    // Request Body
+    const body = JSON.stringify({ username, email, password, profile });
+
+    axios
+      .put("/api/auth/register", body, config)
+      .then((res) => {
+        dispatch(createMessages({ verifyEmail: "Please verify your email." }));
+        dispatch({
+          type: EDIT_PROFILE_SUCCESS,
+          payload: res.data,
+        });
+      })
+      .catch((err) => {
+        dispatch(returnErrors(err.response.data, err.response.status));
+        dispatch({
+          type: EDIT_PROFILE_FAIL,
         });
       });
   };

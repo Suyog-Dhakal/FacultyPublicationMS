@@ -45,11 +45,11 @@ export class Login extends Component {
             </h3>
             <form onSubmit={this.onSubmit}>
               <div className="form-group mt-2">
-                <label>Email</label>
+                <label>Username</label>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="abc.pcampus.edu.np"
+                  placeholder="username"
                   name="username"
                   onChange={this.onChange}
                   value={username}

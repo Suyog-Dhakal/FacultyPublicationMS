@@ -19,7 +19,6 @@ export class Register extends Component {
     institute: "",
     address: "",
     website: "",
-    image: null,
   };
 
   static propTypes = {
@@ -41,9 +40,8 @@ export class Register extends Component {
       institute,
       address,
       website,
-      image,
     } = this.state;
-    const profile = { full_name, about_me, institute, address,website, image };
+    const profile = { full_name, about_me, institute, address, website };
     if (password !== password2) {
       this.props.createMessages({ passwordNotMatch: "Passwords do not match" });
     } else {
@@ -65,29 +63,6 @@ export class Register extends Component {
     this.setState({
       is_profile: true,
     });
-  };
-
-  imageUploaded = (e) => {
-    let base64String = "";
-    let imageBase64Stringsep = "";
-
-    var file = document.querySelector("input[type=file]")["files"][0];
-
-    var reader = new FileReader();
-    console.log("next");
-
-    reader.onload = function () {
-      base64String = reader.result.replace("data:", "").replace(/^.+,/, "");
-
-      imageBase64Stringsep = base64String;
-
-      // alert(imageBase64Stringsep);
-      console.log({ base64String });
-      this.setState({
-        [e.target.name]: base64String,
-      });
-    };
-    reader.readAsDataURL(file);
   };
 
   onChange = (e) => {
@@ -114,7 +89,14 @@ export class Register extends Component {
         <div className="col-md-6 m-auto">
           <div className="card card body mt-5">
             <div className="container">
-              <h3 className="text-center mt-3">Sign Up</h3>
+              <h3
+                className="text-center mt-3"
+                style={{
+                  color: "green",
+                }}
+              >
+                Sign Up
+              </h3>
               <form onSubmit={this.onSubmit1}>
                 <div className="form-group mt-2">
                   <label>Username</label>
@@ -165,12 +147,21 @@ export class Register extends Component {
 
                 <button
                   type="submit"
-                  className="btn btn-primary btn-block mt-4"
+                  className="btn btn-success btn-block mt-4"
                 >
                   Next
                 </button>
                 <p className="forgot-password text-right mt-3">
-                  Already have an account <Link to="/login"> Sign In</Link>
+                  Already have an account{" "}
+                  <Link
+                    to="/login"
+                    style={{
+                      color: "green",
+                    }}
+                  >
+                    {" "}
+                    Sign In
+                  </Link>
                 </p>
               </form>
             </div>
@@ -182,7 +173,14 @@ export class Register extends Component {
         <div className="col-md-6 m-auto">
           <div className="card card body mt-5">
             <div className="container">
-              <h3 className="text-center mt-3">Sign Up</h3>
+              <h3
+                className="text-center mt-3"
+                style={{
+                  color: "green",
+                }}
+              >
+                Sign Up
+              </h3>
               <form onSubmit={this.onSubmit}>
                 <div className="form-group mt-2">
                   <label>Full Name</label>
@@ -242,7 +240,7 @@ export class Register extends Component {
                   />
                 </div>
 
-                <div className="form-group mt-2">
+                {/* <div className="form-group mt-2">
                   <label htmlFor="profile-image">Profile Avatar</label>
                   <input
                     id="profile-image"
@@ -255,11 +253,11 @@ export class Register extends Component {
                     value={this.state.image}
                     //form data
                   />
-                </div>
+                </div> */}
 
                 <button
                   type="submit"
-                  className="btn btn-primary btn-block mt-4"
+                  className="btn btn-success btn-block mt-4"
                 >
                   Submit
                 </button>

@@ -17,7 +17,12 @@ export class Profile extends Component {
             src={this.props.user?.profile?.image}
           />
           <div className="media-body">
-            <h4 className="account-heading d-inline">
+            <h4
+              className="account-heading d-inline"
+              style={{
+                color: "green",
+              }}
+            >
               {this.props.user?.profile?.full_name}
             </h4>
             <p className=" fs-6 d-inline text-secondary mx-3">
@@ -41,6 +46,9 @@ export class Profile extends Component {
                 className="text-secondary"
                 href={this.props.user?.profile?.website}
                 target="/"
+                style={{
+                  color: "green",
+                }}
               >
                 Go to Personal Website
               </a>
@@ -55,7 +63,10 @@ export class Profile extends Component {
         >
           {this.props.user.username !== "superadmin" &&
           this.props.user.id == this.props.owner?.id ? (
-            <Link style={{ textDecoration: "none" }} to="/papers">
+            <Link
+              style={{ textDecoration: "none", color: "green", fontSize: 20 }}
+              to="/papers"
+            >
               Export Papers
             </Link>
           ) : (
