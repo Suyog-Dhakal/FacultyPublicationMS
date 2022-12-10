@@ -21,7 +21,7 @@ export class Header extends Component {
   render() {
     const { isAuthenticated, user } = this.props.auth;
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-info">
+      <nav className="navbar navbar-expand-lg navbar-light bg-success">
         <div className="container-fluid">
           <a className="navbar-brand text-white" href="#">
             Research Repository
