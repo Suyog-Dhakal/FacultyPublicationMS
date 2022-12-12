@@ -139,7 +139,9 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
 import produce from "immer";
+import store from "../../store";
 
 import { Link } from "react-router-dom";
 
@@ -159,7 +161,7 @@ const AdminApproval = () => {
   //     title: "lstm",
   //   },
   // ];
-
+  const dispatch = useDispatch();
   const [papers, setPapers] = useState([]);
 
   useEffect(() => {
@@ -216,13 +218,17 @@ const AdminApproval = () => {
                   <button
                     type="button"
                     className="btn btn-success"
-                    onClick={putPapers(
-                      paper.id,
-                      produce(paper, (draft) => {
-                        draft["approval_status"] = "approved";
-                      })
-                      // { ...paper, approval_status: "approved" }
-                    )}
+                    onClick={() => {
+                      console.log("approved button clicked");
+                      store.dispatch(
+                        putPapers(
+                          paper.id,
+                          produce(paper, (draft) => {
+                            draft["approval_status"] = "approved";
+                          })
+                        )
+                      );
+                    }}
                   >
                     Approve
                   </button>
@@ -231,12 +237,17 @@ const AdminApproval = () => {
                   <button
                     type="button"
                     className="btn btn-danger"
-                    onClick={putPapers(
-                      paper.id,
-                      produce(paper, (draft) => {
-                        draft["approval_status"] = "rejected";
-                      })
-                    )}
+                    onClick={() => {
+                      console.log("reject button clicked");
+                      store.dispatch(
+                        putPapers(
+                          paper.id,
+                          produce(paper, (draft) => {
+                            draft["approval_status"] = "rejected";
+                          })
+                        )
+                      );
+                    }}
                   >
                     Reject
                   </button>

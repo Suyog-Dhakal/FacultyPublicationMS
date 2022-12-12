@@ -14,6 +14,7 @@ export class Profile extends Component {
         <div className="media mt-2" style={{ display: "inline" }}>
           <img
             className="rounded-circle account-img"
+            style={{ height: 100, width: 100 }}
             src={this.props.user?.profile?.image}
           />
           <div className="media-body">

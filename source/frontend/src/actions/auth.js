@@ -193,7 +193,7 @@ export const resetConfirm = (username, otp, newPass) => (dispatch) => {
 
 export const tokenConfig = (getState) => {
   console.log({ function: typeof getState });
-  const token = getState().auth.token;
+  const token = getState()?.auth.token;
 
   const config = {
     headers: {

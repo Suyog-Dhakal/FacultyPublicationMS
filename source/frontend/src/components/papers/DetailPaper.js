@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { capitalize } from "lodash";
 
-import { getPaper } from "../../actions/papers";
+import { getPaper } from "../../actions/papers.js";
 import { Box } from "@mui/system";
 import { Button, Typography } from "@mui/material";
 import { ThumbUpAlt, ThumbUpOffAlt } from "@mui/icons-material";
@@ -280,6 +280,7 @@ export class DetailPaper extends Component {
       </Box>
     );
   }
+  getPaper;
 }
 
 const mapStateToProps = (state) => ({
