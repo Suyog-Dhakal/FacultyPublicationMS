@@ -41,22 +41,36 @@ export class Header extends Component {
             {isAuthenticated ? (
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a
-                    className="nav-link active text-white"
-                    aria-current="page"
-                    href="#/addPaper"
-                  >
-                    Add Paper
-                  </a>
+                  {user.username === "superadmin" ? (
+                    <a
+                      className="nav-link active text-white"
+                      aria-current="page"
+                      href="#/addPaper"
+                    >
+                      Dashboard
+                    </a>
+                  ) : (
+                    <a
+                      className="nav-link active text-white"
+                      aria-current="page"
+                      href="#/addPaper"
+                    >
+                      Add Paper
+                    </a>
+                  )}
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link active text-white"
-                    aria-current="page"
-                    href="#/profile"
-                  >
-                    Profile
-                  </a>
+                  {user.username === "superadmin" ? (
+                    ""
+                  ) : (
+                    <a
+                      className="nav-link active text-white"
+                      aria-current="page"
+                      href="#/profile"
+                    >
+                      Profile
+                    </a>
+                  )}
                 </li>
                 <li className="nav-item">
                   <a

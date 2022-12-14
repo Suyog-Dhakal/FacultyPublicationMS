@@ -146,6 +146,7 @@ import store from "../../store";
 import { Link } from "react-router-dom";
 
 import { putPapers, getAllPapers } from "../../actions/papers";
+import { getProfile } from "../../actions/profiles";
 const AdminApproval = () => {
   // let papers = [
   //   {
@@ -207,7 +208,7 @@ const AdminApproval = () => {
                 <td>
                   <Link
                     to={"/user/" + paper.author.id}
-                    onClick={() => getUser(paper.author.id)}
+                    onClick={() => store.dispatch(getProfile(paper.author.id))}
                     className=""
                   >
                     {paper.author.profile ? paper.author.profile.full_name : ""}
