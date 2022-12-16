@@ -30,6 +30,7 @@ import PaperList from "./papers/PaperList.js";
 import DetailUser from "./papers/DetailUser";
 import AdminApproval from "./papers/adminApproval.js";
 import PaperForm from "./papers/PaperForm.js";
+import NamelistTry from "./papers/NamelistTry.js";
 
 //Alerts
 const alertOptions = {
@@ -52,7 +53,7 @@ class App extends Component {
                 <Alerts />
                 <Switch>
                   <PrivateRoute exact path="/profile" component={DashBoard} />
-                  <PrivateRoute exact path="/papers" s component={PaperList} />
+                  <PrivateRoute exact path="/papers" component={PaperList} />
                   <PrivateRoute exact path="/" component={Search} />
                   <PrivateRoute
                     exact
@@ -60,6 +61,11 @@ class App extends Component {
                     component={DetailPaper}
                   />
                   <PrivateRoute exact path="/user/:id" component={DetailUser} />
+                  <PrivateRoute
+                    exact
+                    path="/paperList"
+                    component={NamelistTry}
+                  />
                   <Route exact path="/register" component={Register} />
                   <Route exact path="/login" component={Login} />
                   <Route

@@ -1,0 +1,538 @@
+{
+  "0": {
+    "Title": "User behavior analytics for anomaly detection using LSTM autoencoder-insider threat detection",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:RHpTSmoSYBkC",
+    "Authors": "Balaram Sharma, Prabhat Pokharel, Basanta Joshi",
+    "Publication date": "2020/7/1",
+    "Book": "Proceedings of the 11th International Conference on Advances in Information Technology",
+    "Pages": "1-9"
+  },
+  "1": {
+    "Title": "Music classification based on genre and mood",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:KlAtU1dfN6UC",
+    "Authors": "Ayush Shakya, Bijay Gurung, Mahendra Singh Thapa, Mehang Rai, Basanta Joshi",
+    "Publication date": "2017/3/24",
+    "Conference": "International conference on computational intelligence, communications, and business analytics",
+    "Pages": "168-183",
+    "Publisher": "Springer, Singapore"
+  },
+  "2": {
+    "Title": "Intelligent clustering scheme for log data streams",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:ufrVoPGSRksC",
+    "Authors": "Basanta Joshi, Umanga Bista, Manoj Ghimire",
+    "Publication date": "2014/4/6",
+    "Conference": "International Conference on Intelligent Text Processing and Computational Linguistics",
+    "Pages": "454-465",
+    "Publisher": "Springer, Berlin, Heidelberg"
+  },
+  "3": {
+    "Title": "Transfer learning based image visualization using cnn",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:7PzlFSSx8tAC",
+    "Authors": "Santosh Giri, Basanta Joshi",
+    "Publication date": "2019/7",
+    "Journal": "International Journal of Artificial Intellegence and Application",
+    "Volume": "10",
+    "Issue": "4",
+    "Pages": "47-55"
+  },
+  "4": {
+    "Title": "Nepali speech recognition using rnn-ctc model",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:L8Ckcad2t8MC",
+    "Authors": "Paribesh Regmi, Arjun Dahal, Basanta Joshi",
+    "Publication date": "2019/7",
+    "Journal": "International Journal of Computer Applications",
+    "Volume": "178",
+    "Issue": "31",
+    "Pages": "1-6"
+  },
+  "5": {
+    "Title": "Hmm based isolated word nepali speech recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:_kc_bZDykSQC",
+    "Authors": "Manish K Ssarma, Avaas Gajurel, Anup Pokhrel, Basanta Joshi",
+    "Publication date": "2017/7/9",
+    "Conference": "2017 International Conference on Machine Learning and Cybernetics (ICMLC)",
+    "Volume": "1",
+    "Pages": "71-76",
+    "Publisher": "IEEE"
+  },
+  "6": {
+    "Title": "Comparative study of camera calibration models for 3D particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:HDshCWvjkbEC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose",
+    "Publication date": "2013",
+    "Journal": "International Journal of Innovative Computing, Information and Control",
+    "Volume": "9",
+    "Issue": "5",
+    "Pages": "1971-1986"
+  },
+  "7": {
+    "Title": "A SOM based stereo pair matching algorithm for 3-D particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:u-x6o8ySG0sC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Sanjeeb Prasad Panday",
+    "Publication date": "2009/9/16",
+    "Conference": "International Conference on Intelligent Computing",
+    "Pages": "11-20",
+    "Publisher": "Springer, Berlin, Heidelberg"
+  },
+  "8": {
+    "Title": "Novel algorithms of 3D particle tracking velocimetry using a tomographic reconstruction technique",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:9yKSN-GCB0IC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose",
+    "Publication date": "2012",
+    "Journal": "Journal of Fluid Science and Technology",
+    "Volume": "7",
+    "Issue": "3",
+    "Pages": "242-258",
+    "Publisher": "The Japan Society of Mechanical Engineers"
+  },
+  "9": {
+    "Title": "Adaptive traffic light control with statistical multiplexing technique and particle swarm optimization in smart cities",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:Wp0gIr-vW9MC",
+    "Authors": "Brabim Manandhar, Basanta Joshi",
+    "Publication date": "2018/10/25",
+    "Conference": "2018 IEEE 3rd International Conference on Computing, Communication and Security (ICCCS)",
+    "Pages": "210-217",
+    "Publisher": "IEEE"
+  },
+  "10": {
+    "Title": "Particles detection scheme for tomographic particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:d1gkVwhDpl0C",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose",
+    "Publication date": "2012/7/9",
+    "Journal": "Proc. 16th Int. Symp. on Applications of Laser Techniques to Fluid Mechanics",
+    "Volume": "1",
+    "Issue": "4",
+    "Pages": "10"
+  },
+  "11": {
+    "Title": "Nepali speech recognition using CNN, GRU and CTC",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:zA6iFVUQeVQC",
+    "Authors": "Bharat Bhatta, Basanta Joshi, Ram Krishna Maharjhan",
+    "Publication date": "2020/9",
+    "Conference": "Proceedings of the 32nd Conference on Computational Linguistics and Speech Processing (ROCLING 2020)",
+    "Pages": "238-246"
+  },
+  "12": {
+    "Title": "Plant Leaf Disease Recognition Using Random Forest, KNN, SVM and CNN.",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:fPk4N6BV_jEC",
+    "Authors": "Bijaya Kumar Hatuwal, Aman Shakya, Basanta Joshi",
+    "Publication date": "2020",
+    "Journal": "Polibits",
+    "Volume": "62",
+    "Pages": "13-19"
+  },
+  "13": {
+    "Title": "Deep residual learning for facial emotion recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:D03iK_w7-QYC",
+    "Authors": "Sagar Mishra, Basanta Joshi, Rajendra Paudyal, Duryodhan Chaulagain, Subarna Shakya",
+    "Publication date": "2022",
+    "Book": "Mobile Computing and Sustainable Informatics",
+    "Pages": "301-313",
+    "Publisher": "Springer, Singapore"
+  },
+  "14": {
+    "Title": "Disease Classification of Chest X-Ray using CNN",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:KxtntwgDAa4C",
+    "Authors": "Tejasvi Raj Pant, Ravi Kiran Aryal, Tribikram Panthi, Milan Maharjan, Basanta Joshi",
+    "Publication date": "2021/12/17",
+    "Conference": "2021 IEEE 6th International Conference on Computing, Communication and Automation (ICCCA)",
+    "Pages": "467-471",
+    "Publisher": "IEEE"
+  },
+  "15": {
+    "Title": "Multi-agent based heterogeneous power management system",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:HoB7MX3m0LUC",
+    "Authors": "Purushotam Shrestha, Basanta Joshi",
+    "Publication date": "2021",
+    "Journal": "Int. J. Innov. Comput. Inf. Control",
+    "Volume": "17",
+    "Issue": "1",
+    "Pages": "245-257"
+  },
+  "16": {
+    "Title": "A hybrid approach for log signature generation",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:mVmsd5A6BfQC",
+    "Authors": "Prabhat Pokharel, Roshan Pokhrel, Basanta Joshi",
+    "Publication date": "2020/7/28",
+    "Journal": "Applied Computing and Informatics",
+    "Publisher": "Emerald Publishing Limited"
+  },
+  "17": {
+    "Title": "Nepali Text to Speech using Time Domain Pitch Synchronous Overlap Add Method",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:K3LRdlH-MEoC",
+    "Authors": "Pratistha Malla",
+    "Publication date": "2015",
+    "Institution": "Pulchowk Campus"
+  },
+  "18": {
+    "Title": "Camera calibration models for 3D particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:UeHWp8X0CEIC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Sanjeeb Prasad Panday",
+    "Publication date": "2010",
+    "Journal": "Image",
+    "Volume": "10",
+    "Pages": "256"
+  },
+  "19": {
+    "Title": "Digital Holography Based Particle Tracking Velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:2osOgNQ5qMEC",
+    "Authors": "Kazuo Ohmi, Sanjeeb Prasad Panday, Basanta Joshi",
+    "Publication date": "2009",
+    "Publisher": "FLUCOME"
+  },
+  "20": {
+    "Title": "An Alumni Portal and Tracking System",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:u_35RYKgDlwC",
+    "Authors": "Baibhav Bista, Aman Shakya, Basanta Joshi, Anusandhan Pokhrel, Lumanti Dangol, Mohit Kedia, Daya Sagar Baral",
+    "Publication date": "2021/4/12",
+    "Journal": "Journal of the Institute of Engineering",
+    "Volume": "16",
+    "Issue": "1",
+    "Pages": "7-14"
+  },
+  "21": {
+    "Title": "Automatic Pose Estimation of Micro Unmanned Aerial Vehicle for Autonomous Landing",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:lSLTfruPkqcC",
+    "Authors": "Manish Shrestha, Sanjeeb Prasad Panday, Basanta Joshi, Aman Shakya, Rom Kant Pandey",
+    "Publication date": "2020/10/2",
+    "Conference": "International Conference on Intelligent Computing",
+    "Pages": "3-15",
+    "Publisher": "Springer, Cham"
+  },
+  "22": {
+    "Title": "Information Extraction Using Named Entity Recognition from Log Messages",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:mB3voiENLucC",
+    "Authors": "Prabhat Pokharel",
+    "Publication date": "2018/7/29",
+    "Journal": "PhD thesis",
+    "Publisher": "Pokhara University"
+  },
+  "23": {
+    "Title": "Particle path based tomographic image velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:qjMakFHDy7sC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Aljabri Sultan, Alharbi Alaa",
+    "Publication date": "2013/7/1",
+    "Journal": "Proc. 10th International Symposium on Particle Image Velocimetry A",
+    "Volume": "160"
+  },
+  "24": {
+    "Title": "3D PIV Experiments on the Wake of Two Tandem Circular Cylinders in a Cross Flow",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:pqnbT2bcN3wC",
+    "Authors": "K Ohmi, SP Panday, B Joshi"
+  },
+  "25": {
+    "Title": "Generation of Nepalese Handwritten Characters Using Generative Adversarial Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:Tiz5es2fbqcC",
+    "Authors": "Krishna Khadka, Sanjeeb Prasad Panday, Basanta Joshi",
+    "Publication date": "2022",
+    "Book": "International Conference on Artificial Intelligence and Sustainable Engineering",
+    "Pages": "333-347",
+    "Publisher": "Springer, Singapore"
+  },
+  "26": {
+    "Title": "A Novel Deep Learning Based Nepali Speech Recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:XiSMed-E-HIC",
+    "Authors": "Basanta Joshi, Bharat Bhatta, Sanjeeb Prasad Panday, Ram Krishna Maharjan",
+    "Publication date": "2022",
+    "Conference": "International Conference on Electrical and Electronics Engineering",
+    "Pages": "433-443",
+    "Publisher": "Springer, Singapore"
+  },
+  "27": {
+    "Title": "Hierarchical Multi Label Classification of News Articles Using RNN, CNN and HAN",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:nb7KW1ujOQ8C",
+    "Authors": "Pratik Sharma, Aman Shakya, Basanta Joshi, Sanjeeb Prasad Panday",
+    "Publication date": "2022",
+    "Book": "ICT with Intelligent Applications",
+    "Pages": "499-506",
+    "Publisher": "Springer, Singapore"
+  },
+  "28": {
+    "Title": "Rapid Earthquake Assessment from Satellite Imagery Using RPN and Yolo v3",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:P5F9QuxV20EC",
+    "Authors": "Sanjeeb Prasad Panday, Saurav Lal Karn, Basanta Joshi, Aman Shakya, Rom Kant Pandey",
+    "Publication date": "2021/8/12",
+    "Conference": "International Conference on Intelligent Computing",
+    "Pages": "288-301",
+    "Publisher": "Springer, Cham"
+  },
+  "29": {
+    "Title": "Abnormal motion pattern detection in video sequences by an unsupervised approach",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:cFHS6HbyZ2cC",
+    "Authors": "Himal Acharya, Basanta Joshi",
+    "Publication date": "2021/7/9",
+    "Journal": "Engineering and Applied Science Research",
+    "Volume": "48",
+    "Issue": "5",
+    "Pages": "509-517"
+  },
+  "30": {
+    "Title": "INTELLIGENT CODE. SMELL. DETECTION SYSTEM USING DEEP LEARNING",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:vRqMK49ujn8C",
+    "Authors": "Sanjaya Subedi",
+    "Publication date": "2021",
+    "Institution": "Pulchowk Campus"
+  },
+  "31": {
+    "Title": "STOCK PRICE PREDICTION USING DEEP NEURAL NETWORK",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:l7t_Zn2s7bgC",
+    "Authors": "BASANT RAJ PHULARA",
+    "Publication date": "2021",
+    "Institution": "Pulchowk Campus"
+  },
+  "32": {
+    "Title": "Deep Learning Based Voice Conversion Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:p2g8aNsByqUC",
+    "Authors": "Ashok Basnet, Basanta Joshi, Suman Sharma",
+    "Publication date": "2021"
+  },
+  "33": {
+    "Title": "User Behavior Analytics for Insider Threat Detection using Deep Learning",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:OU6Ihb5iCvQC",
+    "Authors": "Santosh Nepal, Basanta Joshi",
+    "Publication date": "2021"
+  },
+  "34": {
+    "Title": "Performance Analysis of Shard Selection Techniques on Elasticsearch",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:uWQEDVKXjbEC",
+    "Authors": "Yashasvi Raj Pant, Basanta Joshi, Nanda Bikram Adhikari",
+    "Publication date": "2021"
+  },
+  "35": {
+    "Title": "Convolutional Neural Networks for the Assessment of Fetal Echocardiography",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:SP6oXDckpogC",
+    "Authors": "Dipak Kumar Nidhi, Khushboo Srivastav, Basanta Joshi, Shashidhar Ram Joshi",
+    "Publication date": "2021"
+  },
+  "36": {
+    "Title": "Nepali Speech Recognition using LSTM-CTC",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:UxriW0iASnsC",
+    "Authors": "Rupesh Shrestha, Basanta Joshi, Suman Sharma",
+    "Publication date": "2021"
+  },
+  "37": {
+    "Title": "Anomaly Detection in Distributed Streams",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:2P1L_qKh6hAC",
+    "Authors": "Rupesh Karn, Suvrat Ram Joshi, Umanga Bista, Basanta Joshi, Daya Sagar Baral, Aman Shakya",
+    "Publication date": "2020/5/15",
+    "Conference": "International Conference on Information and Communication Technology for Intelligent Systems",
+    "Pages": "139-147",
+    "Publisher": "Springer, Singapore"
+  },
+  "38": {
+    "Title": "Coronary Artery Disease Prediction Using Neural Network and Random Forest-Based Feature Selection",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:35N4QoGY0k4C",
+    "Authors": "Aman Shakya, Neerav Adhikari, Basanta Joshi",
+    "Publication date": "2020/5/15",
+    "Conference": "International Conference on Information and Communication Technology for Intelligent Systems",
+    "Pages": "97-105",
+    "Publisher": "Springer, Singapore"
+  },
+  "39": {
+    "Title": "Emotion Recognition From Video Using Feature level Fusion.",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:RGFaLdJalmkC",
+    "Authors": "Binod Adhikaria, Basanta Joshi",
+    "Publication date": "2020"
+  },
+  "40": {
+    "Title": "Time Series Based Pattern Recognition for Anomaly Detection from System Audit Logs",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:qUcmZB5y_30C",
+    "Authors": "Prabhat Pokharel, Sandeep Sigdel, Roshan Pokhrel, Basanta Joshi",
+    "Publication date": "2019/11/5",
+    "Conference": "2019 Artificial Intelligence for Transforming Business and Society (AITB)",
+    "Volume": "1",
+    "Pages": "1-6",
+    "Publisher": "IEEE"
+  },
+  "41": {
+    "Title": "User Behavior Modeling and Anomaly Detection in Cybersecurity Data Using Deep Learning",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:08ZZubdj9fEC",
+    "Authors": "Balaram Sharma",
+    "Publication date": "2019",
+    "Institution": "Pulchowk Campus"
+  },
+  "42": {
+    "Title": "Thyroid Ultrasonography Image Classification Based on Fine-tuned Convolutional Neural Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:tOudhMTPpwUC",
+    "Authors": "PANKAJ CHANDRA",
+    "Publication date": "2019",
+    "Institution": "Pulchowk Campus"
+  },
+  "43": {
+    "Title": "Applied Computing and Informatics",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:u9iWguZQMMsC",
+    "Authors": "Prabhat Pokharel, Roshan Pokhrel, Basanta Joshi",
+    "Publication date": "2019"
+  },
+  "44": {
+    "Title": "Abnormal Motion Pattern Detection in Surveillance Video Sequences by Clustering Approach",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:NaGl4SEjCO4C",
+    "Authors": "Himal Acharya, Basanta Joshi",
+    "Publication date": "2019",
+    "Journal": "Proceedings of IOE Graduate Conference"
+  },
+  "45": {
+    "Title": "INTERACTIVE VOICE RESPONSE SYSTEM WITH SPEECH RECOGNITION",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:R3hNpaxXUhUC",
+    "Authors": "Prabin Bhandari",
+    "Publication date": "2017/8"
+  },
+  "46": {
+    "Title": "A Novel Method for Real Time Pothole Detection System using Smartphones with Accelerometers",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:738O_yMBCRsC",
+    "Authors": "SUJIT MAHARJAN",
+    "Publication date": "2017",
+    "Institution": "Pulchowk Campus"
+  },
+  "47": {
+    "Title": "Object Detection in Video using Region based Convolution Neural Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:TQgYirikUcIC",
+    "Authors": "DEEPESH LEKHAK",
+    "Publication date": "2017",
+    "Institution": "Pulchowk Campus"
+  },
+  "48": {
+    "Title": "3D volumetric particle tracking velocimetry based on a tomographic reconstruction technique",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:hqOjcs7Dif8C",
+    "Authors": "Basanta Joshi",
+    "Publication date": "2016/6/5"
+  },
+  "49": {
+    "Title": "J054013 粒子のストリーク像を利用した 3 次元トモグラフィ PTV ([J054-01] 流れの高次元化可視化に向けて (1))",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:J_g5lzvAfSwC",
+    "Authors": "近江和生",
+    "Publication date": "2013/9/8",
+    "Conference": "年次大会 2013",
+    "Pages": "_J054013-1-_J054013-4",
+    "Publisher": "一般社団法人 日本機械学会"
+  },
+  "50": {
+    "Title": "Three dimensional volumetric particle tracking velocimetry based on a tomographic reconstruction technique",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:hFOr9nPyWt4C",
+    "Authors": "Joshi Basanta",
+    "Publication date": "2013",
+    "Institution": "大阪産業大学"
+  },
+  "51": {
+    "Title": "3 次元画像流体計測法におけるトモグラフィ再構成法の適用",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:WF5omc3nYNoC",
+    "Authors": "近江和生， 能勢和夫",
+    "Publication date": "2012/12/21",
+    "Journal": "電気学会研究会資料. LAV, 光応用・視覚研究会",
+    "Volume": "2012",
+    "Issue": "15",
+    "Pages": "17-22"
+  },
+  "52": {
+    "Title": "J055023 トモグラフィによる 3 次元 PTV の新解析手法",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:RYcK_YlVTxYC",
+    "Authors": "近江和生",
+    "Publication date": "2012/9/9",
+    "Conference": "年次大会 2012",
+    "Pages": "_J055023-1-_J055023-5",
+    "Publisher": "一般社団法人 日本機械学会"
+  },
+  "53": {
+    "Title": "粒子群最適化法による PTV のアルゴリズム",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:LkGwnXOMwfcC",
+    "Authors": "近江和生",
+    "Publication date": "2009",
+    "Journal": "可視化情報学会誌",
+    "Volume": "29",
+    "Issue": "1",
+    "Pages": "221-221",
+    "Publisher": "社団法人 可視化情報学会"
+  },
+  "54": {
+    "Title": "蟻コロニー最適化による PTV の最適化アルゴリズム",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:eQOLeE2rZwMC",
+    "Authors": "近江和生",
+    "Publication date": "2009",
+    "Journal": "可視化情報学会誌",
+    "Volume": "29",
+    "Issue": "2",
+    "Pages": "1167-1167",
+    "Publisher": "社団法人 可視化情報学会"
+  },
+  "55": {
+    "Title": "Particle Tracking Velocimetry using Digital In-Line Holograohy",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:Y0pCki6q_DkC",
+    "Authors": "Kazuo OHMI, Sanjeeb Prasad PANDAY, Basanta JOSHI",
+    "Publication date": "2009",
+    "Journal": "Journal of the Visualization Society of Japan",
+    "Volume": "29",
+    "Issue": "1",
+    "Pages": "223-223",
+    "Publisher": "The Visualization Society of Japan"
+  },
+  "56": {
+    "Title": "Vision Based Motorcycle Monitoring at Intersection of Nepal Roads",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:rO6llkc54NcC",
+    "Authors": "Himal Acharya, Basanta Joshi"
+  },
+  "57": {
+    "Title": "Multilayer Backpropagation Neural Networks",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:3s1wT3WcHBgC",
+    "Authors": "Santosh Giri, Basanta Joshi"
+  },
+  "58": {
+    "Title": "International Journal of Advanced Engineering",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:g5m5HwL7SMYC",
+    "Authors": "Pradip Bhandari, Dipak Kumar Nidhi, Basanta Joshi, Surendra Shrestha"
+  },
+  "59": {
+    "Title": "Nepali Speech Recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:e5wmG9Sq2KIC",
+    "Authors": "Aavaas Gajurel, Anup Pokhrel, Manish K Sharma"
+  },
+  "60": {
+    "Title": "2019 Artificial Intelligence for Transforming Business and Society November 5, 2019-Hyatt Regency Hotel, Kathmandu, Nepal. _",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:hC7cP41nSMkC",
+    "Authors": "Aakash Shrestha, Aashish Adhikari, Abhishesh Dahal, Arpan Pokhrel, Arun Babu Aryal, Basanta Joshi, Bikram Dahal, Kaushal Paudel, Kritish Pahi, Manish Munikar, Manish Pokharel, Pinky Sitikhu, Prabhat Pokharel, Pranita Upadhyaya, Pranjal Dhakal, Pujan Thapa, Roshan Pokhrel, Sandeep Sigdel, Sanjeeb Prasad Panday, Shashidhar Ram Joshi, Subarna Shakya, Sujan Adhikari, Suman Khatri, Sushil Ghimire, Sushil Shakya, Sushil Shrestha, Swajeet Kayastha, Swarup Raj Dhungana, Ujjwal Gewali"
+  },
+  "61": {
+    "Title": "Comparative Study of Camera Calibration Methods for 3D Particle Tracking Velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:IWHjjKOFINEC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose"
+  },
+  "62": {
+    "Title": "Object Detection in Images using Region Based CNN",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:4DMP91E08xMC",
+    "Authors": "Deepesh Lekhak, Basanta Joshi, Sushma Shrestha"
+  },
+  "63": {
+    "Title": "Speech Processing",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:8k81kl-MbHgC",
+    "Authors": "Basanta Joshi"
+  },
+  "64": {
+    "Title": "A data streaming algorithm for signature generation and clustering of log messages",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:5nxA0vEk-isC",
+    "Authors": "Basanta Joshi"
+  },
+  "65": {
+    "Title": "Anomaly Detection from System Logs based on Spectral Method",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:0EnyYjriUFMC",
+    "Authors": "Sagar Dhakal, Umanga Bista, Basanta Joshi"
+  },
+  "66": {
+    "Title": "SOM BASED PARTICLE MATCHING FOR VOLUMETRIC PARTICLE TRACKING VELOCIMETRY",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:W7OEmFMy1HYC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose"
+  },
+  "67": {
+    "Title": "Effect of Camera Calibration Method in the 3D Tomographic PIV",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:Tyk-4Ss8FVUC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Chuan-Qi Cao"
+  },
+  "68": {
+    "Title": "CAMERA CALIBRATION MODEL FOR PARTICLE TRACKING VELOCIMETRY WITH LENS DISTORTION",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:zYLM7Y9cAGgC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi"
+  },
+  "69": {
+    "Title": "ASSESSMENT OF IMPROVED VOLUMETRIC PARTICLE TRACKING VELOCIMETRY",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:IjCSPb-OGe4C",
+    "Authors": "B JOSHI, K OHMI, K NOSE"
+  }
+}

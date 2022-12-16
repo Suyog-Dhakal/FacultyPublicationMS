@@ -33,7 +33,9 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "caniuse-lite": "^1.0.30001418",
+    "chromedriver": "^108.0.0",
     "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
     "google-search-results-nodejs": "^2.0.1",
     "immer": "^9.0.16",
     "jquery": "^3.6.0",
@@ -50,6 +52,7 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.13.11",
+    "selenium-webdriver": "^4.7.1",
     "xlsx": "^0.17.0"
   }
 }
