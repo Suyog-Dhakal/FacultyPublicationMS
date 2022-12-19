@@ -6,6 +6,7 @@ import { getPapers, deletePapers, putPapers } from "../../actions/papers";
 import { getProfile } from "../../actions/profiles";
 import AdminApproval from "./adminApproval";
 import "regenerator-runtime/runtime";
+import data from "./file.json";
 
 export class Papers extends Component {
   static propTypes = {
@@ -284,6 +285,62 @@ export class Papers extends Component {
                     </tr>
                   </thead>
                   <tbody>
+                    {Object.entries(data)
+                      .map(([key, value]) => value)
+                      .map((paper) => (
+                        <tr key={paper.URL}>
+                          <td>{paper["Publication date"]}</td>
+                          <td>
+                            <a href={paper.URL} target="/">
+                              {paper.Title}
+                            </a>
+                          </td>
+                          <td>
+                            {/* <Link
+                              to={"/user/" + paper.Authors.id}
+                              onClick={() => this.getUser(paper.author.id)}
+                              className=""
+                            >
+                              {paper.Authors ? paper.Authors : ""}
+                            </Link> */}
+                            {paper.Authors !== "" ? paper.Authors : ""}
+                          </td>
+                          <td style={{ color: "green" }}>{"Approved"}</td>
+                          {/* <td >{paper.publisher}</td>
+                                <td>{paper.group}</td> */}
+                          {this.props.id == this.props.user.id ? (
+                            <td>
+                              <button
+                                type="button"
+                                className="btn btn-warning btn-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                                onClick={() => this.edit(paper)}
+                              >
+                                <i className="far fa-edit"></i>
+                              </button>
+                            </td>
+                          ) : (
+                            ""
+                          )}
+
+                          {this.props.id == this.props.user.id ? (
+                            <td>
+                              <button
+                                className="btn btn-danger btn-sm"
+                                onClick={this.props.deletePapers.bind(
+                                  this,
+                                  paper.id
+                                )}
+                              >
+                                <i className="fas fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          ) : (
+                            ""
+                          )}
+                        </tr>
+                      ))}
                     {this.props.papers.map((paper) => (
                       <tr key={paper.id}>
                         <td>{paper.publication_date}</td>
@@ -302,11 +359,11 @@ export class Papers extends Component {
                               ? paper.author.profile.full_name
                               : ""}
                           </Link>
-                          {paper.authors !== "" ? " and " + paper.authors : ""}
+                          {paper.Authors !== "" ? " and " + paper.Authors : ""}
                         </td>
                         <td>{paper.approval_status.toUpperCase()}</td>
                         {/* <td >{paper.publisher}</td>
-                                <td>{paper.group}</td> */}
+                                  <td>{paper.group}</td> */}
                         {this.props.id == this.props.user.id ? (
                           <td>
                             <button

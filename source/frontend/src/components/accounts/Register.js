@@ -199,6 +199,9 @@ export class Register extends Component {
                   <input
                     type="textarea"
                     className="form-control"
+                    style={{
+                      height: "30px",
+                    }}
                     placeholder=""
                     name="about_me"
                     onChange={this.onChange}

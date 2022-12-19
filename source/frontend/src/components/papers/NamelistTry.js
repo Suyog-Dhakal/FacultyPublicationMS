@@ -20,7 +20,7 @@ export default class NamelistTry extends Component {
             >
               <h5>
                 <a href={paper.URL} target="/">
-                  Title : {paper.Title}
+                  {paper.Title.toUpperCase()}
                 </a>
               </h5>
               <h5>Authors : {paper.Authors}</h5>
