@@ -2,7 +2,12 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Redirect, Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { getPapers, deletePapers, putPapers } from "../../actions/papers";
+import {
+  getPapers,
+  deletePapers,
+  putPapers,
+  addPapers,
+} from "../../actions/papers";
 import { getProfile } from "../../actions/profiles";
 import AdminApproval from "./adminApproval";
 import "regenerator-runtime/runtime";
@@ -123,6 +128,51 @@ export class Papers extends Component {
       location: "",
       organised_date: null,
     });
+  };
+
+  saveToDatabase = (e) => {
+    e.preventDefault();
+    Object.entries(data)
+      .map(([key, value]) => value)
+      .map((paper) => {
+        this.props.addPapers({
+          title: paper.Title,
+          publisher: paper?.Publisher,
+          volume: paper?.Volume,
+          peer_reviewed: paper?.peer_reviewed,
+          issn: paper?.issn,
+          issue: paper?.Issue,
+          pages: paper?.Pages,
+          paper_link: paper.URL,
+          publication_date: paper["Publication date"]
+            ? new Date(paper["Publication date"]).toISOString().slice(0, 10)
+            : null,
+          status: "published",
+          group: "publication",
+          description: paper.Authors,
+          DOI: paper?.DOI,
+          journal: paper?.Journal,
+          edition: paper?.edition,
+          isbn: paper?.isbn,
+          level: paper?.level,
+          chapters: paper?.chapters,
+          authors: paper?.Authors,
+          author_status: paper?.author_status,
+          SJR_rating: paper?.SJR_rating,
+          impact_factor_journal: paper?.impact_factor_journal,
+          conference_name: paper?.Conference,
+          location: paper?.location,
+          organised_date: paper?.organised_date,
+        });
+        console.log(paper);
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    console.log("saved DB clicked");
   };
 
   onChange = (e) => {
@@ -271,6 +321,7 @@ export class Papers extends Component {
               >
                 Publications
               </h2>
+              <button onClick={this.saveToDatabase}>Save to Database</button>
               <div className="table-responsive">
                 <table className="table table-striped table-hover table-sm">
                   <thead>
@@ -762,4 +813,5 @@ export default connect(mapStateToProps, {
   deletePapers,
   putPapers,
   getProfile,
+  addPapers,
 })(Papers);

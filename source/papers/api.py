@@ -13,8 +13,8 @@ from rest_framework import generics
 
 class PaperViewSet(viewsets.ModelViewSet):
     queryset = Paper.objects.all()
-    permission_classes = [permissions.IsAuthenticated and isOwnerOrReadOnly]
-    #permission_classes = [permissions.AllowAny]
+    #permission_classes = [permissions.IsAuthenticated and isOwnerOrReadOnly]
+    permission_classes = [permissions.AllowAny]
 
     serializer_class = PaperSerializer
     ordering = ['-publication_date']
@@ -41,7 +41,8 @@ class PaperViewSet(viewsets.ModelViewSet):
 class SearchView(generics.ListAPIView):
     queryset = Paper.postobjects.all()
     serializer_class = PaperSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.AllowAny]
     filter_backends = [filters.SearchFilter]
     search_fields = ['title', 'author__profile__full_name','authors', 'group']
     ordering = ['-publication_date']
@@ -53,6 +54,7 @@ class SearchViewTitle(generics.ListAPIView):
     filter_backends = [filters.SearchFilter]
     search_fields = ['title']
     ordering = ['-publication_date']
+    permission_classes = [permissions.AllowAny]
 
 class SearchViewAuthors(generics.ListAPIView):
     queryset = Paper.postobjects.all()
@@ -60,4 +62,5 @@ class SearchViewAuthors(generics.ListAPIView):
     filter_backends = [filters.SearchFilter]
     search_fields = ['author__profile__full_name',"authors"]
     ordering = ['-publication_date']
+    permission_classes = [permissions.AllowAny]
 
