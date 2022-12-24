@@ -300,35 +300,35 @@ export class PaperForm extends Component {
     };
     this.props.addPapers(paper);
     console.log(paper);
-    this.setState({
-      title: "",
-      publisher: "",
-      volume: "",
-      peer_reviewed: "",
-      issn: "",
-      issue: "",
-      pages: "",
-      paper_link: "",
-      publication_date: "",
-      description: "",
-      DOI: "",
-      journal: "",
-      edition: "",
-      isbn: "",
-      level: "",
-      chapters: "",
-      authors: "",
-      author_status: "",
-      SJR_rating: "",
-      impact_factor_journal: "",
-      group: "",
-      status: "",
+    // this.setState({
+    //   title: "",
+    //   publisher: "",
+    //   volume: "",
+    //   peer_reviewed: "",
+    //   issn: "",
+    //   issue: "",
+    //   pages: "",
+    //   paper_link: "",
+    //   publication_date: "",
+    //   description: "",
+    //   DOI: "",
+    //   journal: "",
+    //   edition: "",
+    //   isbn: "",
+    //   level: "",
+    //   chapters: "",
+    //   authors: "",
+    //   author_status: "",
+    //   SJR_rating: "",
+    //   impact_factor_journal: "",
+    //   group: "",
+    //   status: "",
 
-      conference_name: "",
-      location: "",
-      organised_date: null,
-      bibtext: "",
-    });
+    //   conference_name: "",
+    //   location: "",
+    //   organised_date: null,
+    //   bibtext: "",
+    // });
   };
 
   render() {
@@ -715,7 +715,7 @@ export class PaperForm extends Component {
                 <label>Publication Date</label>
                 <input
                   className="form-control"
-                  type="date"
+                  type="text"
                   name="publication_date"
                   onChange={this.onChange}
                   value={publication_date}

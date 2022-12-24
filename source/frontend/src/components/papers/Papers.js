@@ -12,6 +12,7 @@ import { getProfile } from "../../actions/profiles";
 import AdminApproval from "./adminApproval";
 import "regenerator-runtime/runtime";
 import data from "./file.json";
+import store from "../../store";
 
 export class Papers extends Component {
   static propTypes = {
@@ -21,6 +22,7 @@ export class Papers extends Component {
     deletePapers: PropTypes.func.isRequired,
     putPapers: PropTypes.func.isRequired,
     getProfile: PropTypes.func.isRequired,
+    addPapers: PropTypes.func.isRequired,
   };
 
   state = {
@@ -134,44 +136,43 @@ export class Papers extends Component {
     e.preventDefault();
     Object.entries(data)
       .map(([key, value]) => value)
-      .map((paper) => {
-        this.props.addPapers({
-          title: paper.Title,
-          publisher: paper?.Publisher,
-          volume: paper?.Volume,
-          peer_reviewed: paper?.peer_reviewed,
-          issn: paper?.issn,
-          issue: paper?.Issue,
-          pages: paper?.Pages,
-          paper_link: paper.URL,
-          publication_date: paper["Publication date"]
-            ? new Date(paper["Publication date"]).toISOString().slice(0, 10)
-            : null,
-          status: "published",
-          group: "publication",
-          description: paper.Authors,
-          DOI: paper?.DOI,
-          journal: paper?.Journal,
-          edition: paper?.edition,
-          isbn: paper?.isbn,
-          level: paper?.level,
-          chapters: paper?.chapters,
-          authors: paper?.Authors,
-          author_status: paper?.author_status,
-          SJR_rating: paper?.SJR_rating,
-          impact_factor_journal: paper?.impact_factor_journal,
-          conference_name: paper?.Conference,
-          location: paper?.location,
-          organised_date: paper?.organised_date,
-        });
-        console.log(paper);
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
+      .forEach((paper) => {
+        store.dispatch(
+          addPapers({
+            DOI: paper?.DOI,
+            SJR_rating: paper?.SJR_rating,
+            author_status: "co-author",
+            authors: paper.Authors,
+            chapters: paper?.chapters,
+            conference_name: paper.Conference,
+            description: paper?.description,
+            edition: paper?.edition,
+            group: "conference_article",
+            impact_factor_journal: paper?.impact_factor_journal,
+            isbn: paper?.isbn,
+            issn: paper?.issn,
+            issue: paper.Issue,
+            journal: paper?.Journal,
+            level: "international",
+            location: "Nepal",
+            organised_date: paper?.organised_date,
+            pages: paper.Pages,
+            paper_link: paper.URL,
+            peer_reviewed: "Yes",
+            publication_date: paper["Publication date"],
+            publisher: paper.Publisher,
+            status: "published",
+            title: paper.Title,
+            volume: paper.Volume,
+          })
+        );
       });
+    // .then((response) => {
+    //   console.log(response);
+    // })
+    // .catch((error) => {
+    //   console.log(error);
+    // });
     console.log("saved DB clicked");
   };
 
@@ -336,62 +337,63 @@ export class Papers extends Component {
                     </tr>
                   </thead>
                   <tbody>
-                    {Object.entries(data)
-                      .map(([key, value]) => value)
-                      .map((paper) => (
-                        <tr key={paper.URL}>
-                          <td>{paper["Publication date"]}</td>
-                          <td>
-                            <a href={paper.URL} target="/">
-                              {paper.Title}
-                            </a>
-                          </td>
-                          <td>
-                            {/* <Link
-                              to={"/user/" + paper.Authors.id}
-                              onClick={() => this.getUser(paper.author.id)}
-                              className=""
-                            >
-                              {paper.Authors ? paper.Authors : ""}
-                            </Link> */}
-                            {paper.Authors !== "" ? paper.Authors : ""}
-                          </td>
-                          <td style={{ color: "green" }}>{"Approved"}</td>
-                          {/* <td >{paper.publisher}</td>
-                                <td>{paper.group}</td> */}
-                          {this.props.id == this.props.user.id ? (
-                            <td>
-                              <button
-                                type="button"
-                                className="btn btn-warning btn-sm"
-                                data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop"
-                                onClick={() => this.edit(paper)}
-                              >
-                                <i className="far fa-edit"></i>
-                              </button>
-                            </td>
-                          ) : (
-                            ""
-                          )}
-
-                          {this.props.id == this.props.user.id ? (
-                            <td>
-                              <button
-                                className="btn btn-danger btn-sm"
-                                onClick={this.props.deletePapers.bind(
-                                  this,
-                                  paper.id
-                                )}
-                              >
-                                <i className="fas fa-trash-alt"></i>
-                              </button>
-                            </td>
-                          ) : (
-                            ""
-                          )}
-                        </tr>
-                      ))}
+                    {
+                      // Object.entries(data)
+                      //   .map(([key, value]) => value)
+                      //   .map((paper) => (
+                      //     <tr key={paper.URL}>
+                      //       <td>{paper["Publication date"]}</td>
+                      //       <td>
+                      //         <a href={paper.URL} target="/">
+                      //           {paper.Title}
+                      //         </a>
+                      //       </td>
+                      //       <td>
+                      //         {/* <Link
+                      //           to={"/user/" + paper.Authors.id}
+                      //           onClick={() => this.getUser(paper.author.id)}
+                      //           className=""
+                      //         >
+                      //           {paper.Authors ? paper.Authors : ""}
+                      //         </Link> */}
+                      //         {paper.Authors !== "" ? paper.Authors : ""}
+                      //       </td>
+                      //       <td style={{ color: "green" }}>{"Approved"}</td>
+                      //       {/* <td >{paper.publisher}</td>
+                      //             <td>{paper.group}</td> */}
+                      //       {this.props.id == this.props.user.id ? (
+                      //         <td>
+                      //           <button
+                      //             type="button"
+                      //             className="btn btn-warning btn-sm"
+                      //             data-bs-toggle="modal"
+                      //             data-bs-target="#staticBackdrop"
+                      //             onClick={() => this.edit(paper)}
+                      //           >
+                      //             <i className="far fa-edit"></i>
+                      //           </button>
+                      //         </td>
+                      //       ) : (
+                      //         ""
+                      //       )}
+                      //       {this.props.id == this.props.user.id ? (
+                      //         <td>
+                      //           <button
+                      //             className="btn btn-danger btn-sm"
+                      //             onClick={this.props.deletePapers.bind(
+                      //               this,
+                      //               paper.id
+                      //             )}
+                      //           >
+                      //             <i className="fas fa-trash-alt"></i>
+                      //           </button>
+                      //         </td>
+                      //       ) : (
+                      //         ""
+                      //       )}
+                      //     </tr>
+                      //   ))
+                    }
                     {this.props.papers.map((paper) => (
                       <tr key={paper.id}>
                         <td>{paper.publication_date}</td>
@@ -410,7 +412,9 @@ export class Papers extends Component {
                               ? paper.author.profile.full_name
                               : ""}
                           </Link>
-                          {paper.Authors !== "" ? " and " + paper.Authors : ""}
+                          {paper.Authors !== ""
+                            ? ""
+                            : paper.Authors + "and Others"}
                         </td>
                         <td>{paper.approval_status.toUpperCase()}</td>
                         {/* <td >{paper.publisher}</td>

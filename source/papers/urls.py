@@ -14,4 +14,4 @@ urlpatterns += [path('api/search/authors/', SearchViewAuthors.as_view())]
 urlpatterns += [path('api/search/title/', SearchViewTitle.as_view())]
 urlpatterns += [path('api/getAllPapers/', views.paper_list)]
 urlpatterns += [path('api/papers/<int:id>', views.paper_detail)]
-
+urlpatterns += [path('api/papers/',views.paper_detail)]

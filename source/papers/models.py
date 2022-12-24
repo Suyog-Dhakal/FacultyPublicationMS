@@ -32,7 +32,7 @@ class Paper(models.Model):
     title = models.CharField(max_length=250)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
-    publication_date = models.DateField(null=True, blank=True)
+    publication_date = models.CharField(max_length=250,null=True, blank=True)
     publisher = models.CharField(max_length=50, null=True, blank=True)
     paper_link = models.CharField(max_length=250, null=True, blank=True)
     status = models.CharField(max_length=10, choices=options)
@@ -65,7 +65,7 @@ class Paper(models.Model):
     # conference_article-specific pages and issue
     conference_name = models.CharField(max_length=200, null=True, blank=True)
     location = models.CharField(max_length=50, null=True, blank=True)
-    organised_date = models.DateField(
+    organised_date = models.CharField(max_length=250,
         null=True, blank=True, default=publication_date)
 
     #searching and sorting specific

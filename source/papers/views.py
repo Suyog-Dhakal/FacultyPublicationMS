@@ -4,7 +4,8 @@ from .serializers import PaperSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-
+import json
+import ast
 # Create your views here.
 
 
@@ -29,7 +30,7 @@ def paper_detail(request, id):
     return Response(serializer.data)
 
   elif request.method =='PUT':
-    serializer = PaperSerializer(paper, data=request.data)
+    serializer = PaperSerializer(paper, data=ast.literal_eval(request.data))
     if serializer.is_valid():
       serializer.save()
       return Response(serializer.data)
