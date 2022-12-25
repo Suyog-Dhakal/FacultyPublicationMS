@@ -191,7 +191,6 @@ const AdminApproval = () => {
             <th>Date</th>
             <th>Papers</th>
             <th>Authors</th>
-            <th>Approval status</th>
           </tr>
         </thead>
         <tbody>
