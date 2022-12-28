@@ -31,6 +31,7 @@ import DetailUser from "./papers/DetailUser";
 import AdminApproval from "./papers/adminApproval.js";
 import PaperForm from "./papers/PaperForm.js";
 import NamelistTry from "./papers/NamelistTry.js";
+import Homepage from "./Homepage.js";
 
 //Alerts
 const alertOptions = {
@@ -54,7 +55,8 @@ class App extends Component {
                 <Switch>
                   <PrivateRoute exact path="/profile" component={DashBoard} />
                   <PrivateRoute exact path="/papers" component={PaperList} />
-                  <PrivateRoute exact path="/" component={Search} />
+                  <PrivateRoute exact path="/" component={Homepage} />
+                  {/* <PrivateRoute exact path="/" component={Search} /> */}
                   <PrivateRoute
                     exact
                     path="/paper/:id"
