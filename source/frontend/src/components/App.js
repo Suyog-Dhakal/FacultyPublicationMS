@@ -14,6 +14,7 @@ import { Provider } from "react-redux";
 import store from "../store.js";
 
 import Header from "./layout/Header";
+import Footer from "./layout/Footer.js";
 import DashBoard from "./papers/DashBoard";
 import Alerts from "./layout/Alerts";
 
@@ -55,8 +56,8 @@ class App extends Component {
                 <Switch>
                   <PrivateRoute exact path="/profile" component={DashBoard} />
                   <PrivateRoute exact path="/papers" component={PaperList} />
-                  {/* <PrivateRoute exact path="/" component={Homepage} /> */}
-                  <PrivateRoute exact path="/" component={Search} />
+                  <PrivateRoute exact path="/" component={Homepage} />
+                  {/* <PrivateRoute exact path="/" component={Search} /> */}
                   <PrivateRoute
                     exact
                     path="/paper/:id"
@@ -83,6 +84,7 @@ class App extends Component {
                   />
                 </Switch>
               </div>
+              {/* <Footer /> */}
             </Fragment>
           </Router>
         </AlertProvider>
