@@ -9,7 +9,7 @@ async function getCitation() {
   let driver = new Builder().forBrowser("chrome").build();
 
   await driver.get(
-    "https://scholar.google.com/citations?user=ZB6i0OKaPo4C&hl=en"
+    "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=iocLiGcAAAAJ"
   );
 
   await driver.findElement(By.css("button#gsc_bpf_more")).click();
@@ -48,7 +48,7 @@ async function getCitation() {
       citation[await element.getText()] = await x[i].getText();
       i = i + 1;
       delete citation["Description"];
-      delete citation["Total citations"];
+      // delete citation["Total citations"];
       delete citation["Scholar articles"];
     }
     dict_of_citation[j] = citation;

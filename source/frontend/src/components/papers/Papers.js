@@ -164,6 +164,7 @@ export class Papers extends Component {
             status: "published",
             title: paper.Title,
             volume: paper.Volume,
+            total_citation: paper["Total citations"],
           })
         );
       });

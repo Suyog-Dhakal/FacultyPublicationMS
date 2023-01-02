@@ -257,6 +257,14 @@ export class DetailPaper extends Component {
                       </td>
                     </tr>
                   }
+                  {
+                    <tr>
+                      <td>Total Citations</td>
+                      <td style={{ color: "green" }}>
+                        {this.props.paper.total_citation}
+                      </td>
+                    </tr>
+                  }
                 </tbody>
               </table>
             </div>

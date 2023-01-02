@@ -55,8 +55,8 @@ class App extends Component {
                 <Switch>
                   <PrivateRoute exact path="/profile" component={DashBoard} />
                   <PrivateRoute exact path="/papers" component={PaperList} />
-                  <PrivateRoute exact path="/" component={Homepage} />
-                  {/* <PrivateRoute exact path="/" component={Search} /> */}
+                  {/* <PrivateRoute exact path="/" component={Homepage} /> */}
+                  <PrivateRoute exact path="/" component={Search} />
                   <PrivateRoute
                     exact
                     path="/paper/:id"
