@@ -12,7 +12,7 @@ const PrivateRoute = ({ component: Component, auth, ...rest }) => (
       if (auth.isLoading) {
         return <Spinner animation="border" variant="info" />;
       } else if (!auth.isAuthenticated) {
-        return <Redirect to="/" />;
+        return <Redirect to="/index" />;
       }
       return <Component {...props} />;
     }}

@@ -1,11 +1,6 @@
 import React, { Component, Fragment } from "react";
 import ReactDOM from "react-dom";
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
@@ -13,26 +8,23 @@ import AlertTemplate from "react-alert-template-basic";
 import { Provider } from "react-redux";
 import store from "../store.js";
 
-import Header from "./layout/Header";
-import Footer from "./layout/Footer.js";
-import DashBoard from "./papers/DashBoard";
 import Alerts from "./layout/Alerts";
+import Header from "./layout/Header";
+import DashBoard from "./papers/DashBoard";
 
 import Login from "./accounts/Login";
-import Register from "./accounts/Register";
 import PasswordReset from "./accounts/PasswordReset";
+import Register from "./accounts/Register";
 import Search from "./papers/Search.js";
 
 import PrivateRoute from "./common/PrivateRoute";
 
-import { loadUser } from "../actions/auth";
-import DetailPaper from "./papers/DetailPaper.js";
-import PaperList from "./papers/PaperList.js";
-import DetailUser from "./papers/DetailUser";
+import Landing from "./Landing.js";
 import AdminApproval from "./papers/adminApproval.js";
+import DetailPaper from "./papers/DetailPaper.js";
+import DetailUser from "./papers/DetailUser";
 import PaperForm from "./papers/PaperForm.js";
-import NamelistTry from "./papers/NamelistTry.js";
-import Homepage from "./Homepage.js";
+import PaperList from "./papers/PaperList.js";
 
 //Alerts
 const alertOptions = {
@@ -41,9 +33,6 @@ const alertOptions = {
 };
 
 class App extends Component {
-  componentDidMount() {
-    store.dispatch(loadUser());
-  }
   render() {
     return (
       <Provider store={store}>
@@ -53,22 +42,18 @@ class App extends Component {
               <Header />
               <div className="container">
                 <Alerts />
+
                 <Switch>
+                  <Route path="/index" component={Landing} />
                   <PrivateRoute exact path="/profile" component={DashBoard} />
                   <PrivateRoute exact path="/papers" component={PaperList} />
-                  <PrivateRoute exact path="/" component={Homepage} />
-                  {/* <PrivateRoute exact path="/" component={Search} /> */}
+                  <PrivateRoute exact path="/" component={Search} />
                   <PrivateRoute
                     exact
                     path="/paper/:id"
                     component={DetailPaper}
                   />
                   <PrivateRoute exact path="/user/:id" component={DetailUser} />
-                  <PrivateRoute
-                    exact
-                    path="/paperList"
-                    component={NamelistTry}
-                  />
                   <Route exact path="/register" component={Register} />
                   <Route exact path="/login" component={Login} />
                   <Route

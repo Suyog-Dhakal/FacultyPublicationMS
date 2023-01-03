@@ -1,21 +1,20 @@
 import axios from "axios";
-import { returnErrors, createMessages } from "./messages";
+import { createMessages, returnErrors } from "./messages";
 
 import {
-  USER_LOADED,
-  USER_LOADING,
   AUTH_ERROR,
-  LOGIN_SUCCESS,
+  EDIT_PROFILE_FAIL,
+  EDIT_PROFILE_SUCCESS,
   LOGIN_FAIL,
+  LOGIN_SUCCESS,
   LOGOUT_SUCCESS,
+  PASSWORD_RESET,
+  PASSWORD_RESET_CONFIRM,
   REGISTER_FAIL,
   REGISTER_SUCCESS,
-  PASSWORD_RESET,
   RESET_FAIL,
-  PASSWORD_RESET_CONFIRM,
-  EDIT_PROFILE,
-  EDIT_PROFILE_SUCCESS,
-  EDIT_PROFILE_FAIL,
+  USER_LOADED,
+  USER_LOADING,
 } from "./types";
 
 export const loadUser = () => (dispatch, getState) => {
