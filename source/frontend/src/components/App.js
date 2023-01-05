@@ -24,7 +24,9 @@ import AdminApproval from "./papers/adminApproval.js";
 import DetailPaper from "./papers/DetailPaper.js";
 import DetailUser from "./papers/DetailUser";
 import PaperForm from "./papers/PaperForm.js";
+
 import PaperList from "./papers/PaperList.js";
+import { loadUser } from "../actions/auth.js";
 
 //Alerts
 const alertOptions = {
@@ -33,6 +35,10 @@ const alertOptions = {
 };
 
 class App extends Component {
+  componentDidMount() {
+    store.dispatch(loadUser());
+  }
+
   render() {
     return (
       <Provider store={store}>
@@ -44,7 +50,6 @@ class App extends Component {
                 <Alerts />
 
                 <Switch>
-                  <Route path="/index" component={Landing} />
                   <PrivateRoute exact path="/profile" component={DashBoard} />
                   <PrivateRoute exact path="/papers" component={PaperList} />
                   <PrivateRoute exact path="/" component={Search} />
@@ -67,6 +72,7 @@ class App extends Component {
                     path="/superadmin"
                     component={AdminApproval}
                   />
+                  <Route exact path="/index" component={Landing} />
                 </Switch>
               </div>
               {/* <Footer /> */}

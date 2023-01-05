@@ -71,7 +71,7 @@ export class Header extends Component {
                     onClick={this.props.logout}
                     aria-current="page"
                     className=" nav-link active text-black"
-                    href="#/login"
+                    href="#/index"
                   >
                     Log Out
                   </a>

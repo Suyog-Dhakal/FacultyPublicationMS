@@ -11,10 +11,11 @@ const PrivateRoute = ({ component: Component, auth, ...rest }) => (
     render={(props) => {
       if (auth.isLoading) {
         return <Spinner animation="border" variant="info" />;
-      } else if (!auth.isAuthenticated) {
-        return <Redirect to="/index" />;
+      } else if (auth.isAuthenticated) {
+        return <Component {...props} />;
+      } else {
+        return <Redirect to="/login" />;
       }
-      return <Component {...props} />;
     }}
   />
 );
