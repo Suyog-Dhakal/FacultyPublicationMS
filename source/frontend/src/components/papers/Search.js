@@ -68,7 +68,7 @@ export class Search extends Component {
               color: "green",
             }}
           >
-            Paper Search
+            Search papers here...
           </h3>
           <div className="input-group mx-auto" style={{ maxWidth: "500px" }}>
             <input

@@ -17,10 +17,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jpg|png)$/,
-        exclude: /node_module/,
-        use: {
-          loader: "babel-loader",
+        test: /\.(js|jsx)$/,
+        loader: "esbuild-loader",
+        options: {
+          loader: "jsx",
+          target: "es2016",
         },
       },
     ],

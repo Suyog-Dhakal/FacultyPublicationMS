@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import ReactDOM from "react-dom";
+
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Provider as AlertProvider } from "react-alert";
@@ -19,14 +19,14 @@ import Search from "./papers/Search.js";
 
 import PrivateRoute from "./common/PrivateRoute";
 
-import Landing from "./Landing.js";
+import Landing from "./Landing.jsx";
 import AdminApproval from "./papers/adminApproval.js";
 import DetailPaper from "./papers/DetailPaper.js";
 import DetailUser from "./papers/DetailUser";
 import PaperForm from "./papers/PaperForm.js";
 
-import PaperList from "./papers/PaperList.js";
 import { loadUser } from "../actions/auth.js";
+import PaperList from "./papers/PaperList.js";
 
 //Alerts
 const alertOptions = {
@@ -83,4 +83,4 @@ class App extends Component {
     );
   }
 }
-ReactDOM.render(<App />, document.getElementById("app"));
+export default App;
