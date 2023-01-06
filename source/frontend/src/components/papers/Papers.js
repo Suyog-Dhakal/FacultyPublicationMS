@@ -413,7 +413,7 @@ export class Papers extends Component {
                               ? paper.author.profile.full_name
                               : ""}
                           </Link>
-                          {paper.Authors !== ""
+                          {paper.Authors === ""
                             ? ""
                             : paper.Authors + "and Others"}
                         </td>
