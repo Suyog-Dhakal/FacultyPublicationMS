@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import ReactDOM from "react-dom";
+
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Provider as AlertProvider } from "react-alert";
@@ -19,11 +19,13 @@ import Search from "./papers/Search.js";
 
 import PrivateRoute from "./common/PrivateRoute";
 
-import Landing from "./Landing.js";
+import Landing from "./Landing.jsx";
 import AdminApproval from "./papers/adminApproval.js";
 import DetailPaper from "./papers/DetailPaper.js";
 import DetailUser from "./papers/DetailUser";
 import PaperForm from "./papers/PaperForm.js";
+
+import { loadUser } from "../actions/auth.js";
 import PaperList from "./papers/PaperList.js";
 
 //Alerts
@@ -33,6 +35,10 @@ const alertOptions = {
 };
 
 class App extends Component {
+  componentDidMount() {
+    store.dispatch(loadUser());
+  }
+
   render() {
     return (
       <Provider store={store}>
@@ -44,7 +50,6 @@ class App extends Component {
                 <Alerts />
 
                 <Switch>
-                  <Route path="/index" component={Landing} />
                   <PrivateRoute exact path="/profile" component={DashBoard} />
                   <PrivateRoute exact path="/papers" component={PaperList} />
                   <PrivateRoute exact path="/" component={Search} />
@@ -67,6 +72,7 @@ class App extends Component {
                     path="/superadmin"
                     component={AdminApproval}
                   />
+                  <Route exact path="/index" component={Landing} />
                 </Switch>
               </div>
               {/* <Footer /> */}
@@ -77,4 +83,4 @@ class App extends Component {
     );
   }
 }
-ReactDOM.render(<App />, document.getElementById("app"));
+export default App;
