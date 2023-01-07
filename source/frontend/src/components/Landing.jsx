@@ -78,11 +78,14 @@ const Landing = () => {
           <div class="d-sm-flex align-items-center justify-content-between">
             <div>
               <h1>
-                Pulchowk Campus
-                <span class="text-warning">Routine Management</span>
+                <span class="text-warning">
+                  Pulchowk Campus Research Repository
+                </span>
               </h1>
-              <p class="lead my-4">Access your semester routine here</p>
-              <button class="btn btn-primary btn-lg">View your Routine</button>
+              <p class="lead my-4">
+                Repository of Researchers of IOE, Pulchowk Campus
+              </p>
+              {/* <button class="btn btn-primary btn-lg">View your Routine</button> */}
             </div>
             <img
               class="img-fluid w-50 d-none d-sm-block"
@@ -96,7 +99,7 @@ const Landing = () => {
       <section class="bg-primary text-light p-5">
         <div class="container">
           <div class="d-md-flex justify-content-between align-items-center">
-            <h3 class="mb-3 mb-md-0">Sign Up For Our Latest News</h3>
+            <h3 class="mb-3 mb-md-0">Register to access the papers ...</h3>
           </div>
         </div>
       </section>
@@ -171,7 +174,7 @@ const Landing = () => {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
-              <img src="./img/fundamentals.svg" class="img-fluid" alt="" />
+              <img src="./img/college.jpeg" class="img-fluid" alt="" />
             </div>
             <div class="col-md p-5">
               <h2>More About Pulchowk Campus</h2>
@@ -316,10 +319,6 @@ const Landing = () => {
                 <li class="list-group-item">
                   <span class="fw-bold">Phone no:</span> 01-5550000
                 </li>
-                <li class="list-group-item">
-                  <span class="fw-bold">Developer Email:</span>{" "}
-                  routinemanagement@gmail.com
-                </li>
               </ul>
             </div>
           </div>
@@ -328,7 +327,9 @@ const Landing = () => {
 
       <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
-          <p class="lead">Copyright &copy; 2023 BE Routine Management</p>
+          <p class="lead">
+            Copyright &copy; 2023 Pulchowk Campus Research Repository
+          </p>
 
           <a href="#" class="position-absolute bottom-0 end-0 p-5">
             <i class="bi bi-arrow-up-circle h1"></i>

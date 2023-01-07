@@ -63,9 +63,9 @@ export class DetailPaper extends Component {
                           color: "green",
                         }}
                       >
-                        {this.props.paper.author.profile.full_name}
+                        {/* {this.props.paper.author.profile.full_name} */}
                         {this.props.paper.authors !== ""
-                          ? " and " + this.props.paper.authors
+                          ? this.props.paper.authors
                           : ""}
                       </td>
                     </tr>

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { register } from "../../actions/auth";
 import { createMessages } from "../../actions/messages";
+import Multiselect from "multiselect-react-dropdown";
 
 export class Register extends Component {
   state = {
@@ -194,7 +195,7 @@ export class Register extends Component {
                   />
                 </div>
 
-                <div className="form-group mt-2">
+                {/* <div className="form-group mt-2">
                   <label>About Me</label>
                   <input
                     type="textarea"
@@ -206,6 +207,26 @@ export class Register extends Component {
                     name="about_me"
                     onChange={this.onChange}
                     value={this.state.about_me}
+                  />
+                </div> */}
+
+                <div className="form-group mt-2">
+                  <label>Post and Department</label>
+                  <Multiselect
+                    onChange={this.onChange}
+                    value={this.state.about_me}
+                    isObject={false}
+                    options={[
+                      "Professor",
+                      "Associate Professor",
+                      "Lecturer",
+                      "Computer",
+                      "Electronics",
+                      "Electrical",
+                      "Civil",
+                      "Mechanical",
+                      "Architecture",
+                    ]}
                   />
                 </div>
 

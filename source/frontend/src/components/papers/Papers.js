@@ -155,7 +155,7 @@ export class Papers extends Component {
             journal: paper?.Journal,
             level: "international",
             location: "Nepal",
-            organised_date: paper?.organised_date,
+            organised_date: paper["Publication date"],
             pages: paper.Pages,
             paper_link: paper.URL,
             peer_reviewed: "Yes",
@@ -413,9 +413,7 @@ export class Papers extends Component {
                               ? paper.author.profile.full_name
                               : ""}
                           </Link>
-                          {paper.Authors === ""
-                            ? ""
-                            : paper.Authors + "and Others"}
+                          {paper.Authors === "" ? "" : "" + "and Others"}
                         </td>
                         <td>{paper.approval_status.toUpperCase()}</td>
                         {/* <td >{paper.publisher}</td>

@@ -66,7 +66,7 @@ class Paper(models.Model):
     conference_name = models.CharField(max_length=200, null=True, blank=True)
     location = models.CharField(max_length=50, null=True, blank=True)
     organised_date = models.CharField(max_length=250,
-        null=True, blank=True, default=publication_date)
+        null=True, blank=True)
 
     #searching and sorting specific
     likes_count = models.IntegerField(default=0)
