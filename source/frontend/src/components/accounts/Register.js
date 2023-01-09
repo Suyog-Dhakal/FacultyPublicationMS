@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { register } from "../../actions/auth";
 import { createMessages } from "../../actions/messages";
 import Multiselect from "multiselect-react-dropdown";
-
+import { MenuItem, Select } from "@mui/material";
 export class Register extends Component {
   state = {
     username: "",
@@ -16,7 +16,8 @@ export class Register extends Component {
     is_profile: false,
 
     full_name: "",
-    about_me: "",
+    post: "",
+    department: "",
     institute: "",
     address: "",
     website: "",
@@ -37,12 +38,20 @@ export class Register extends Component {
       registered,
       is_profile,
       full_name,
-      about_me,
+      post,
+      department,
       institute,
       address,
       website,
     } = this.state;
-    const profile = { full_name, about_me, institute, address, website };
+    const profile = {
+      full_name,
+      post,
+      department,
+      institute,
+      address,
+      website,
+    };
     if (password !== password2) {
       this.props.createMessages({ passwordNotMatch: "Passwords do not match" });
     } else {
@@ -211,23 +220,32 @@ export class Register extends Component {
                 </div> */}
 
                 <div className="form-group mt-2">
-                  <label>Post and Department</label>
-                  <Multiselect
-                    onChange={this.onChange}
-                    value={this.state.about_me}
-                    isObject={false}
-                    options={[
-                      "Professor",
-                      "Associate Professor",
-                      "Lecturer",
-                      "Computer",
-                      "Electronics",
-                      "Electrical",
-                      "Civil",
-                      "Mechanical",
-                      "Architecture",
-                    ]}
-                  />
+                  <label>Post</label>
+                  <Select onChange={this.onChange} name="post">
+                    <MenuItem value={"Professor"}>Professor</MenuItem>
+                    <MenuItem value={"Associate Professor"}>
+                      Associate Professor
+                    </MenuItem>
+                    <MenuItem value={"Assistant Professor"}>
+                      Assistant Professor
+                    </MenuItem>
+                    <MenuItem value={"Lecturer"}>Lecturer</MenuItem>
+                  </Select>
+                </div>
+
+                <div className="form-group mt-2">
+                  <label>Department</label>
+                  <Select onChange={this.onChange} name="department">
+                    <MenuItem value={"Computer"}>Computer</MenuItem>
+                    <MenuItem value={"Electronics"}>Electronics</MenuItem>
+                    <MenuItem value={"Electrical"}>Electrical</MenuItem>
+                    <MenuItem value={"Civil"}>Civil</MenuItem>
+                    <MenuItem value={"Mechanical"}>Mechanical</MenuItem>
+                    <MenuItem value={"Architecture"}>Architecture</MenuItem>
+                    <MenuItem value={"Applied Science"}>
+                      Applied Science
+                    </MenuItem>
+                  </Select>
                 </div>
 
                 <div className="form-group mt-2">

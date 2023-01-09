@@ -9,7 +9,7 @@ class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = ('full_name', 'image',
-                  'about_me', 'institute', 'address','website')
+                  'post','department', 'institute', 'address','website')
 
     # def get_image_path(self, obj):
     #     return obj.image.url
@@ -47,7 +47,8 @@ class RegisterSerializer(serializers.ModelSerializer):
             user=user,
             full_name=profile_data['full_name'],
             # image=profile_data['image'],
-            about_me=profile_data['about_me'],
+            post=profile_data['post'],
+            department = profile_data['department'],
             institute=profile_data['institute'],
             address=profile_data["address"],
             website=profile_data["website"]

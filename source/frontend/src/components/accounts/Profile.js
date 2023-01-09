@@ -29,9 +29,11 @@ export class Profile extends Component {
             <p className=" fs-6 d-inline text-secondary mx-3">
               Serial No. {this.props.user?.id}
             </p>
+            <h6 className="text-secondary">{this.props.user?.profile?.post}</h6>
             <h6 className="text-secondary">
-              {this.props.user?.profile?.about_me}
+              {this.props.user?.profile?.department}
             </h6>
+
             <h6 className="text-secondary">
               {this.props.user?.profile?.institute}
             </h6>

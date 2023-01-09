@@ -24,7 +24,8 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
     image = models.ImageField(_("Image"), default='default.jpg',
                               upload_to='profile_pics', blank=True)
-    about_me = models.CharField(max_length=200, null=True)
+    post = models.CharField(max_length=200, null=True)
+    department = models.CharField(max_length=200, null=True)
     institute = models.CharField(max_length=200, null=True, blank=True)
     address = models.CharField(max_length=200, null=True, blank=True)
     website = models.CharField(max_length=500,null=True,blank=True)
