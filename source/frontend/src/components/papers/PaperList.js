@@ -381,7 +381,12 @@ export class PaperList extends Component {
                       </span>{" "}
                       {paper.publisher}
                       {", "}
-                      {paper.location} {paper.publication_date.split("-")[0]}
+                      {paper.location} {paper.publication_date?.split("-")[0]}
+                      <hr
+                        style={{
+                          color: "black",
+                        }}
+                      />
                     </td>
                   </tr>
                 ))}
@@ -398,7 +403,7 @@ export class PaperList extends Component {
                   <tr key={paper.id}>
                     <td>
                       {this.apaNaming(paper.authors, author_name)}
-                      {paper.publication_date.split("-")[0]}. "{paper.title}".{" "}
+                      {paper.publication_date?.split("-")[0]}. "{paper.title}".{" "}
                       <span className="fst-italic">
                         {paper.conference_name
                           ? paper.conference_name + "."
@@ -408,6 +413,11 @@ export class PaperList extends Component {
                         {paper.journal ? paper.journal + "." : ""}
                       </span>{" "}
                       {paper.location} {paper.publisher}
+                      <hr
+                        style={{
+                          color: "black",
+                        }}
+                      />
                     </td>
                   </tr>
                 ))}
@@ -433,7 +443,12 @@ export class PaperList extends Component {
                         {paper.journal ? paper.journal + "." : ""}
                       </span>{" "}
                       {paper.location} {paper.publisher}
-                      {paper.publication_date.split("-")[0]}.
+                      {paper.publication_date?.split("-")[0]}.
+                      <hr
+                        style={{
+                          color: "black",
+                        }}
+                      />
                     </td>
                   </tr>
                 ))}
