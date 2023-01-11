@@ -220,7 +220,7 @@ export class Register extends Component {
                 </div> */}
 
                 <div className="form-group mt-2">
-                  <label>Post</label>
+                  <label>Designation</label>
                   <Select onChange={this.onChange} name="post">
                     <MenuItem value={"Professor"}>Professor</MenuItem>
                     <MenuItem value={"Associate Professor"}>
