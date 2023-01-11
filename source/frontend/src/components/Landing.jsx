@@ -73,7 +73,7 @@ const Landing = () => {
         </div>
       </nav> */}
 
-      <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div class="bg-dark text-light  text-center text-sm-start">
         <div class="container">
           <div class="d-sm-flex align-items-center justify-content-between">
             <div>
@@ -94,17 +94,17 @@ const Landing = () => {
             />
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="bg-primary text-light p-5">
+      <div class="bg-primary text-light ">
         <div class="container">
           <div class="d-md-flex justify-content-between align-items-center">
             <h3 class="mb-3 mb-md-0">Register to access the papers ...</h3>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="p-5">
+      <div class="p-5">
         <div class="container">
           <div class="row text-center">
             <div class="col-md">
@@ -168,9 +168,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="About" class="p-5">
+      <div id="About" class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
@@ -192,9 +192,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="info" class="p-5 bg-dark text-light">
+      <div id="info" class="p-5 bg-dark text-light">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md p-5">
@@ -223,9 +223,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="p-5">
+      <div class="p-5">
         <div class="container">
           <h2 class="text-center mb-4">Frequently Asked Question</h2>
           <div class="accordion accordion-flush" id="questions">
@@ -305,9 +305,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="p-5" id="Contact">
+      <div class="p-5" id="Contact">
         <div class="container">
           <div class="row g-4">
             <div class="col-md">
@@ -323,15 +323,20 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <footer class="p-5 bg-dark text-white text-center position-relative">
+      <footer
+        class="p-5 bg-dark text-white text-center position-relative"
+        style={{
+          width: "100%",
+        }}
+      >
         <div class="container">
           <p class="lead">
             Copyright &copy; 2023 Pulchowk Campus Research Repository
           </p>
 
-          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <a href="#/index" class="position-absolute bottom-0 end-0 p-5">
             <i class="bi bi-arrow-up-circle h1"></i>
           </a>
         </div>

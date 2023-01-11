@@ -70,7 +70,7 @@ class Paper(models.Model):
 
     #searching and sorting specific
     likes_count = models.IntegerField(default=0)
-    total_citation=models.CharField(max_length=250, null=True, blank=True)
+    total_citation=models.IntegerField( null=True, blank=True)
 
     class JournalPapers(models.Manager):
         def get_queryset(self):

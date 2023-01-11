@@ -1,18 +1,18 @@
+import { parseInt } from "lodash";
+import PropTypes from "prop-types";
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import { Redirect, Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import "regenerator-runtime/runtime";
 import {
-  getPapers,
-  deletePapers,
-  putPapers,
   addPapers,
+  deletePapers,
+  getPapers,
+  putPapers,
 } from "../../actions/papers";
 import { getProfile } from "../../actions/profiles";
-import AdminApproval from "./adminApproval";
-import "regenerator-runtime/runtime";
-import data from "./file.json";
 import store from "../../store";
+import data from "./file.json";
 
 export class Papers extends Component {
   static propTypes = {
@@ -164,16 +164,12 @@ export class Papers extends Component {
             status: "published",
             title: paper.Title,
             volume: paper.Volume,
-            total_citation: paper["Total citations"],
+            total_citation:
+              paper["Total citations"] &&
+              parseInt(paper["Total citations"].split("\n")[0].split(" ")[2]),
           })
         );
       });
-    // .then((response) => {
-    //   console.log(response);
-    // })
-    // .catch((error) => {
-    //   console.log(error);
-    // });
     console.log("saved DB clicked");
   };
 
@@ -323,7 +319,7 @@ export class Papers extends Component {
               >
                 Publications
               </h2>
-              {/* <button onClick={this.saveToDatabase}>Save to Database</button> */}
+              <button onClick={this.saveToDatabase}>Save to Database</button>
               <div className="table-responsive">
                 <table className="table table-striped table-hover table-sm">
                   <thead>
