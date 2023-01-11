@@ -320,20 +320,41 @@ export class Papers extends Component {
                 Publications
               </h2>
               <button onClick={this.saveToDatabase}>Save to Database</button>
-              <div className="table-responsive">
+              <div
+                className="table-responsive"
+                style={{
+                  minWidth: "100%",
+                }}
+              >
+                <div
+                  style={{
+                    paddingLeft: "85%",
+                    alignItems: "right",
+                    alignContent: "right",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Total Publications: {this.props.papers.length}
+                </div>
                 <table className="table table-striped table-hover table-sm">
-                  <thead>
+                  <thead
+                    style={{
+                      backgroundColor: "black",
+                      color: "white",
+                      fontStyle: "italic",
+                    }}
+                  >
                     <tr>
+                      <th>S.N</th>
                       <th>Date</th>
-                      <th>Papers</th>
+                      <th>Paper Title</th>
                       <th>Authors</th>
                       <th>Approval status</th>
-                      {/* <th>Publishers</th>
-                            <th>Class</th> */}
-                      <th />
+                      <th>Edit</th>
+                      <th>Delete</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody style={{}}>
                     {
                       // Object.entries(data)
                       //   .map(([key, value]) => value)
@@ -391,8 +412,9 @@ export class Papers extends Component {
                       //     </tr>
                       //   ))
                     }
-                    {this.props.papers.map((paper) => (
+                    {this.props.papers.map((paper, index) => (
                       <tr key={paper.id}>
+                        <td>{index + 1}</td>
                         <td>{paper.publication_date}</td>
                         <td>
                           <Link to={"/paper/" + paper.id} className="">
@@ -409,9 +431,11 @@ export class Papers extends Component {
                               ? paper.author.profile.full_name
                               : ""}
                           </Link>
-                          {paper.Authors === "" ? "" : "" + "and Others"}
+                          {paper.Authors === "" ? "" : "" + " and Others"}
                         </td>
-                        <td>{paper.approval_status.toUpperCase()}</td>
+                        <td style={{ color: "red" }}>
+                          {paper.approval_status.toUpperCase()}
+                        </td>
                         {/* <td >{paper.publisher}</td>
                                   <td>{paper.group}</td> */}
                         {this.props.id == this.props.user.id ? (

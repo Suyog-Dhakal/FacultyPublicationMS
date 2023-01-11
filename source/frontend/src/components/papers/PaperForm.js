@@ -136,11 +136,11 @@ export class PaperForm extends Component {
         console.log(sample[i].entryTags);
         const year = sample[i].entryTags.year + "-01-01";
 
-        const name = this.props.user.profile.full_name
+        let name = this.props.user.profile.full_name
           .split(" ")
           .reverse()
           .join(", ");
-        const coauthors = sample[i].entryTags.author.split(" and ");
+        let coauthors = sample[i].entryTags.author.split(" and ");
         if (coauthors.includes(name)) {
           let index = coauthors.indexOf(name);
           coauthors.splice(index, 1);
