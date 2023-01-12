@@ -319,7 +319,7 @@ export class Papers extends Component {
               >
                 Publications
               </h2>
-              <button onClick={this.saveToDatabase}>Save to Database</button>
+              {/* <button onClick={this.saveToDatabase}>Save to Database</button> */}
               <div
                 className="table-responsive"
                 style={{

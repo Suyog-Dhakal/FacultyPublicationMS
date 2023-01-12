@@ -40,7 +40,7 @@ class Paper(models.Model):
     group = models.CharField(max_length=20, choices=category)
     level = models.CharField(max_length=20, null =True, choices = levels, default = "national" )
     description = models.CharField(max_length=1000, null=True, blank=True)
-    authors = models.CharField(max_length=250, null=True, blank=True)
+    authors = models.CharField(max_length=1500, null=True, blank=True)
     author_status = models.CharField(max_length =20, null = True, choices = author_levels, default ="chief")
     # journals-specificCh
 
