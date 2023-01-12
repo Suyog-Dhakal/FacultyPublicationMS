@@ -7,21 +7,14 @@ It is better to clear the pycache files(if any present) before running the follo
 ```
 TERMINAL
 
-FPMS> npm install
-             pip install -r requirements.txt
-             npm run dev
-             python manage.py makemigrations accounts
-             python manage.py makemigrations papers
-             python manage.py migrate
-FPMS/proj_fpms>python manage.py runserver
 main_dir>  npm install
               npm run dev
-main_dir>  cd proj_fpms
+main_dir>  cd source
               pip install -r requirements.txt
               python manage.py makemigrations accounts
               python manage.py makemigrations papers
               python manage.py migrate
-main_dir/proj_fpms>python manage.py runserver
+main_dir/source>python manage.py runserver
 ```
 
 If on linux use command 'npm rebuild' before 'npm run dev'
