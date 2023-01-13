@@ -236,14 +236,15 @@ export class Register extends Component {
                 <div className="form-group mt-2">
                   <label>Department</label>
                   <Select onChange={this.onChange} name="department">
-                    <MenuItem value={"Computer"}>Computer</MenuItem>
-                    <MenuItem value={"Electronics"}>Electronics</MenuItem>
+                    <MenuItem value={"Electronics and Computer"}>
+                      Electronics and Computer
+                    </MenuItem>
                     <MenuItem value={"Electrical"}>Electrical</MenuItem>
                     <MenuItem value={"Civil"}>Civil</MenuItem>
                     <MenuItem value={"Mechanical"}>Mechanical</MenuItem>
                     <MenuItem value={"Architecture"}>Architecture</MenuItem>
-                    <MenuItem value={"Applied Science"}>
-                      Applied Science
+                    <MenuItem value={"Applied Science and Chemical"}>
+                      Applied Science and Chemical
                     </MenuItem>
                   </Select>
                 </div>

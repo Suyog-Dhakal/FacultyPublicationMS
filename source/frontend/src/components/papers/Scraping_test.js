@@ -9,7 +9,7 @@ async function getCitation() {
   let driver = new Builder().forBrowser("chrome").build();
 
   await driver.get(
-    "https://scholar.google.com/citations?user=Tcu7MM4AAAAJ&hl=en"
+    "https://scholar.google.com/citations?user=O3HvZ_IAAAAJ&hl=en"
   );
 
   await driver.findElement(By.css("button#gsc_bpf_more")).click();
