@@ -19,9 +19,6 @@ main_dir/source>python manage.py runserver
 
 If on linux use command 'npm rebuild' before 'npm run dev'
 
-For register authentication mail:  
- add your email and password to your device environment variables as:
-
 
 ## Use
 
