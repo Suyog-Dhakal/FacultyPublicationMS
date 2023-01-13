@@ -18,6 +18,11 @@ export class DetailPaper extends Component {
     this.props.getPaper(this.props.match.params.id);
   }
 
+  getCoAuthors = (authors, author) => {
+    const coAuthors = authors.replace(`${author},`, "");
+    return coAuthors;
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -28,14 +33,15 @@ export class DetailPaper extends Component {
   render() {
     // const paper = (this.props.paper)? this.props.paper:{}
     return (
-      <Box className="container">
+      <Box>
         <div
           className="card card-body my-4 mx-auto"
-          style={{ maxWidth: "800px" }}
+          style={{ padding: "20px 40px" }}
         >
           <h3
             style={{
               color: "green",
+              fontStyle: "italic",
             }}
           >
             {this.props.paper.title}
@@ -208,8 +214,12 @@ export class DetailPaper extends Component {
                             .join(", ")
                         : ""}
                       {this.props.paper.authors
-                        ? this.props.paper.authors.split("and").length < 3
-                          ? " and " + this.props.paper.authors
+                        ? this.props.paper.authors.split(",").length < 3
+                          ? " and " +
+                            this.getCoAuthors(
+                              this.props.paper.authors,
+                              this.props.paper.author.profile.full_name
+                            )
                           : this.props.paper.authors !== ""
                           ? ", et al."
                           : ""

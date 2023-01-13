@@ -362,7 +362,11 @@ export class PaperForm extends Component {
 
     return (
       //login username==superadmin ? route to "adminApproval.js" :
-      <div>
+      <div
+        style={{
+          padding: "0 80px",
+        }}
+      >
         {this.props.user.username === "superadmin" ? (
           <AdminApproval />
         ) : (

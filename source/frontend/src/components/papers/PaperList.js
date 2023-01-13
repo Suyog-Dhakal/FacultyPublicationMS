@@ -54,18 +54,18 @@ export class PaperList extends Component {
     name = name + author_name;
 
     if (authors != "") {
-      let temp = authors.split(" and ");
-      if (temp.length <= 3) {
-        if (temp.length === 2) {
-          name = name + " and " + temp[1].split(",").reverse().join(" ") + ".";
-        } else if (temp.length === 3) {
+      let temp = authors?.split(" and ");
+      if (temp?.length <= 3) {
+        if (temp?.length === 2) {
+          name = name + " and " + temp[1]?.split(",").reverse().join(" ") + ".";
+        } else if (temp?.length === 3) {
           // alert(temp[1]);
           name =
             name +
             ", " +
-            temp[1].split(",").reverse().join(" ") +
+            temp[1]?.split(",").reverse().join(" ") +
             ", and " +
-            temp[2].split(",").reverse().join(" ") +
+            temp[2]?.split(",").reverse().join(" ") +
             ".";
         }
       } else {
@@ -75,7 +75,7 @@ export class PaperList extends Component {
     return name;
   };
   initials = (name, f) => {
-    let temp = name.split(",").reverse(); //firstname middlename lastname array
+    let temp = name?.split(",").reverse(); //firstname middlename lastname array
 
     if (f === "ugc") {
       return temp.join(" ");
@@ -116,7 +116,7 @@ export class PaperList extends Component {
     name = name + this.initials(author_name, "apa");
 
     if (authors != "") {
-      let temp = authors.split(" and ");
+      let temp = authors?.split(" and ");
       if (temp.length <= 3) {
         if (temp.length === 2) {
           name = name + " & " + this.initials(temp[1], "apa") + ". ";
@@ -149,7 +149,7 @@ export class PaperList extends Component {
     name = name + this.initials(author_name, form);
 
     if (authors != "") {
-      let temp = authors.split(" and ");
+      let temp = authors?.split(" and ");
 
       if (temp.length <= 6) {
         for (let i in temp) {
@@ -166,16 +166,21 @@ export class PaperList extends Component {
     return name + " ";
   };
 
+  //return UGCnaming
   UGCnaming = (authors, author_name) => {
     let name = "";
     name = name + this.initials(author_name, "ugc");
     if (authors != "") {
-      let temp = authors.split(" and ");
+      let temp = authors?.split(",");
       for (let i in temp) {
         name = name + ", " + this.initials(temp[i], "ugc");
       }
     }
     return name;
+  };
+
+  getCoAuthors = (authors, author_name) => {
+    return authors?.replace(`${author_name}`, "");
   };
 
   render() {
@@ -206,7 +211,7 @@ export class PaperList extends Component {
     }
 
     const author_name = this.props.user.profile.full_name
-      .split(" ")
+      ?.split(" ")
       .reverse()
       .join(", ");
 
@@ -252,14 +257,19 @@ export class PaperList extends Component {
     if (group == "misc_papers") group_text = "Miscellaneous Articles";
 
     return (
-      <Fragment>
+      <div
+        style={{
+          padding: "0 20px",
+          color: "blue",
+        }}
+      >
         <h4
           className="mt-3"
           style={{
             color: "green",
           }}
         >
-          Publications & Appearances
+          Publications and Appearances
         </h4>
         <div className="text-right" style={{ textAlign: "right" }}>
           <button
@@ -356,7 +366,14 @@ export class PaperList extends Component {
           </div>
         </div>
 
-        <p className="fw-light my-3">{this.props.user.profile.full_name}</p>
+        <p
+          className="fw-light my-3"
+          style={{
+            color: "black",
+          }}
+        >
+          Author Name: {this.props.user.profile.full_name}
+        </p>
 
         <div className="table-responsive">
           <p className="fw-lighter d-none d-print-block">{group_text}</p>
@@ -364,7 +381,12 @@ export class PaperList extends Component {
           {/*---------------MLA-------------*/}
 
           {this.state.format == "MLA" ? (
-            <table className="table table-borderless">
+            <table
+              className="table table-borderless"
+              style={{
+                padding: "0 40px",
+              }}
+            >
               <tbody>
                 {displayPapers.map((paper) => (
                   <tr key={paper.id}>
@@ -397,7 +419,12 @@ export class PaperList extends Component {
           {/* ------------------APA------------- */}
 
           {this.state.format == "APA" ? (
-            <table className="table table-borderless">
+            <table
+              className="table table-borderless"
+              style={{
+                padding: "0 40px",
+              }}
+            >
               <tbody>
                 {displayPapers.map((paper) => (
                   <tr key={paper.id}>
@@ -427,7 +454,12 @@ export class PaperList extends Component {
 
           {/* IEEE Citation */}
           {this.state.format == "IEEE" ? (
-            <table className="table table-borderless">
+            <table
+              className="table table-borderless"
+              style={{
+                padding: "0 40px",
+              }}
+            >
               <tbody>
                 {displayPapers.map((paper) => (
                   <tr key={paper.id}>
@@ -458,7 +490,12 @@ export class PaperList extends Component {
 
           {/*--------------UGC/TU---------------------*/}
           {this.state.format == "UGC" ? (
-            <table className="table table-bordered table-responsive">
+            <table
+              className="table table-bordered table-responsive"
+              style={{
+                padding: "0 40px",
+              }}
+            >
               <thead>
                 <tr>
                   <td>
@@ -468,70 +505,75 @@ export class PaperList extends Component {
                     <strong>Authors</strong>
                   </td>
                   <td>
-                    <strong>Author Status</strong>
-                  </td>
-                  <td>
                     <strong>Date</strong>
                   </td>
                   <td>
-                    <strong>Publisher</strong>
+                    <strong>Publisher/Conference/Journal</strong>
                   </td>
-                  {group == "conference_article" || group == "" ? (
-                    <td>
-                      <strong>Conference</strong>
-                    </td>
-                  ) : (
-                    ""
-                  )}
-                  {group == "journal" || group == "" ? (
-                    <td>
-                      <strong>Journal</strong>
-                    </td>
-                  ) : (
-                    ""
-                  )}
-                  <td>
+
+                  <td
+                    style={{
+                      maxWidth: "100px",
+                    }}
+                  >
                     <strong>Link</strong>
                   </td>
                 </tr>
               </thead>
 
               <tbody>
-                {displayPapers.map((paper) => (
+                {displayPapers.map((paper, index) => (
                   <tr key={paper.id}>
-                    <td id="Title">{paper.title}</td>
-
-                    <td id="Authors">
-                      {this.UGCnaming(paper.authors, author_name)}
+                    <td
+                      id="Title"
+                      style={{
+                        width: "33%",
+                      }}
+                    >
+                      {index + 1}. {paper.title}
                     </td>
 
-                    <td id="Contribution_Status">{paper.author_status}</td>
-
+                    <td
+                      id="Authors"
+                      style={{
+                        width: "33%",
+                      }}
+                    >
+                      {author_name} and{" "}
+                      {this.getCoAuthors(
+                        paper.authors,
+                        this.props.user.profile.full_name
+                      )}
+                    </td>
                     <td id="Publication_Date">{paper.publication_date}</td>
 
-                    <td id="Publisher">{paper.publisher}</td>
+                    <td id="Publisher">
+                      {
+                        <>
+                          {paper.publisher}
+                          <br></br>
+                          {paper?.conference_name}
+                          <br></br>
+                          {paper?.journal}
+                        </>
+                      }
+                    </td>
 
-                    {group == "conference_article" || group == "" ? (
-                      <td id="Conference_Name">{paper.conference_name}</td>
-                    ) : (
-                      ""
-                    )}
-
-                    {group == "journal" || group == "" ? (
-                      <td id="Journal_Name">{paper.journal}</td>
-                    ) : (
-                      ""
-                    )}
-
-                    <td id="Paper_Link">{paper.paper_link}</td>
-                    <td id="approval_status">{paper.approval_status}</td>
+                    <td
+                      id="Paper_Link"
+                      style={{
+                        fontSize: "0.8rem",
+                      }}
+                    >
+                      <a href={paper.paper_link}>click here</a>
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           ) : null}
         </div>
-      </Fragment>
+      </div>
     );
   }
 }

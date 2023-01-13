@@ -13,7 +13,11 @@ export class DashBoard extends Component {
 
   render() {
     return (
-      <div>
+      <div
+        style={{
+          padding: "0 20px",
+        }}
+      >
         <Profile user={this.props.user} />
         <Papers id={this.props.user.id} />
       </div>

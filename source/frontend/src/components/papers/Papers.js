@@ -350,8 +350,8 @@ export class Papers extends Component {
                       <th>Paper Title</th>
                       <th>Authors</th>
                       <th>Approval status</th>
-                      <th>Edit</th>
-                      <th>Delete</th>
+                      <th>Edit here</th>
+                      <th>Delete here</th>
                     </tr>
                   </thead>
                   <tbody style={{}}>
