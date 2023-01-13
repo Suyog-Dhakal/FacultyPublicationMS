@@ -1,4 +1,4 @@
-# REST-REACT-FPMS (Publication Management System)
+# Research Repository(Faculty Evaluation Management System)
 
 ## Installation
 
@@ -22,10 +22,6 @@ If on linux use command 'npm rebuild' before 'npm run dev'
 For register authentication mail:  
  add your email and password to your device environment variables as:
 
-```
-EMAIL_USER: your email
-EMAIL_PASSWORD: your password
-```
 
 ## Use
 
