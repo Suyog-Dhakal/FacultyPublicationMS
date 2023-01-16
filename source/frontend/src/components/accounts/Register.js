@@ -221,7 +221,11 @@ export class Register extends Component {
 
                 <div className="form-group mt-2">
                   <label>Designation</label>
-                  <Select onChange={this.onChange} name="post">
+                  <Select
+                    style={{ width: "300px", marginLeft: "5px" }}
+                    onChange={this.onChange}
+                    name="post"
+                  >
                     <MenuItem value={"Professor"}>Professor</MenuItem>
                     <MenuItem value={"Associate Professor"}>
                       Associate Professor
@@ -235,7 +239,11 @@ export class Register extends Component {
 
                 <div className="form-group mt-2">
                   <label>Department</label>
-                  <Select onChange={this.onChange} name="department">
+                  <Select
+                    style={{ width: "300px", marginLeft: "5px" }}
+                    onChange={this.onChange}
+                    name="department"
+                  >
                     <MenuItem value={"Electronics and Computer"}>
                       Electronics and Computer
                     </MenuItem>

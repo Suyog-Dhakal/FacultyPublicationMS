@@ -10,69 +10,6 @@ const Landing = () => {
         width: "100%",
       }}
     >
-      {/* <div
-        className="container"
-        style={{
-          display: "inline",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h1
-          style={{
-            fontFamily: "sans-serif",
-          }}
-        >
-          Please login to access the system....
-        </h1>
-        <br />
-        <h3>Features of this application are...</h3>
-        <ul style={{ color: "black" }}>
-          <li>Centralization of published research papers in popular sites </li>
-          <li>Search for papers</li>
-          <li>Edit paper details</li>
-        </ul>
-      </div>
-      <Footer /> */}
-
-      {/* <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-        <div class="container">
-          <a href="#" class="navbar-brand">
-            BE Routine Management
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navmenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="#About" class="nav-link">
-                  {" "}
-                  About Us{" "}
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#Contact" class="nav-link">
-                  {" "}
-                  Contact Us{" "}
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#Login" class="nav-link">
-                  {" "}
-                  Login{" "}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> */}
-
       <div class="bg-dark text-light  text-center text-sm-start">
         <div class="container">
           <div class="d-sm-flex align-items-center justify-content-between">
