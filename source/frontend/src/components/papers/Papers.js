@@ -11,10 +11,26 @@ import {
   putPapers,
 } from "../../actions/papers";
 import { getProfile } from "../../actions/profiles";
+import papers from "../../reducers/papers";
 import store from "../../store";
 import data from "./file.json";
 
 export class Papers extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: 1,
+      itemsPerPage: 10,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    this.setState({
+      currentPage: Number(e.target.id),
+    });
+  }
+
   static propTypes = {
     user: PropTypes.object.isRequired,
     papers: PropTypes.array.isRequired,
@@ -302,6 +318,48 @@ export class Papers extends Component {
       location,
       organised_date,
     } = this.state;
+
+    //const { papers } = this.props;
+    const { currentPage, itemsPerPage } = this.state;
+
+    //logic for displaying current papers
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = this.props.papers.slice(
+      indexOfFirstItem,
+      indexOfLastItem
+    );
+
+    const pageNumbers = [];
+    for (
+      let i = 1;
+      i <= Math.ceil(this.props.papers.length / itemsPerPage);
+      i++
+    ) {
+      pageNumbers.push(i);
+    }
+
+    const renderPageNumbers = pageNumbers.map((number) => {
+      return (
+        <button
+          key={number}
+          id={number}
+          onClick={this.handleClick}
+          style={{
+            backgroundColor: currentPage === number ? "darkblue" : "lightblue",
+            color: currentPage === number ? "white" : "black",
+            borderRadius: "2px",
+            padding: "8px 16px",
+            margin: "5px",
+            cursor: "pointer",
+            fontSize: "15px",
+          }}
+        >
+          {number}
+        </button>
+      );
+    });
+
     return (
       <Fragment>
         <div>
@@ -412,7 +470,7 @@ export class Papers extends Component {
                       //     </tr>
                       //   ))
                     }
-                    {this.props.papers.map((paper, index) => (
+                    {currentItems.map((paper, index) => (
                       <tr key={paper.id}>
                         <td>{index + 1}</td>
                         <td>{paper.publication_date}</td>
@@ -473,6 +531,9 @@ export class Papers extends Component {
                     ))}
                   </tbody>
                 </table>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  {renderPageNumbers}
+                </div>
               </div>
 
               <div
