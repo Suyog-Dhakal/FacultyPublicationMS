@@ -39,6 +39,7 @@ export class PaperForm extends Component {
 
     conference_name: "",
     location: "",
+    total_citation: "",
     organised_date: null,
 
     isBibtex: "Import from BibTex",
@@ -100,6 +101,7 @@ export class PaperForm extends Component {
 
       conference_name: "",
       location: "",
+      total_citation: "",
       organised_date: null,
       bibtext: "",
     });
@@ -129,6 +131,7 @@ export class PaperForm extends Component {
       impact_factor_journal,
       conference_name,
       location,
+      total_citation,
       organised_date,
     } = this.state;
     if (sample.length > 1) {
@@ -201,6 +204,7 @@ export class PaperForm extends Component {
           impact_factor_journal,
           conference_name,
           location,
+          total_citation,
           organised_date,
         };
         this.props.addPapers(paper);
@@ -269,6 +273,7 @@ export class PaperForm extends Component {
       impact_factor_journal,
       conference_name,
       location,
+      total_citation,
       organised_date,
     } = this.state;
     const paper = {
@@ -296,6 +301,7 @@ export class PaperForm extends Component {
       impact_factor_journal,
       conference_name,
       location,
+      total_citation,
       organised_date,
     };
     this.props.addPapers(paper);
@@ -356,6 +362,7 @@ export class PaperForm extends Component {
       impact_factor_journal,
       conference_name,
       location,
+      total_citation,
       organised_date,
       level,
     } = this.state;
@@ -701,6 +708,17 @@ export class PaperForm extends Component {
                   name="location"
                   onChange={this.onChange}
                   value={location}
+                />
+              </div>
+
+              <div className="form-group my-2">
+                <label>Total Citation</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="total_citation"
+                  onChange={this.onChange}
+                  value={total_citation}
                 />
               </div>
 

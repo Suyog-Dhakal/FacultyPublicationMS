@@ -33,76 +33,12 @@ const Landing = () => {
         </div>
       </div>
 
-      <div class="bg-primary text-light ">
+      <div class="bg-secondary text-light ">
         <div class="container">
           <div class="d-md-flex justify-content-between align-items-center">
-            <h3 class="mb-3 mb-md-0">Register to access the papers ...</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-5">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-md">
-              <div class="card bg-dark text-light">
-                <div class="card-body text-center g-4">
-                  <div class="h1" mb-3>
-                    <i class="bi bi-laptop"></i>
-                  </div>
-                  <h3 class="car-title mb-3">Virtual</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolore quisquam, libero ipsa reiciendis praesentium optio
-                    odit doloremque cupiditate quia ratione temporibus tempore
-                    fuga, laudantium error itaque vitae asperiores nemo tenetur.
-                  </p>
-                  <a href="#" class="btn btn-primary">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md">
-              <div class="card bg-secondary text-light">
-                <div class="card-body text-center">
-                  <div class="h1" mb-3>
-                    <i class="bi bi-person-square"></i>
-                  </div>
-                  <h3 class="car-title mb-3">Hybrid</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolore quisquam, libero ipsa reiciendis praesentium optio
-                    odit doloremque cupiditate quia ratione temporibus tempore
-                    fuga, laudantium error itaque vitae asperiores nemo tenetur.
-                  </p>
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md">
-              <div class="card bg-dark text-light">
-                <div class="card-body text-center">
-                  <div class="h1" mb-3>
-                    <i class="bi bi-people"></i>
-                  </div>
-                  <h3 class="car-title mb-3">In person</h3>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolore quisquam, libero ipsa reiciendis praesentium optio
-                    odit doloremque cupiditate quia ratione temporibus tempore
-                    fuga, laudantium error itaque vitae asperiores nemo tenetur.
-                  </p>
-                  <a href="#" class="btn btn-dark">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
+            <h3 class="mb-3 mb-md-0 text-warning">
+              Register to access the papers ...
+            </h3>
           </div>
         </div>
       </div>
@@ -174,7 +110,7 @@ const Landing = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#question-one"
                 >
-                  How effective is the managament system
+                  How effective is the managament system?
                 </button>
               </h2>
               <div
@@ -199,7 +135,7 @@ const Landing = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#question-two"
                 >
-                  what is the fee structure
+                  What is the history behind it?
                 </button>
               </h2>
               <div
@@ -224,7 +160,7 @@ const Landing = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#question-three"
                 >
-                  what is the prerequisite for studying
+                  what is the prerequisite for publishing papers
                 </button>
               </h2>
               <div
@@ -251,10 +187,10 @@ const Landing = () => {
               <h2 class="text-center mb-4">Contact info</h2>
               <ul class="list-group list-group-flush lead">
                 <li class="list-group-item">
-                  <span class="fw-bold">Main Location:</span> Pulchowk,Lalitpur
+                  <span class="fw-bold">Location:</span> Pulchowk,Lalitpur
                 </li>
                 <li class="list-group-item">
-                  <span class="fw-bold">Phone no:</span> 01-5550000
+                  <span class="fw-bold">Phone no:</span> 01-5543078
                 </li>
               </ul>
             </div>

@@ -65,6 +65,7 @@ class Paper(models.Model):
     # conference_article-specific pages and issue
     conference_name = models.CharField(max_length=250, null=True, blank=True)
     location = models.CharField(max_length=250, null=True, blank=True)
+    total_citation = models.CharField(max_length=250, null=True, blank=True)
     organised_date = models.CharField(max_length=250,
         null=True, blank=True)
 

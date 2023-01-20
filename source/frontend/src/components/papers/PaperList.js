@@ -263,14 +263,14 @@ export class PaperList extends Component {
           color: "blue",
         }}
       >
-        <h4
+        {/* <h4
           className="mt-3"
           style={{
             color: "green",
           }}
         >
           Publications and Appearances
-        </h4>
+        </h4> */}
         <div className="text-right" style={{ textAlign: "right" }}>
           <button
             className="btn btn-danger ms-auto mx-2 d-print-none"
@@ -372,7 +372,21 @@ export class PaperList extends Component {
             color: "black",
           }}
         >
-          Author Name: {this.props.user.profile.full_name}
+          <p
+            style={{
+              fontSize: "20px",
+              fontWeight: "bold",
+            }}
+          >
+            Profile Summarization
+          </p>
+          {this.props.user.profile.post} {this.props.user.profile.full_name} is
+          a researcher in the {this.props.user.profile.department} department at
+          Pulchowk Campus - Institute of Engineering, Tribhuvan University.{" "}
+          {this.props.user.profile.post} {this.props.user.profile.full_name} has
+          published around {this.props.papers.length} papers in leading journals
+          and conference in {this.props.user.profile.department} and other
+          related fields.
         </p>
 
         <div className="table-responsive">
