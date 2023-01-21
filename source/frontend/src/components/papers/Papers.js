@@ -411,9 +411,9 @@ export class Papers extends Component {
                   >
                     <tr>
                       <th>S.N</th>
-                      <th>Date</th>
-                      <th>Paper Title</th>
-                      <th>Authors</th>
+                      {/* <th>Date</th> */}
+                      <th>Papers</th>
+                      {/* <th>Authors</th> */}
                       <th>Approval status</th>
                       <th>Edit here</th>
                       <th>Delete here</th>
@@ -480,13 +480,26 @@ export class Papers extends Component {
                     {currentItems.map((paper, index) => (
                       <tr key={paper.id}>
                         <td>{index + 1}</td>
-                        <td>{paper.publication_date}</td>
+                        {/* <td>{paper.publication_date}</td> */}
                         <td>
                           <Link to={"/paper/" + paper.id} className="">
                             {paper.title}
                           </Link>
+                          <br></br>
+                          {paper.authors
+                            ? paper.authors.split(",").slice(0, 2).join(",") +
+                              "..."
+                            : " "}
+                          &nbsp;&nbsp;&nbsp;
+                          {" -" + paper.journal
+                            ? paper.journal
+                            : paper.conference_name
+                            ? paper.conference_name
+                            : paper.publisher}
+                          &nbsp;&nbsp;
+                          {paper.publication_date}
                         </td>
-                        <td>
+                        {/* <td>
                           <Link
                             to={"/user/" + paper.author.id}
                             onClick={() => this.getUser(paper.author.id)}
@@ -497,7 +510,7 @@ export class Papers extends Component {
                               : ""}
                           </Link>
                           {paper.Authors === "" ? "" : "" + " and Others"}
-                        </td>
+                        </td> */}
                         <td style={{ color: "red" }}>
                           {paper.approval_status.toUpperCase()}
                         </td>

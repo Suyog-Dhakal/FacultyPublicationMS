@@ -386,7 +386,8 @@ export class PaperList extends Component {
           {this.props.user.profile.post} {this.props.user.profile.full_name} has
           published around {this.props.papers.length} papers in leading journals
           and conference in {this.props.user.profile.department} and other
-          related fields.
+          related fields. The list of papers published by the researcher is
+          listed below.
         </p>
 
         <div className="table-responsive">

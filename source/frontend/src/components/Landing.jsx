@@ -110,7 +110,7 @@ const Landing = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#question-one"
                 >
-                  How effective is the managament system?
+                  How effective is the management system?
                 </button>
               </h2>
               <div

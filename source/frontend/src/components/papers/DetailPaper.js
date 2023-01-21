@@ -271,7 +271,22 @@ export class DetailPaper extends Component {
                     <tr>
                       <td>Total Citations</td>
                       <td style={{ color: "green", fontSize: "20px" }}>
-                        {this.props.paper.total_citation}
+                        {this.props.paper.total_citation >= 0 &&
+                        this.props.paper.total_citation < 10
+                          ? "less than 10 (Low citations)"
+                          : this.props.paper.total_citation >= 10 &&
+                            this.props.paper.total_citation < 20
+                          ? "between 10 and 20"
+                          : this.props.paper.total_citation >= 20 &&
+                            this.props.paper.total_citation < 30
+                          ? "between 20 and 30"
+                          : this.props.paper.total_citation >= 30 &&
+                            this.props.paper.total_citation < 40
+                          ? "between 30 and 40"
+                          : this.props.paper.total_citation >= 40 &&
+                            this.props.paper.total_citation < 50
+                          ? "between 40 and 50"
+                          : "greater than 50 (High citations)"}
                       </td>
                     </tr>
                   }
