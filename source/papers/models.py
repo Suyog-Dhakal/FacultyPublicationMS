@@ -34,7 +34,7 @@ class Paper(models.Model):
         User, on_delete=models.CASCADE, null=True, blank=True)
     publication_date = models.CharField(max_length=250,null=True, blank=True)
     publisher = models.CharField(max_length=250, null=True, blank=True)
-    paper_link = models.CharField(max_length=250, null=True, blank=True)
+    paper_link = models.CharField(max_length=1000, null=True, blank=True)
     status = models.CharField(max_length=10, choices=options)
     approval_status = models.CharField(max_length=10, choices=approval_status, default="pending")
     group = models.CharField(max_length=250, choices=category)
