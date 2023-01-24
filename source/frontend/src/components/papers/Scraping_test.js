@@ -9,9 +9,10 @@ async function getCitation() {
   let driver = new Builder().forBrowser("chrome").build();
 
   await driver.get(
-    "https://scholar.google.com/citations?user=XN-sooAAAAAJ&hl=en&oi=ao"
+    "https://scholar.google.com/citations?user=0tHzAygAAAAJ&hl=en"
   );
 
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
   await driver.findElement(By.css("button#gsc_bpf_more")).click();
   await driver.wait(until.elementLocated(By.css("span#gsc_a_nn")), 5000);
   const iframe = await driver.findElement(By.css("span#gsc_a_nn"));
