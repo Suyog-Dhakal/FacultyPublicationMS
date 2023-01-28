@@ -1,924 +1,573 @@
 {
   "0": {
-    "Title": "Sand erosion of Pelton turbine nozzles and buckets: A case study of Chilime Hydropower Plant",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:KlAtU1dfN6UC",
-    "Authors": "TR Bajracharya, B Acharya, CB Joshi, RP Saini, OG Dahlhaug",
-    "Publication date": "2008/2/4",
-    "Journal": "Wear",
-    "Volume": "264",
-    "Issue": "3-4",
-    "Pages": "177-184",
-    "Publisher": "Elsevier",
-    "Total citations": "Cited by 128\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
+    "Title": "User behavior analytics for anomaly detection using LSTM autoencoder-insider threat detection",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:RHpTSmoSYBkC",
+    "Authors": "Balaram Sharma, Prabhat Pokharel, Basanta Joshi",
+    "Publication date": "2020/7/1",
+    "Book": "Proceedings of the 11th International Conference on Advances in Information Technology",
+    "Pages": "1-9",
+    "Total citations": "Cited by 41\n2020\n2021\n2022\n2023"
   },
   "1": {
-    "Title": "Comparison of cylindrical and conical basins with optimum position of runner: Gravitational water vortex power plant",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:IWHjjKOFINEC",
-    "Authors": "Sagar Dhakal, Ashesh B Timilsina, Rabin Dhakal, Dinesh Fuyal, Tri R Bajracharya, Hari P Pandit, Nagendra Amatya, Amrit M Nakarmi",
-    "Publication date": "2015/8/1",
-    "Source": "Renewable and Sustainable Energy Reviews",
-    "Volume": "48",
-    "Pages": "662-669",
-    "Publisher": "Pergamon",
-    "Total citations": "Cited by 121\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
+    "Title": "Intelligent clustering scheme for log data streams",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:ufrVoPGSRksC",
+    "Authors": "Basanta Joshi, Umanga Bista, Manoj Ghimire",
+    "Publication date": "2014",
+    "Conference": "Computational Linguistics and Intelligent Text Processing: 15th International Conference, CICLing 2014, Kathmandu, Nepal, April 6-12, 2014, Proceedings, Part II 15",
+    "Pages": "454-465",
+    "Publisher": "Springer Berlin Heidelberg",
+    "Total citations": "Cited by 15\n2018\n2019\n2020\n2021\n2022"
   },
   "2": {
-    "Title": "Development and testing of runner and conical basin for gravitational water vortex power plant",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:9ZlFYXVOiuMC",
-    "Authors": "Subash Dhakal, Susan Nakarmi, Pikam Pun, Arun Bikram Thapa, Tri Ratna Bajracharya",
-    "Publication date": "2014/8/3",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "10",
-    "Issue": "1",
-    "Pages": "140-148",
-    "Total citations": "Cited by 84\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
+    "Title": "Music classification based on genre and mood",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:KlAtU1dfN6UC",
+    "Authors": "Ayush Shakya, Bijay Gurung, Mahendra Singh Thapa, Mehang Rai, Basanta Joshi",
+    "Publication date": "2017",
+    "Conference": "Computational Intelligence, Communications, and Business Analytics: First International Conference, CICBA 2017, Kolkata, India, March 24–25, 2017, Revised Selected Papers, Part II",
+    "Pages": "168-183",
+    "Publisher": "Springer Singapore",
+    "Total citations": "Cited by 14\n2018\n2019\n2020\n2021\n2022"
   },
   "3": {
-    "Title": "Water vortex hydropower technology: a state-of-the-art review of developmental trends",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:R3hNpaxXUhUC",
-    "Authors": "Ashesh Babu Timilsina, Sean Mulligan, Tri Ratna Bajracharya",
-    "Publication date": "2018/10",
-    "Source": "Clean Technologies and Environmental Policy",
-    "Volume": "20",
-    "Issue": "8",
-    "Pages": "1737-1760",
-    "Publisher": "Springer Berlin Heidelberg",
-    "Total citations": "Cited by 60\n2018\n2019\n2020\n2021\n2022\n2023"
+    "Title": "Transfer learning based image visualization using cnn",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:7PzlFSSx8tAC",
+    "Authors": "Santosh Giri, Basanta Joshi",
+    "Publication date": "2019/7",
+    "Journal": "International Journal of Artificial Intelligence & Applications",
+    "Volume": "10",
+    "Issue": "4",
+    "Pages": "47-55",
+    "Total citations": "Cited by 11\n2020\n2021\n2022"
   },
   "4": {
-    "Title": "Computational and experimental investigation of runner for gravitational water vortex power plant",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:eQOLeE2rZwMC",
-    "Authors": "R Dhakal, TR Bajracharya, SR Shakya, B Kumal, Nepal Kathmandu, K Khanal, Nepal Kavre, SJ Williamson, S Gautam, DP Ghale",
-    "Publication date": "2017/11",
-    "Journal": "Proceedings of a meeting held",
-    "Volume": "5",
-    "Pages": "8",
-    "Total citations": "Cited by 44\n2018\n2019\n2020\n2021\n2022\n2023"
+    "Title": "Nepali speech recognition using rnn-ctc model",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:L8Ckcad2t8MC",
+    "Authors": "Paribesh Regmi, Arjun Dahal, Basanta Joshi",
+    "Publication date": "2019/7",
+    "Journal": "International Journal of Computer Applications",
+    "Volume": "178",
+    "Issue": "31",
+    "Pages": "1-6",
+    "Total citations": "Cited by 10\n2020\n2021\n2022"
   },
   "5": {
-    "Title": "Effect of dominant parameters for conical basin: Gravitational water vortex power plant",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:HDshCWvjkbEC",
-    "Authors": "Sagar Dhakal, Ashesh Babu Timilsina, Rabin Dhakal, Dinesh Fuyal, Tri Ratna Bajracharya, Hari Prasad Pandit",
-    "Publication date": "2014",
-    "Journal": "Proceedings of IOE graduate conference",
-    "Volume": "5",
-    "Pages": "381",
-    "Total citations": "Cited by 43\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
+    "Title": "Hmm based isolated word nepali speech recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:_kc_bZDykSQC",
+    "Authors": "Manish K Ssarma, Avaas Gajurel, Anup Pokhrel, Basanta Joshi",
+    "Publication date": "2017/7/9",
+    "Conference": "2017 International Conference on Machine Learning and Cybernetics (ICMLC)",
+    "Volume": "1",
+    "Pages": "71-76",
+    "Publisher": "IEEE",
+    "Total citations": "Cited by 8\n2018\n2019\n2020\n2021\n2022"
   },
   "6": {
-    "Title": "Purification and compression of biogas: A research experience",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:Tyk-4Ss8FVUC",
-    "Authors": "Tri Ratna Bajracharya, Alok Dhungana, Nirajan Thapaliya, Gogan Hamal",
-    "Publication date": "2009",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "7",
-    "Issue": "1",
-    "Pages": "90-98",
-    "Total citations": "Cited by 37\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
+    "Title": "Plant Leaf Disease Recognition Using Random Forest, KNN, SVM and CNN.",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:fPk4N6BV_jEC",
+    "Authors": "Bijaya Kumar Hatuwal, Aman Shakya, Basanta Joshi",
+    "Publication date": "2020",
+    "Journal": "Polibits",
+    "Volume": "62",
+    "Pages": "13-19",
+    "Total citations": "Cited by 7\n2021\n2022"
   },
   "7": {
-    "Title": "Changing climatic parameters and its possible impacts in hydropower generation in Nepal (a case study on Gandaki River Basin)",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:M3ejUd6NZC8C",
-    "Authors": "Tri Ratna Bajracharya, Samanta Acharya, Bhakta Bahadur Ale",
-    "Publication date": "2011",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "8",
-    "Issue": "1-2",
-    "Pages": "160-173",
-    "Total citations": "Cited by 30\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
+    "Title": "Comparative study of camera calibration models for 3D particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:HDshCWvjkbEC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose",
+    "Publication date": "2013",
+    "Journal": "International Journal of Innovative Computing, Information and Control",
+    "Volume": "9",
+    "Issue": "5",
+    "Pages": "1971-1986",
+    "Total citations": "Cited by 7\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
   },
   "8": {
-    "Title": "Mathematical modeling, design optimization and experimental verification of conical basin: Gravitational water vortex power plant",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:0EnyYjriUFMC",
-    "Authors": "Sagar Dhakal, Ashesh Babu Timilsina, Rabin Dhakal, Dinesh Fuyal, Tri R Bajracharya, Hari P Pandit, Nagendra Amatya",
-    "Publication date": "2015/7",
-    "Journal": "dalam World Largest Hydro Conference",
-    "Total citations": "Cited by 28\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
+    "Title": "A SOM based stereo pair matching algorithm for 3-D particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:u-x6o8ySG0sC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Sanjeeb Prasad Panday",
+    "Publication date": "2009",
+    "Conference": "Emerging Intelligent Computing Technology and Applications. With Aspects of Artificial Intelligence: 5th International Conference on Intelligent Computing, ICIC 2009 Ulsan, South Korea, September 16-19, 2009 Proceedings 5",
+    "Pages": "11-20",
+    "Publisher": "Springer Berlin Heidelberg",
+    "Total citations": "Cited by 7\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020"
   },
   "9": {
-    "Title": "A study on developing pico propeller turbine for low head micro hydropower plants in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:7PzlFSSx8tAC",
-    "Authors": "Pradhumna Adhikari, Umesh Budhathoki, Shiva Raj Timilsina, Saurav Manandhar, Tri Ratna Bajracharya",
-    "Publication date": "2013",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "9",
-    "Issue": "1",
-    "Pages": "36-53",
-    "Total citations": "Cited by 28\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
+    "Title": "Novel algorithms of 3D particle tracking velocimetry using a tomographic reconstruction technique",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:9yKSN-GCB0IC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose",
+    "Publication date": "2012",
+    "Journal": "Journal of Fluid Science and Technology",
+    "Volume": "7",
+    "Issue": "3",
+    "Pages": "242-258",
+    "Publisher": "The Japan Society of Mechanical Engineers",
+    "Total citations": "Cited by 6\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020"
   },
   "10": {
-    "Title": "Dry anaerobic co-digestion of cow dung with pig manure for methane production",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:9yKSN-GCB0IC",
-    "Authors": "Jianzheng Li, Ajay Kumar Jha, Tri Ratna Bajracharya",
-    "Publication date": "2014/7",
-    "Journal": "Applied biochemistry and biotechnology",
-    "Volume": "173",
-    "Issue": "6",
-    "Pages": "1537-1552",
-    "Publisher": "Springer US",
-    "Total citations": "Cited by 27\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
+    "Title": "Adaptive traffic light control with statistical multiplexing technique and particle swarm optimization in smart cities",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:Wp0gIr-vW9MC",
+    "Authors": "Brabim Manandhar, Basanta Joshi",
+    "Publication date": "2018/10/25",
+    "Conference": "2018 IEEE 3rd International Conference on Computing, Communication and Security (ICCCS)",
+    "Pages": "210-217",
+    "Publisher": "IEEE",
+    "Total citations": "Cited by 5\n2020\n2021"
   },
   "11": {
-    "Title": "Renewable Energy in Nepal-Progress at a glance from 1998 to 2003",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:IjCSPb-OGe4C",
-    "Authors": "Jagan Nath Shrestha, TR Bajracharya, Shree Raj Shakya, Bijay Giri",
-    "Publication date": "2003/10",
-    "Journal": "proceedings of the international conference on renewable energy technology for rural development (RETRUD-03)",
-    "Volume": "3",
-    "Pages": "12-14",
-    "Total citations": "Cited by 26\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
+    "Title": "Particles detection scheme for tomographic particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:d1gkVwhDpl0C",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose",
+    "Publication date": "2012/7/9",
+    "Journal": "Proc. 16th Int. Symp. on Applications of Laser Techniques to Fluid Mechanics",
+    "Volume": "1",
+    "Issue": "4",
+    "Pages": "10",
+    "Total citations": "Cited by 5\n2012\n2013\n2014\n2015\n2016"
   },
   "12": {
-    "Title": "Economic feasibility study of gravitational water vortex power plant for the rural electrification of low head region of nepal and its comparative study with other low head …",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:ufrVoPGSRksC",
-    "Authors": "Rabin Dhakal, Raj Kumar Chaulagain, Triratna Bajracharya, Sulochana Shrestha",
-    "Publication date": "2015",
-    "Journal": "Conference proceeding of the 11th international conference on ASEAN knowledge networks for the economy, society, culture, and environmental stability, Kathmandu",
-    "Total citations": "Cited by 22\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
+    "Title": "Deep residual learning for facial emotion recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:D03iK_w7-QYC",
+    "Authors": "Sagar Mishra, Basanta Joshi, Rajendra Paudyal, Duryodhan Chaulagain, Subarna Shakya",
+    "Publication date": "2022",
+    "Conference": "Mobile Computing and Sustainable Informatics: Proceedings of ICMCSI 2021",
+    "Pages": "301-313",
+    "Publisher": "Springer Singapore",
+    "Total citations": "Cited by 4\n2022"
   },
   "13": {
-    "Title": "Effects of geometrical parameters in gravitational water vortex turbines with conical basin",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:NMxIlDl6LWMC",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya, Ashesh Babu Timilsina, Jhalak Dhakal, Subash Neupane, Ankit Gautam, Anil Sapkota",
-    "Publication date": "2020/12/2",
-    "Journal": "Journal of Renewable Energy",
-    "Volume": "2020",
-    "Publisher": "Hindawi",
-    "Total citations": "Cited by 19\n2021\n2022\n2023"
-  },
-  "14": {
-    "Title": "Developing innovative low head water turbine for free-flowing streams suitable for micro-hydropower in flat (Terai) regions in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:_kc_bZDykSQC",
-    "Authors": "Tri Ratna Bajracharya, RK Chaulagai",
-    "Publication date": "2012",
-    "Journal": "Kathmandu: Center for Applied Research and Development (CARD), Institute of Engineering, Tribhuvan University, Nepal",
-    "Total citations": "Cited by 19\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
-  },
-  "15": {
-    "Title": "Wastewater treatment technologies in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:YsMSGLbcyi4C",
-    "Authors": "Ajay Kumar Jha, Tri Ratna Bajracharya",
-    "Publication date": "2014",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "77",
-    "Total citations": "Cited by 17\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
-  },
-  "16": {
-    "Title": "Modeling water resources under competing demands for sustainable development: A case study of Kaligandaki Gorge Hydropower Project in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:RHpTSmoSYBkC",
-    "Authors": "Rakesh Sahukhal, Tri Ratna Bajracharya",
-    "Publication date": "2019/3/1",
-    "Journal": "Water Science and Engineering",
-    "Volume": "12",
-    "Issue": "1",
-    "Pages": "19-26",
-    "Publisher": "Elsevier",
-    "Total citations": "Cited by 12\n2020\n2021\n2022"
-  },
-  "17": {
-    "Title": "Current status of micro‐hydro technology in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:hqOjcs7Dif8C",
-    "Authors": "Khemraj Acharya, Triratna Bajracharya",
-    "Publication date": "2013/11",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Volume": "1",
-    "Pages": "1",
-    "Total citations": "Cited by 11\n2018\n2019\n2020\n2021\n2022"
-  },
-  "18": {
-    "Title": "Correlation study on sand led erosion of buckets and efficiency losses in high head power plants",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:ULOm3_A8WrAC",
-    "Authors": "TR Bajracharya, D Sapkota, R Thapa, S Poudel, CB Joshi, RP Saini, OG Dahlhaug",
-    "Publication date": "2006",
-    "Journal": "Proc. First National Conference on Renewable Energy Technology for Rural Development, Kathmandu, Nepal",
-    "Total citations": "Cited by 10\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017"
-  },
-  "19": {
-    "Title": "Design and Performance Analysis of Water Vortex Powerplant in Context Of Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&citation_for_view=0tHzAygAAAAJ:e5wmG9Sq2KIC",
-    "Authors": "T Bajracharya, R Ghimire, A Timilsina",
-    "Publication date": "2018/11",
-    "Journal": "20th International Seminar on Hydropower Plants",
-    "Pages": "14-16",
-    "Total citations": "Cited by 8\n2019\n2020\n2021\n2022"
-  },
-  "20": {
-    "Title": "Reliability and availability evaluation of Sunkoshi hydro power station",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:5nxA0vEk-isC",
-    "Authors": "Deepak Sapkota, Tri Ratna Bajracharya, Mahesh Chandra Luintel",
-    "Publication date": "2014",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "197-202",
-    "Total citations": "Cited by 8\n2015\n2016\n2017\n2018\n2019\n2020\n2021"
-  },
-  "21": {
-    "Title": "Computational analysis of Pelton bucket tip erosion using digital image processing",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:4TOpqqG69KYC",
-    "Authors": "Bim Prasad Shrestha, Bijaya Gautam, Tri Ratna Bajracharya",
-    "Publication date": "2007/11/29",
-    "Conference": "Electronic Imaging and Multimedia Technology V",
-    "Volume": "6833",
-    "Pages": "825-835",
-    "Publisher": "SPIE",
-    "Total citations": "Cited by 8\n2009\n2010\n2011\n2012\n2013\n2014"
-  },
-  "22": {
-    "Title": "A review of energy sector in the BBIN sub-region",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:YFjsv_pBGBYC",
-    "Authors": "Khem Gyanwali, Ryoichi Komiyama, Yasumasa Fujii, Tri Ratna Bajracharya",
-    "Publication date": "2021/7/3",
-    "Source": "International Journal of Sustainable Energy",
-    "Volume": "40",
-    "Issue": "6",
-    "Pages": "530-556",
-    "Publisher": "Taylor & Francis",
-    "Total citations": "Cited by 7\n2020\n2021\n2022\n2023"
-  },
-  "23": {
-    "Title": "Framework for sustainability assessment of renewable energy projects in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:roLk4NBRz8UC",
-    "Authors": "Ram Prasad Dhital, Parakram Pyakurel, Tri Ratna Bajracharya, Rajendra Shrestha",
-    "Publication date": "2014/10/1",
-    "Journal": "Int. J. Anal. Hierarchy Process.",
-    "Pages": "1001-1008",
-    "Total citations": "Cited by 7\n2017\n2018\n2019\n2020\n2021\n2022"
-  },
-  "24": {
-    "Title": "Correlation between sand led erosion of Pelton buckets and efficiency losses in high head hydropower scheme",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:u5HHmVD_uO8C",
-    "Authors": "T Bajracharya, RP Saini, OG Dahlhaug",
-    "Publication date": "2007",
-    "Journal": "Tribhuvan Univeristy",
-    "Total citations": "Cited by 7\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
-  },
-  "25": {
-    "Title": "Estimation of air pollutant emissions from captive diesel generators and its mitigation potential through microgrid and solar energy",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:fPk4N6BV_jEC",
-    "Authors": "Shree Raj Shakya, Iswor Bajracharya, Ramesh Ananda Vaidya, Prakash Bhave, Anzoo Sharma, Maheswar Rupakheti, Tri Ratna Bajracharya",
-    "Publication date": "2022/11/1",
-    "Journal": "Energy reports",
-    "Volume": "8",
-    "Pages": "3251-3262",
-    "Publisher": "Elsevier",
-    "Total citations": "Cited by 6\n2022"
-  },
-  "26": {
-    "Title": "Efficiency Deterioration in Pelton Turbines due to Sand-Particle-Led Bucket Erosion",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:M05iB0D1s5AC",
-    "Authors": "TR Bajracharya",
-    "Publication date": "2007",
-    "Journal": "Tribhuvan University",
-    "Total citations": "Cited by 6\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
-  },
-  "27": {
-    "Title": "Comparative study of Pelton turbines with sand led erosion test and numerical flow analysis",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:4DMP91E08xMC",
-    "Authors": "TR Bajracharya, D Sapkota, R Thapa, S Poudel, CB Joshi, RP Saini, OG Dahlhaug",
-    "Publication date": "2006",
-    "Journal": "Journal of The Institute Of Engineering",
-    "Total citations": "Cited by 6\n2007\n2008\n2009\n2010\n2011\n2012\n2013"
-  },
-  "28": {
-    "Title": "Sustainable green campus in NEPAL: 3E analysis",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:NaGl4SEjCO4C",
-    "Authors": "Bharosh Kumar Yadav, Pankaj Kumar Rauniyar, K Sudhakar, Tri Ratna Bajracharya, S Shanmuga Priya",
-    "Publication date": "2021/5",
-    "Journal": "International Journal of Low-Carbon Technologies",
-    "Volume": "16",
-    "Issue": "2",
-    "Pages": "531-542",
-    "Publisher": "Oxford University Press",
-    "Total citations": "Cited by 5\n2021\n2022"
-  },
-  "29": {
-    "Title": "A Methodology for Modelling of Steady State Flow in Pelton Turbine Injectors",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:M3NEmzRMIkIC",
-    "Authors": "Tri Ratna Bajracharya, Rajendra Shrestha, Ashesh Babu Timilsina",
-    "Publication date": "2019/7/31",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "15",
-    "Issue": "2",
-    "Pages": "246-255",
-    "Total citations": "Cited by 5\n2021\n2022"
-  },
-  "30": {
-    "Title": "Contribution of renewable energy technologies (rets) in climate resilient approach and sdg 7",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:GnPB-g6toBAC",
-    "Authors": "Ram Chandra Khanal, Shree Raj Shakya, Tri Ratna Bajracharya",
-    "Publication date": "2019",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "15",
-    "Issue": "3",
-    "Pages": "393-401",
-    "Total citations": "Cited by 5\n2021\n2022"
-  },
-  "31": {
-    "Title": "Economic Analysis of Small Hydropower Project–A Case Study of Lower Khare Small Hydropower Project",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:MXK_kJrjxJIC",
-    "Authors": "Ravi Kishor Dutta, Tri Ratna Bajracharya, Shree Raj Shakya, S Definition",
-    "Publication date": "2014",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "349",
-    "Total citations": "Cited by 5\n2019\n2020\n2021\n2022"
-  },
-  "32": {
-    "Title": "Demand side management in industrial sector of nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:W7OEmFMy1HYC",
-    "Authors": "Khem Gyanwali, Tri Ratna Bajracharya",
-    "Publication date": "2013/11",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Volume": "1",
-    "Pages": "108-116",
-    "Total citations": "Cited by 5\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022"
-  },
-  "33": {
-    "Title": "Developing innovative low head water turbine",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:g5m5HwL7SMYC",
-    "Authors": "TR Bajracharya, RK Chaulagain",
-    "Publication date": "2012",
-    "Journal": "Center for Applied Research and Development (CARD), Tribhuvan University, Kathmandu",
-    "Total citations": "Cited by 5\n2016\n2017\n2018\n2019\n2020"
-  },
-  "34": {
-    "Title": "Inlet and Outlet Geometrical Condition for Optimal Installation of Gravitational Water Vortex Power Plant with Conical Basin Structure",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:4JMBOYKVnBMC",
-    "Authors": "Rabin Dhakal, Sirapa Shrestha, Hari Neupane, Sunil Adhikari, Triratna Bajracharya",
-    "Publication date": "2020",
-    "Book": "Recent Advances in Mechanical Infrastructure",
-    "Pages": "163-174",
-    "Publisher": "Springer, Singapore",
-    "Total citations": "Cited by 4\n2021"
-  },
-  "35": {
-    "Title": "Solid particle erosion models and their application to predict wear in pelton turbine injector",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:O3NaXMp0MMsC",
-    "Authors": "Tri Ratna Bajracharya, Rajendra Shrestha, Ashesh Babu Timilsina",
-    "Publication date": "2019",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "15",
-    "Issue": "3",
-    "Pages": "349-359",
+    "Title": "Nepali speech recognition using CNN, GRU and CTC",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:zA6iFVUQeVQC",
+    "Authors": "Bharat Bhatta, Basanta Joshi, Ram Krishna Maharjhan",
+    "Publication date": "2020/9",
+    "Conference": "Proceedings of the 32nd Conference on Computational Linguistics and Speech Processing (ROCLING 2020)",
+    "Pages": "238-246",
     "Total citations": "Cited by 4\n2021\n2022"
   },
-  "36": {
-    "Title": "Prototype net zero energy for contemporary residential building of kathmandu valley",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:ZeXyd9-uunAC",
-    "Authors": "Prava Thapa Chhetri, Triratna Bajracharya, Sushil Bajracharya",
-    "Publication date": "2015",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "69-74",
-    "Total citations": "Cited by 4\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
-  },
-  "37": {
-    "Title": "Assessing green energy growth in Nepal with a hydropower-hydrogen integrated power grid model",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:cFHS6HbyZ2cC",
-    "Authors": "Khem Gyanwali, Aadya Bhattarai, Tri Ratna Bajracharya, Ryoichi Komiyama, Yasumasa Fujii",
-    "Publication date": "2022/4/22",
-    "Journal": "International Journal of Hydrogen Energy",
-    "Volume": "47",
-    "Issue": "34",
-    "Pages": "15133-15148",
-    "Publisher": "Pergamon",
-    "Total citations": "Cited by 3\n2022\n2023"
-  },
-  "38": {
-    "Title": "Notice of Violation of IEEE Publication Principles: Computational and experimental investigation of runner for gravitational water vortex power plant",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:J_g5lzvAfSwC",
-    "Authors": "R Dhakal, TR Bajracharya, SR Shakya, B Kumal, K Khanal, SJ Williamson, S Gautam, DP Ghale",
-    "Publication date": "2017/11/5",
-    "Conference": "2017 IEEE 6Th International Conference On Renewable Energy Research And Applications (ICRERA)",
-    "Pages": "365-373",
+  "14": {
+    "Title": "Disease classification of chest X-ray using CNN",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:KxtntwgDAa4C",
+    "Authors": "Tejasvi Raj Pant, Ravi Kiran Aryal, Tribikram Panthi, Milan Maharjan, Basanta Joshi",
+    "Publication date": "2021/12/17",
+    "Conference": "2021 IEEE 6th International Conference on Computing, Communication and Automation (ICCCA)",
+    "Pages": "467-471",
     "Publisher": "IEEE",
+    "Total citations": "Cited by 3\n2022"
+  },
+  "15": {
+    "Title": "Multi-agent based heterogeneous power management system",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:HoB7MX3m0LUC",
+    "Authors": "Purushotam Shrestha, Basanta Joshi",
+    "Publication date": "2021",
+    "Journal": "Int. J. Innov. Comput. Inf. Control",
+    "Volume": "17",
+    "Issue": "1",
+    "Pages": "245-257",
     "Total citations": "Cited by 3\n2021\n2022"
   },
-  "39": {
-    "Title": "Waste to Energy: An Assessment of Application of the Selective Fuel for Applications in Industries using a Mixture of\" A\" Grade Coal and Municipal Solid Waste",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:d1gkVwhDpl0C",
-    "Authors": "Nripendra Bajracharya, Bhakta Bahadur Ale, Ramesh Man Singh, Tri Ratna Bajracharya",
-    "Publication date": "2016",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "12",
-    "Issue": "1",
-    "Pages": "129-142",
-    "Total citations": "Cited by 3\n2020\n2021"
+  "16": {
+    "Title": "A hybrid approach for log signature generation",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:mVmsd5A6BfQC",
+    "Authors": "Prabhat Pokharel, Roshan Pokhrel, Basanta Joshi",
+    "Publication date": "2020/7/28",
+    "Journal": "Applied Computing and Informatics",
+    "Issue": "ahead-of-print",
+    "Publisher": "Emerald Publishing Limited",
+    "Total citations": "Cited by 3\n2019\n2020\n2021\n2022"
   },
-  "40": {
-    "Title": "A comparative study of various models for the estimation of monthly average daily global solar radiation on horizontal surface at Kathmandu",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:LkGwnXOMwfcC",
-    "Authors": "Amitabh Kumar Das, Shree Raj Shakya, Tri Ratna Bajracharya",
-    "Publication date": "2014",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Volume": "2",
-    "Pages": "110-117",
-    "Total citations": "Cited by 3\n2016\n2017\n2018"
+  "17": {
+    "Title": "Nepali Text to Speech using Time Domain Pitch Synchronous Overlap Add Method",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:K3LRdlH-MEoC",
+    "Authors": "Pratistha Malla",
+    "Publication date": "2015",
+    "Institution": "Pulchowk Campus",
+    "Total citations": "Cited by 2\n2019\n2020\n2021"
   },
-  "41": {
-    "Title": "Design, Fabrication, and Performance Analysis of an Automatic Horizontal Egg Incubator",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:vV6vV6tmYwMC",
-    "Authors": "Bharosh Kumar Yadav, Nischal Pokhrel, Dinesh Khatiwada, Madan Khanal, Triratna Bajracharya, Rabin Dhakal",
+  "18": {
+    "Title": "Digital Holography Based Particle Tracking Velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:2osOgNQ5qMEC",
+    "Authors": "Kazuo Ohmi, Sanjeeb Prasad Panday, Basanta Joshi",
+    "Publication date": "2009",
+    "Publisher": "FLUCOME",
+    "Total citations": "Cited by 2\n2012\n2013\n2014\n2015"
+  },
+  "19": {
+    "Title": "An Alumni Portal and Tracking System",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&citation_for_view=iocLiGcAAAAJ:u_35RYKgDlwC",
+    "Authors": "Baibhav Bista, Aman Shakya, Basanta Joshi, Anusandhan Pokhrel, Lumanti Dangol, Mohit Kedia, Daya Sagar Baral",
     "Publication date": "2021/4/12",
     "Journal": "Journal of the Institute of Engineering",
     "Volume": "16",
     "Issue": "1",
-    "Pages": "77-85",
-    "Total citations": "Cited by 2\n2022"
-  },
-  "42": {
-    "Title": "Restructuring examination system of institute of engineering for establishing center of excellence in engineering education",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:Wp0gIr-vW9MC",
-    "Authors": "Tri Ratna Bajracharya, Babu Ram Dawadi, Ram Chandra Sapkota",
-    "Publication date": "2018/6/4",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "14",
-    "Issue": "1",
-    "Pages": "75-81",
-    "Total citations": "Cited by 2\n2021\n2022"
-  },
-  "43": {
-    "Title": "Sustainability Assessment of Rural Solar PV Water Pumping System in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:hFOr9nPyWt4C",
-    "Authors": "Ram Prasad Dhital, Bishal Parajuli, Tri Ratna Bajracharya, Rajendra Sthrestha",
-    "Publication date": "2016",
-    "Publisher": "October). Retrieved from http://conference. ioe. edu. np/conf2014Papers/IOE-CONF-2014-43. pdf",
-    "Total citations": "Cited by 2\n2019\n2020"
-  },
-  "44": {
-    "Title": "The Effects of Economy of Scale of Production on Energy Mix and GHGs Emissions for the Biscuit Industries of Nepal: A Case Study of Nebico Foods and Confectioneries Pvt. Ltd.",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:QIV2ME_5wuYC",
-    "Authors": "Subash Bhandari, Tri Ratna Bajracharya",
-    "Publication date": "2016",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "41-47",
-    "Total citations": "Cited by 2\n2020"
-  },
-  "45": {
-    "Title": "Surface treatment of screw and financial analysis of rice husk briquetting machine by using different types of hardfacing welding rods",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:aqlVkmm33-oC",
-    "Authors": "Shivajee Sharma, Tri Ratna Bajracharya, Krishna Raj Shrestha",
-    "Publication date": "2016",
-    "Journal": "2016 IOE Graduate Conference (Pulchowk)",
-    "Pages": "215-220",
-    "Total citations": "Cited by 2\n2018\n2019"
-  },
-  "46": {
-    "Title": "Understanding of severe sepsis and septic shock among emergency department and intensive care unit medical officers in a developing country Nepal: A survey study",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:YOwf2qJgpHMC",
-    "Authors": "GS Shrestha, BP Parajuli, SP Acharya, A Banstola, B Upadhyay, T Bajracharya",
-    "Publication date": "2016",
-    "Journal": "Birat Journal of Health Sciences",
-    "Volume": "1",
-    "Issue": "1",
-    "Pages": "47-50",
-    "Total citations": "Cited by 2\n2017\n2018\n2019\n2020"
-  },
-  "47": {
-    "Title": "Sustainable Building Rating (SBR) System for Nepal-–A Case of Kathmandu Valley",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:8k81kl-MbHgC",
-    "Authors": "Saurabha Shakya, Tri Ratna Bajracharya, Sushil Bahadur Bajracharya",
-    "Publication date": "2015",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "218-226",
-    "Total citations": "Cited by 2\n2018\n2019\n2020\n2021\n2022"
-  },
-  "48": {
-    "Title": "Integration of Climate Change Impact Parameters in Hydropower Planning in Nepal: A Case Study of Kaligandaki Gorge HP",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:_FxGoFyzp5QC",
-    "Authors": "Rakesh Sahukhal, Tri Ratna Bajracharya",
-    "Publication date": "2015",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "211-217",
-    "Total citations": "Cited by 2\n2017\n2018\n2019\n2020\n2021\n2022"
-  },
-  "49": {
-    "Title": "Developing an Innovative Gasification Based Bio-char Stove in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:qUcmZB5y_30C",
-    "Authors": "Bishal Shahi, Bishan Thapa, Ghanashyam Chuhan, Tri Ratna Bajracharya",
-    "Publication date": "2014/7/31",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "10",
-    "Issue": "1",
-    "Pages": "25-33",
-    "Total citations": "Cited by 2\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023"
-  },
-  "50": {
-    "Title": "Addressing Climate Change and Ensuring Energy Security in Nepal through Enhancing Renewable Energy Technology",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:zYLM7Y9cAGgC",
-    "Authors": "Tri Ratna Bajracharya",
-    "Publication date": "2012",
-    "Journal": "6th International Conferences and Planning Workshop of the University Network for Climate and Ecosystems Change and Adaptation Research (UN_CECAR) on Renewable Energy",
-    "Total citations": "Cited by 2\n2013\n2014"
-  },
-  "51": {
-    "Title": "Energy systems planning and analysis in terms of nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:UeHWp8X0CEIC",
-    "Authors": "TR Bajracharya, SR Shakya, AM Nakarmi, BB Ale, R Shrestha, C Bauer, E Doujak, S Gössinger",
-    "Journal": "Conference Proceedings",
-    "Total citations": "Cited by 2\n2016\n2017\n2018\n2019"
-  },
-  "52": {
-    "Title": "Dynamics of energy security and its implications",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:yD5IFk8b50cC",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya, Anzoo Sharma",
-    "Publication date": "2022/1/1",
-    "Book": "Handbook of Energy and Environmental Security",
-    "Pages": "13-25",
-    "Publisher": "Academic Press",
-    "Total citations": "Cited by 1\n2022"
-  },
-  "53": {
-    "Title": "Energy Security Assessment of Nepal for the period 2005-2030",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:HoB7MX3m0LUC",
-    "Authors": "Shova Darlamee, Tri Ratna Bajracharya",
-    "Publication date": "2021/7/10",
-    "Journal": "Journal of Advanced College of Engineering and Management",
-    "Volume": "6",
-    "Pages": "199-211",
-    "Total citations": "Cited by 1\n2020"
-  },
-  "54": {
-    "Title": "Numerical modelling of the sand particle flow in pelton turbine injector",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:70eg2SAEIzsC",
-    "Authors": "Tri Ratna Bajracharya, Rajendra Shrestha, Ashesh Babu Timilsina",
-    "Publication date": "2021/5/1",
-    "Journal": "Journal of Engineering Issues and Solutions",
-    "Volume": "1",
-    "Issue": "1",
-    "Pages": "88-105",
-    "Total citations": "Cited by 1\n2022"
-  },
-  "55": {
-    "Title": "Evaluation and mitigation analysis of carbon footprint for an airline operator: Case of Nepal Airlines Corporation",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:RYcK_YlVTxYC",
-    "Authors": "Sandeep Tuladhar, Tri Ratna Bajracharya, Shree Raj Shakya",
-    "Publication date": "2021/3/5",
-    "Journal": "Journal of Innovations in Engineering Education",
-    "Volume": "4",
-    "Issue": "1",
-    "Pages": "18-33",
+    "Pages": "7-14",
     "Total citations": "Cited by 1\n2021"
   },
-  "56": {
-    "Title": "Spatio-Temporal Analysis Of Public Transportation System Using Static Transit Accessibility Methodological Framework",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:ns9cj8rnVeAC",
-    "Authors": "Anita Prajapati, Nawraj Bhattarai, Tri Ratna Bajracharya",
+  "20": {
+    "Title": "User Behavior Analytics for Insider Threat Detection using Deep Learning",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:OU6Ihb5iCvQC",
+    "Authors": "Santosh Nepal, Basanta Joshi",
+    "Publication date": "2021",
+    "Journal": "Peer Reviewed ISSN",
+    "Pages": "2350-8914",
+    "Total citations": "Cited by 1\n2022"
+  },
+  "21": {
+    "Title": "Automatic Pose Estimation of Micro Unmanned Aerial Vehicle for Autonomous Landing",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:lSLTfruPkqcC",
+    "Authors": "Manish Shrestha, Sanjeeb Prasad Panday, Basanta Joshi, Aman Shakya, Rom Kant Pandey",
     "Publication date": "2020",
-    "Journal": "International Journal of Scientific & Technology Research",
-    "Volume": "9",
+    "Conference": "Intelligent Computing Methodologies: 16th International Conference, ICIC 2020, Bari, Italy, October 2–5, 2020, Proceedings, Part III 16",
+    "Pages": "3-15",
+    "Publisher": "Springer International Publishing",
     "Total citations": "Cited by 1\n2021"
   },
-  "57": {
-    "Title": "Numerical Study on Sediment Erosion of Micro Pelton Turbine Buckets",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:hMod-77fHWUC",
-    "Authors": "Tri Ratna Bajracharya, AK Pachhain, Anil Sapkota, Ashesh Babu Timilsina",
-    "Publication date": "2020",
-    "Journal": "Int. Res. J. Mod. Eng. Technol. Sci",
-    "Volume": "2",
-    "Issue": "7",
-    "Pages": "889-895",
-    "Total citations": "Cited by 1\n2022"
-  },
-  "58": {
-    "Title": "Public Bus Accessibility and its Implications in Energy and Environment: A Case Study of Kathmandu Valley",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:BqipwSGYUEgC",
-    "Authors": "Anita Prajapati, Tri Ratna Bajracharya, Nawraj Bhattarai, Yngve Karl Froyen",
-    "Publication date": "2019",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "15",
-    "Issue": "3",
-    "Pages": "253-260",
-    "Total citations": "Cited by 1\n2023"
-  },
-  "59": {
-    "Title": "RETIENAS: Real Time Intranet Based Entrance Examination System at Institute of Engineering",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:qxL8FJ1GzNcC",
-    "Authors": "Babu Ram Dawadi, Tri Ratna Bajracharya, Ram Chandra Sapkota, Subarna Shakya, Arbind Kumar Mishra, Bharat Raj Pahari, Daya Sagar Baral, Aman Shakya, Sanjeeb Prasad Panday, Arun Kumar Timalsina, Shashidhar Ram Joshi",
-    "Publication date": "2017",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "13",
-    "Issue": "1",
-    "Pages": "190-200",
-    "Total citations": "Cited by 1\n2004"
-  },
-  "60": {
-    "Title": "Design and Numerical Analysis of Solar Underfloor Heating System: A Case Study of Resort in Nagarkot, Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:3fE2CSJIrl8C",
-    "Authors": "Sarika Kumari Mishra, Tri Ratna Bajracharya, Rabindra Nath Bhattarai",
-    "Publication date": "2017",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Pages": "529-536",
-    "Total citations": "Cited by 1\n2019"
-  },
-  "61": {
-    "Title": "Driving factors of Energy consumption in Transport Sector",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:u-x6o8ySG0sC",
-    "Authors": "Anita Prajapati, Tri Ratna Bajracharya, N Bhattarai",
-    "Publication date": "2017",
-    "Journal": "IOE Graduate Conference",
+  "22": {
+    "Title": "Information Extraction Using Named Entity Recognition from Log Messages",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:mB3voiENLucC",
+    "Authors": "Prabhat Pokharel",
+    "Publication date": "2018/7/29",
+    "Journal": "PhD thesis",
+    "Publisher": "Pokhara University",
     "Total citations": "Cited by 1\n2021"
   },
-  "62": {
-    "Title": "Grid connected bagasse cogeneration potential in nepal and its load flow analysis in inps",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:TQgYirikUcIC",
-    "Authors": "Sagar Gnawali, Tri Ratna Bajracharya",
-    "Publication date": "2016",
-    "Journal": "IOE Graduate Conference",
-    "Total citations": "Cited by 1\n2018"
-  },
-  "63": {
-    "Title": "Selection of appropriate Renewable Energy Technology in household sub-sector for Climate Mitigation and Adaptation",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:mVmsd5A6BfQC",
-    "Authors": "Roshan Pandey, Triratna Bajracharya",
-    "Publication date": "2013/11",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Volume": "1",
-    "Pages": "178",
-    "Total citations": "Cited by 1\n2020"
-  },
-  "64": {
-    "Title": "Scenario Analysis of Road Transport Energy Consumption and Greenhouse Gas Emission in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:2osOgNQ5qMEC",
-    "Authors": "Iswor Bajracharya, Tri Ratna Bajracharya",
-    "Publication date": "2013/11",
-    "Journal": "Proceedings of IOE Graduate Conference",
-    "Volume": "1",
-    "Pages": "11-21",
+  "23": {
+    "Title": "Particle path based tomographic image velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:qjMakFHDy7sC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Aljabri Sultan, Alharbi Alaa",
+    "Publication date": "2013/7/1",
+    "Conference": "PIV13; 10th International Symposium on Particle Image Velocimetry, Delft, The Netherlands, July 1-3, 2013",
+    "Publisher": "Delft University of Technology, Faculty of Mechanical, Maritime and Materials Engineering, and Faculty of Aerospace Engineering",
     "Total citations": "Cited by 1\n2014"
   },
-  "65": {
-    "Title": "Energy from Waste: Production of selective fuel using A grade coal and municipal solid waste to assess its potential for industrial applications",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:L8Ckcad2t8MC",
-    "Authors": "Nripendra Bajracharya, Bhakta Bahadur Ale, Tri Ratna Bajracharya, Ramesh Man",
-    "Total citations": "Cited by 1"
+  "24": {
+    "Title": "3D PIV Experiments on the Wake of Two Tandem Circular Cylinders in a Cross Flow",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:pqnbT2bcN3wC",
+    "Authors": "K Ohmi, SP Panday, B Joshi",
+    "Publication date": "2008",
+    "Total citations": "Cited by 1\n2018"
   },
-  "66": {
-    "Title": "Technology Analysis of Domestic Solar Water Heater Systems in Nepal: Needs a Revamp",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:UebtZRa9Y70C",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya",
-    "Journal": "8th National Convention and FEISCA Regional meet",
-    "Total citations": "Cited by 1\n2021"
+  "25": {
+    "Title": "Generation of Nepalese Handwritten Characters Using Generative Adversarial Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:Tiz5es2fbqcC",
+    "Authors": "Krishna Khadka, Sanjeeb Prasad Panday, Basanta Joshi",
+    "Publication date": "2022/4/30",
+    "Book": "International Conference on Artificial Intelligence and Sustainable Engineering: Select Proceedings of AISE 2020, Volume 1",
+    "Pages": "333-347",
+    "Publisher": "Springer Nature Singapore"
   },
-  "67": {
-    "Title": "21 Electrification and Targets in Developing Countries",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:EUQCXRtRnyEC",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya, Anzoo Sharma",
-    "Publication date": "2022/10/14",
-    "Journal": "Handbook of Energy Transitions",
-    "Pages": "391",
-    "Publisher": "CRC Press"
+  "26": {
+    "Title": "A Novel Deep Learning Based Nepali Speech Recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:XiSMed-E-HIC",
+    "Authors": "Basanta Joshi, Bharat Bhatta, Sanjeeb Prasad Panday, Ram Krishna Maharjan",
+    "Publication date": "2022/4/14",
+    "Book": "Innovations in Electrical and Electronic Engineering: Proceedings of ICEEE 2022, Volume 2",
+    "Pages": "433-443",
+    "Publisher": "Springer Singapore"
   },
-  "68": {
-    "Title": "Energy and Sustainable Development",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:_xSYboBqXhAC",
-    "Authors": "Tri Ratna, Shree Raj Shakya, Anzoo Sharma",
-    "Publication date": "2022/10/14",
-    "Book": "Handbook of Energy Transitions",
-    "Pages": "307-322",
-    "Publisher": "CRC Press"
+  "27": {
+    "Title": "Drug-target interaction prediction using deep belief network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:tS2w5q8j5-wC",
+    "Authors": "Aman Shakya, Basanta Joshi, Uday K Yadav, Om Prakash Mahato",
+    "Publication date": "2022",
+    "Journal": "International Journal of Bioinformatics Research and Applications",
+    "Volume": "18",
+    "Issue": "5",
+    "Pages": "479-495",
+    "Publisher": "Inderscience Publishers (IEL)"
   },
-  "69": {
-    "Title": "2 Energy Transitions",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:bFI3QPDXJZMC",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya, Anzoo Sharma",
-    "Publication date": "2022/10/14",
-    "Journal": "Handbook of Energy Transitions",
-    "Pages": "21",
-    "Publisher": "CRC Press"
+  "28": {
+    "Title": "Hierarchical Multi Label Classification of News Articles Using RNN, CNN and HAN",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:nb7KW1ujOQ8C",
+    "Authors": "Pratik Sharma, Aman Shakya, Basanta Joshi, Sanjeeb Prasad Panday",
+    "Publication date": "2022",
+    "Conference": "ICT with Intelligent Applications: Proceedings of ICTIS 2021, Volume 1",
+    "Pages": "499-506",
+    "Publisher": "Springer Singapore"
   },
-  "70": {
-    "Title": "Modelling of Hydroabrasive Erosion in Pelton Turbine Injector",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:f2IySw72cVMC",
-    "Authors": "Tri Ratna Bajracharya, Rajendra Shrestha, Anil Sapkota, Ashesh Babu Timilsina",
-    "Publication date": "2022/7/31",
-    "Journal": "International Journal of Rotating Machinery",
-    "Volume": "2022",
-    "Publisher": "Hindawi"
+  "29": {
+    "Title": "Abnormal motion pattern detection in video sequences by an unsupervised approach",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:cFHS6HbyZ2cC",
+    "Authors": "Himal Acharya, Basanta Joshi",
+    "Publication date": "2021/7/9",
+    "Journal": "Engineering and Applied Science Research",
+    "Volume": "48",
+    "Issue": "5",
+    "Pages": "509-517"
   },
-  "71": {
-    "Title": "Numerical Analysis of Manifold: A Case Study of Phukot Karnali Hydroelectric Project",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:pyW8ca7W8N0C",
-    "Authors": "Bardan Dangi, Tri Ratna Bajracharya, Ashesh Babu Timilsinac, Bikki Chhantyal, Sunil Bista",
-    "Publication date": "2022"
-  },
-  "72": {
-    "Title": "Climate change and sustainable energy systems",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:D03iK_w7-QYC",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya, Anzoo Sharma",
-    "Publication date": "2022/1/1",
-    "Book": "Handbook of Energy and Environmental Security",
-    "Pages": "531-545",
-    "Publisher": "Academic Press"
-  },
-  "73": {
-    "Title": "Energy and environment: sustainability and security",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:a0OBvERweLwC",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya, Anzoo Sharma",
-    "Publication date": "2022/1/1",
-    "Book": "Handbook of Energy and Environmental Security",
-    "Pages": "469-480",
-    "Publisher": "Academic Press"
-  },
-  "74": {
-    "Title": "Energy Reports",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:4OULZ7Gr8RgC",
-    "Authors": "Shree Raj Shakya, Iswor Bajracharya, Ramesh Ananda Vaidya, Prakash Bhave, Anzoo Sharma, Maheswar Rupakheti, Tri Ratna Bajracharya",
-    "Publication date": "2022"
-  },
-  "75": {
-    "Title": "Passenger Transport Modal Mix by Incorporating Travel Behaviour: A Case Study of Kathmandu Valley, Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:rO6llkc54NcC",
-    "Authors": "Anita Prajapati, Nawraj Bhattarai, Tri Ratna Bajracharya",
-    "Publication date": "2021/12/18",
-    "Journal": "Strategic Planning for Energy and the Environment",
-    "Pages": "231–254-231–254"
-  },
-  "76": {
-    "Title": "Supply side management in microhydro using battery bank: A case study of Pinthali microhydro plant, Kavre",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:zA6iFVUQeVQC",
-    "Authors": "Amit Subedi, Tri Ratna Bajracharya",
-    "Publication date": "2021/6/6",
-    "Journal": "Journal of Innovations in Engineering Education",
-    "Volume": "4",
-    "Issue": "2",
-    "Pages": "9-15"
-  },
-  "77": {
-    "Title": "Assessment of Socio-economic and Environmental Aspects of E-rickshaws on Urban Scenario: Case of Butwal, Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:dfsIfKJdRG4C",
-    "Authors": "Sarita Devkota, Tri Ratna Bajracharya",
-    "Publication date": "2021"
-  },
-  "78": {
-    "Title": "Development of a 1 kW Gravitational Water Vortex Hydropower Plant Prototype",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:u_35RYKgDlwC",
-    "Authors": "A Sapkota, A Gautam, AB Timilsina, S Dhakal, SR Shakya, TR Bajracharya",
-    "Publication date": "2021"
-  },
-  "79": {
-    "Title": "Effect of Spear Needle Eccentricity on the Pelton Turbine Jet",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:ZHo1McVdvXMC",
-    "Authors": "Tri Ratna Bajracharya, Ashesh Babu Timilsina, Anil Sapkota, Tejendra Rahadi Magar, Sameep Shrestha, Tejaswi Sapkota, Nawaraj Shrestha",
-    "Publication date": "2021"
-  },
-  "80": {
-    "Title": "7 Energy Security in the",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:ldfaerwXgEUC",
-    "Authors": "Tri Ratna Bajracharya, Shova Darlamee",
-    "Publication date": "2020/12/28",
-    "Journal": "Energy and Environmental Outlook for South Asia",
-    "Pages": "141",
-    "Publisher": "CRC Press"
-  },
-  "81": {
-    "Title": "Energy Security in the Context of Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:2P1L_qKh6hAC",
-    "Authors": "Tri Ratna Bajracharya, Shova Darlamee",
-    "Publication date": "2020/12/28",
-    "Book": "Energy and Environmental Outlook for South Asia",
-    "Pages": "141-174",
-    "Publisher": "CRC Press"
-  },
-  "82": {
-    "Title": "Dynamic response of a shaft of a Pelton turbine due to impact of water jet",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:j3f4tGmQtD8C",
-    "Authors": "Mahesh Luintel, Tri Ratna Bajracharya",
-    "Publication date": "2020/9/1",
-    "Journal": "Journal of Computational & Applied Research in Mechanical Engineering (JCARME)",
-    "Volume": "10",
-    "Issue": "1",
-    "Pages": "73-84",
-    "Publisher": "Shahid Rajaee Teacher Training University (SRTTU)"
-  },
-  "83": {
-    "Title": "Research Article Effects of Geometrical Parameters in Gravitational Water Vortex Turbines with Conical Basin",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:NhqRSupF_l8C",
-    "Authors": "Tri Ratna Bajracharya, Shree Raj Shakya, Ashesh Babu Timilsina, Jhalak Dhakal, Subash Neupane, Ankit Gautam, Anil Sapkota",
-    "Publication date": "2020"
-  },
-  "84": {
-    "Title": "Dynamic response of a Pelton turbine shaft under the impact of water jet",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:3s1wT3WcHBgC",
-    "Authors": "Luintel Mahesh Chandra, Tri Ratna Bajracharya",
-    "Publication date": "2020/1/1",
-    "Volume": "10",
-    "Issue": "1",
-    "Pages": "73-84",
-    "Publisher": "JOURNAL OF COMPUTATIONAL AND APPLIED RESEARCH IN MECHANICAL ENGINEERING (JCARME)"
-  },
-  "85": {
-    "Title": "Flow analysis in eccentric bucket of Micro Pelton turbine: Multiphase modelling with transient state condition",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:SeFeTyx0c_EC",
-    "Authors": "Sourav Dhungana",
-    "Publication date": "2020",
+  "30": {
+    "Title": "INTELLIGENT CODE. SMELL. DETECTION SYSTEM USING DEEP LEARNING",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:vRqMK49ujn8C",
+    "Authors": "Sanjaya Subedi",
+    "Publication date": "2021",
     "Institution": "Pulchowk Campus"
   },
-  "86": {
-    "Title": "Numerical and Experimental Analysis of Efficiency Enhancement in Fire Tube Boiler using Turbulators",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:blknAaTinKkC",
-    "Authors": "Vijay Raj Giri, Ajay Kumar Jha, Tri Ratna Bajracharya",
+  "31": {
+    "Title": "STOCK PRICE PREDICTION USING DEEP NEURAL NETWORK",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:l7t_Zn2s7bgC",
+    "Authors": "BASANT RAJ PHULARA",
+    "Publication date": "2021",
+    "Institution": "Pulchowk Campus"
+  },
+  "32": {
+    "Title": "Deep Learning Based Voice Conversion Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:p2g8aNsByqUC",
+    "Authors": "Ashok Basnet, Basanta Joshi, Suman Sharma",
+    "Publication date": "2021"
+  },
+  "33": {
+    "Title": "Performance Analysis of Shard Selection Techniques on Elasticsearch",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:uWQEDVKXjbEC",
+    "Authors": "Yashasvi Raj Pant, Basanta Joshi, Nanda Bikram Adhikari",
+    "Publication date": "2021"
+  },
+  "34": {
+    "Title": "Convolutional Neural Networks for the Assessment of Fetal Echocardiography",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:SP6oXDckpogC",
+    "Authors": "Dipak Kumar Nidhi, Khushboo Srivastav, Basanta Joshi, Shashidhar Ram Joshi",
+    "Publication date": "2021"
+  },
+  "35": {
+    "Title": "Nepali Speech Recognition using LSTM-CTC",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:UxriW0iASnsC",
+    "Authors": "Rupesh Shrestha, Basanta Joshi, Suman Sharma",
+    "Publication date": "2021"
+  },
+  "36": {
+    "Title": "Rapid Earthquake Assessment from Satellite Imagery Using RPN and Yolo v3",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:P5F9QuxV20EC",
+    "Authors": "Sanjeeb Prasad Panday, Saurav Lal Karn, Basanta Joshi, Aman Shakya, Rom Kant Pandey",
+    "Publication date": "2021",
+    "Conference": "Intelligent Computing Theories and Application: 17th International Conference, ICIC 2021, Shenzhen, China, August 12–15, 2021, Proceedings, Part I 17",
+    "Pages": "288-301",
+    "Publisher": "Springer International Publishing"
+  },
+  "37": {
+    "Title": "Anomaly Detection in Distributed Streams",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:2P1L_qKh6hAC",
+    "Authors": "Rupesh Karn, Suvrat Ram Joshi, Umanga Bista, Basanta Joshi, Daya Sagar Baral, Aman Shakya",
+    "Publication date": "2021",
+    "Conference": "Information and Communication Technology for Intelligent Systems: Proceedings of ICTIS 2020, Volume 2",
+    "Pages": "139-147",
+    "Publisher": "Springer Singapore"
+  },
+  "38": {
+    "Title": "Coronary Artery Disease Prediction Using Neural Network and Random Forest-Based Feature Selection",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:35N4QoGY0k4C",
+    "Authors": "Aman Shakya, Neerav Adhikari, Basanta Joshi",
+    "Publication date": "2021",
+    "Conference": "Information and Communication Technology for Intelligent Systems: Proceedings of ICTIS 2020, Volume 2",
+    "Pages": "97-105",
+    "Publisher": "Springer Singapore"
+  },
+  "39": {
+    "Title": "Emotion Recognition From Video Using Feature level Fusion.",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:RGFaLdJalmkC",
+    "Authors": "Binod Adhikaria, Basanta Joshi",
+    "Publication date": "2020"
+  },
+  "40": {
+    "Title": "Time Series Based Pattern Recognition for Anomaly Detection from System Audit Logs",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:qUcmZB5y_30C",
+    "Authors": "Prabhat Pokharel, Sandeep Sigdel, Roshan Pokhrel, Basanta Joshi",
+    "Publication date": "2019/11/5",
+    "Conference": "2019 Artificial Intelligence for Transforming Business and Society (AITB)",
+    "Volume": "1",
+    "Pages": "1-6",
+    "Publisher": "IEEE"
+  },
+  "41": {
+    "Title": "User Behavior Modeling and Anomaly Detection in Cybersecurity Data Using Deep Learning",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:08ZZubdj9fEC",
+    "Authors": "Balaram Sharma",
+    "Publication date": "2019",
+    "Institution": "Pulchowk Campus"
+  },
+  "42": {
+    "Title": "Thyroid Ultrasonography Image Classification Based on Fine-tuned Convolutional Neural Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:tOudhMTPpwUC",
+    "Authors": "PANKAJ CHANDRA",
+    "Publication date": "2019",
+    "Institution": "Pulchowk Campus"
+  },
+  "43": {
+    "Title": "Applied Computing and Informatics",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:u9iWguZQMMsC",
+    "Authors": "Prabhat Pokharel, Roshan Pokhrel, Basanta Joshi",
+    "Publication date": "2019"
+  },
+  "44": {
+    "Title": "Abnormal Motion Pattern Detection in Surveillance Video Sequences by Clustering Approach",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:NaGl4SEjCO4C",
+    "Authors": "Himal Acharya, Basanta Joshi",
     "Publication date": "2019",
     "Journal": "Proceedings of IOE Graduate Conference"
   },
-  "87": {
-    "Title": "Multi-Criteria Decision Making for Sustainability of Renewable Energy System of Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:bEWYMUwI8FkC",
-    "Authors": "Tri Ratna Bajracharya, Rajendra Shrestha",
-    "Publication date": "2018",
-    "Journal": "renewable energy",
-    "Volume": "8",
-    "Issue": "3"
+  "45": {
+    "Title": "INTERACTIVE VOICE RESPONSE SYSTEM WITH SPEECH RECOGNITION",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:R3hNpaxXUhUC",
+    "Authors": "Prabin Bhandari",
+    "Publication date": "2017/8"
   },
-  "88": {
-    "Title": "Sustainability of Rural Solar PV Water Drinking Projects in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:dhFuZR0502QC",
-    "Authors": "Ram Prasad Dhital, Bishal Parajuli, Tri Ratna Bajracharya, Rajendra Shrestha",
-    "Publication date": "2014/3/24",
-    "Journal": "Water & Energy Proceedings of the Seminar on Water & Energy",
-    "Pages": "68"
+  "46": {
+    "Title": "A Novel Method for Real Time Pothole Detection System using Smartphones with Accelerometers",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:738O_yMBCRsC",
+    "Authors": "SUJIT MAHARJAN",
+    "Publication date": "2017",
+    "Institution": "Pulchowk Campus"
   },
-  "89": {
-    "Title": "Means to Enhance the Production of Water from Solar Thermal Pasteurization System",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:qjMakFHDy7sC",
-    "Authors": "Tri Ratna Bajracharya, Anil Kunwar",
-    "Publication date": "2011",
-    "Journal": "Journal of the Institute of Engineering",
-    "Volume": "8",
-    "Issue": "1-2",
-    "Pages": "39-47"
+  "47": {
+    "Title": "Object Detection in Video using Region based Convolution Neural Network",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:TQgYirikUcIC",
+    "Authors": "DEEPESH LEKHAK",
+    "Publication date": "2017",
+    "Institution": "Pulchowk Campus"
   },
-  "90": {
-    "Title": "NEPAL’S WATER RESOURCES AND PRESENT POWER CRISIS: WHAT IS LAGGING?",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:WF5omc3nYNoC",
-    "Authors": "TR Bajracharya, BC Davis, S Singh",
-    "Publication date": "2010"
+  "48": {
+    "Title": "3D volumetric particle tracking velocimetry based on a tomographic reconstruction technique",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:hqOjcs7Dif8C",
+    "Authors": "Basanta Joshi",
+    "Publication date": "2016/6/5"
   },
-  "91": {
-    "Title": "A Path to Quality Assurance of Solar Thermal Products in Nepal",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:-f6ydRqryjwC",
-    "Authors": "Peter Kovacs, Prajwal Raj Shakya, Tri Ratna Bajracharya, Govind Raj Pokharel",
+  "49": {
+    "Title": "J054013 粒子のストリーク像を利用した 3 次元トモグラフィ PTV ([J054-01] 流れの高次元化可視化に向けて (1))",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:J_g5lzvAfSwC",
+    "Authors": "近江和生",
+    "Publication date": "2013/9/8",
+    "Conference": "年次大会 2013",
+    "Pages": "_J054013-1-_J054013-4",
+    "Publisher": "一般社団法人 日本機械学会"
+  },
+  "50": {
+    "Title": "Three dimensional volumetric particle tracking velocimetry based on a tomographic reconstruction technique",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:hFOr9nPyWt4C",
+    "Authors": "Joshi Basanta",
+    "Publication date": "2013",
+    "Institution": "大阪産業大学"
+  },
+  "51": {
+    "Title": "3 次元画像流体計測法におけるトモグラフィ再構成法の適用",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:WF5omc3nYNoC",
+    "Authors": "近江和生， 能勢和夫",
+    "Publication date": "2012/12/21",
+    "Journal": "電気学会研究会資料. LAV, 光応用・視覚研究会",
+    "Volume": "2012",
+    "Issue": "15",
+    "Pages": "17-22"
+  },
+  "52": {
+    "Title": "J055023 トモグラフィによる 3 次元 PTV の新解析手法",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:RYcK_YlVTxYC",
+    "Authors": "近江和生",
+    "Publication date": "2012/9/9",
+    "Conference": "年次大会 2012",
+    "Pages": "_J055023-1-_J055023-5",
+    "Publisher": "一般社団法人 日本機械学会"
+  },
+  "53": {
+    "Title": "Camera calibration models for 3D particle tracking velocimetry",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:UeHWp8X0CEIC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Sanjeeb Prasad Panday",
+    "Publication date": "2010",
+    "Journal": "Image",
+    "Volume": "10",
+    "Pages": "256"
+  },
+  "54": {
+    "Title": "粒子群最適化法による PTV のアルゴリズム",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:LkGwnXOMwfcC",
+    "Authors": "近江和生",
     "Publication date": "2009",
-    "Conference": "Proceedings of ISES World Congress 2007 (Vol. I–Vol. V) Solar Energy and Human Settlement",
-    "Pages": "2930-2934",
-    "Publisher": "Springer Berlin Heidelberg"
+    "Journal": "可視化情報学会誌",
+    "Volume": "29",
+    "Issue": "1",
+    "Pages": "221-221",
+    "Publisher": "社団法人 可視化情報学会"
   },
-  "92": {
-    "Title": "Computational analysis of Pelton bucket tip erosion using digital image processing [6833-150]",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:Y0pCki6q_DkC",
-    "Authors": "BP Shrestha, B Gautam, TR Bajracharya",
-    "Publication date": "2008",
-    "Journal": "PROCEEDINGS-SPIE THE INTERNATIONAL SOCIETY FOR OPTICAL ENGINEERING",
-    "Volume": "6833",
+  "55": {
+    "Title": "蟻コロニー最適化による PTV の最適化アルゴリズム",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:eQOLeE2rZwMC",
+    "Authors": "近江和生",
+    "Publication date": "2009",
+    "Journal": "可視化情報学会誌",
+    "Volume": "29",
     "Issue": "2",
-    "Pages": "6833",
-    "Publisher": "International Society for Optical Engineering; 1999"
+    "Pages": "1167-1167",
+    "Publisher": "社団法人 可視化情報学会"
   },
-  "93": {
-    "Title": "Publikationsliste für Eduard Doujak E302-Institut für Energietechnik und Thermodynamik als Autorin/Autor bzw. wesentlich beteiligte Person",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:r0BpntZqJG4C",
-    "Authors": "E Doujak, C Bauer, H Matthias, N Bhattarai, I Bajracharya, J Prost, P Unterberger, M Eichhorn, A Schübl, S Gössinger, M Lenarcic, J Unterluggauer, A Maly, V Sulzgruber, B List, P Strnad, T Bajracharya, S Shakya, A Nakarmi, B Ale, R Shrestha, G Edinger, G Holzmann, H Götsch, M Latif, S Naipal, J Nicolle",
-    "Publication date": "2005",
-    "Journal": "International water power & dam construction",
-    "Volume": "57",
-    "Issue": "05",
-    "Pages": "28-30"
+  "56": {
+    "Title": "Particle Tracking Velocimetry using Digital In-Line Holograohy",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:Y0pCki6q_DkC",
+    "Authors": "Kazuo OHMI, Sanjeeb Prasad PANDAY, Basanta JOSHI",
+    "Publication date": "2009",
+    "Journal": "可視化情報学会誌",
+    "Volume": "29",
+    "Issue": "1",
+    "Pages": "223-223",
+    "Publisher": "The Visualization Society of Japan"
   },
-  "94": {
-    "Title": "Electrification and Targets in Developing Countries",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:abG-DnoFyZgC",
-    "Authors": "Tri Ratna, Shree Raj Shakya, Anzoo Sharma",
-    "Book": "Handbook of Energy Transitions",
-    "Pages": "391-404",
-    "Publisher": "CRC Press"
+  "57": {
+    "Title": "Vision Based Motorcycle Monitoring at Intersection of Nepal Roads",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:rO6llkc54NcC",
+    "Authors": "Himal Acharya, Basanta Joshi"
   },
-  "95": {
-    "Title": "Energy Transitions: Trend, Drivers, Barriers, and Policies",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:b0M2c_1WBrUC",
-    "Authors": "Tri Ratna, Shree Raj Shakya, Anzoo Sharma",
-    "Book": "Handbook of Energy Transitions",
-    "Pages": "21-40",
-    "Publisher": "CRC Press"
+  "58": {
+    "Title": "Multilayer Backpropagation Neural Networks",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:3s1wT3WcHBgC",
+    "Authors": "Santosh Giri, Basanta Joshi"
   },
-  "96": {
-    "Title": "Journal of Engineering Issues and Solutions",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:35N4QoGY0k4C",
-    "Authors": "Tri Ratna Bajracharya, Rajendra Shrestha, Ashesh Babu Timilsina",
-    "Journal": "ENGINEERING ISSUES AND SOLUTIONS",
-    "Pages": "88"
+  "59": {
+    "Title": "International Journal of Advanced Engineering",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:g5m5HwL7SMYC",
+    "Authors": "Pradip Bhandari, Dipak Kumar Nidhi, Basanta Joshi, Surendra Shrestha"
   },
-  "97": {
-    "Title": "Heat Transfer Enhancement of Concentric Heat Exchanger using Compound Techniques",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:lSLTfruPkqcC",
-    "Authors": "Suman Acharya, Bimal Bhattarai, Vijay Raj Giri, Midhan Siwakoti, Tri Ratna Bajracharya, Neeraj Adhikari"
+  "60": {
+    "Title": "Nepali Speech Recognition",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:e5wmG9Sq2KIC",
+    "Authors": "Aavaas Gajurel, Anup Pokhrel, Manish K Sharma"
   },
-  "98": {
-    "Title": "Solar Power Forecasting for Smart Grid System by Using Deep Learning Techniques",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:JV2RwH3_ST0C",
-    "Authors": "Shambvu Prasad Mandal, Tri Ratna Bajracharya, Prasis Poudel",
-    "Journal": "NCE JOURNAL OF SCIENCE AND ENGINEERING (NJSE)",
-    "Pages": "12"
+  "61": {
+    "Title": "2019 Artificial Intelligence for Transforming Business and Society November 5, 2019-Hyatt Regency Hotel, Kathmandu, Nepal. _",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:hC7cP41nSMkC",
+    "Authors": "Aakash Shrestha, Aashish Adhikari, Abhishesh Dahal, Arpan Pokhrel, Arun Babu Aryal, Basanta Joshi, Bikram Dahal, Kaushal Paudel, Kritish Pahi, Manish Munikar, Manish Pokharel, Pinky Sitikhu, Prabhat Pokharel, Pranita Upadhyaya, Pranjal Dhakal, Pujan Thapa, Roshan Pokhrel, Sandeep Sigdel, Sanjeeb Prasad Panday, Shashidhar Ram Joshi, Subarna Shakya, Sujan Adhikari, Suman Khatri, Sushil Ghimire, Sushil Shakya, Sushil Shrestha, Swajeet Kayastha, Swarup Raj Dhungana, Ujjwal Gewali"
   },
-  "99": {
-    "Title": "Doctoral Research Proposal on Erosion Resistant Micro Hydro Turbine Design",
-    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=0tHzAygAAAAJ&cstart=20&pagesize=80&citation_for_view=0tHzAygAAAAJ:k_IJM867U9cC",
-    "Authors": "Tri Ratna Bajracharya, Pulchowk Campus"
+  "62": {
+    "Title": "Object Detection in Images using Region Based CNN",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:4DMP91E08xMC",
+    "Authors": "Deepesh Lekhak, Basanta Joshi, Sushma Shrestha"
+  },
+  "63": {
+    "Title": "Speech Processing",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:8k81kl-MbHgC",
+    "Authors": "Basanta Joshi"
+  },
+  "64": {
+    "Title": "A data streaming algorithm for signature generation and clustering of log messages",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:5nxA0vEk-isC",
+    "Authors": "Basanta Joshi"
+  },
+  "65": {
+    "Title": "Anomaly Detection from System Logs based on Spectral Method",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:0EnyYjriUFMC",
+    "Authors": "Sagar Dhakal, Umanga Bista, Basanta Joshi"
+  },
+  "66": {
+    "Title": "SOM BASED PARTICLE MATCHING FOR VOLUMETRIC PARTICLE TRACKING VELOCIMETRY",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:W7OEmFMy1HYC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi, Kazuo Nose"
+  },
+  "67": {
+    "Title": "Effect of Camera Calibration Method in the 3D Tomographic PIV",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:Tyk-4Ss8FVUC",
+    "Authors": "Kazuo Ohmi, Basanta Joshi, Chuan-Qi Cao"
+  },
+  "68": {
+    "Title": "CAMERA CALIBRATION MODEL FOR PARTICLE TRACKING VELOCIMETRY WITH LENS DISTORTION",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:zYLM7Y9cAGgC",
+    "Authors": "Basanta Joshi, Kazuo Ohmi"
+  },
+  "69": {
+    "Title": "ASSESSMENT OF IMPROVED VOLUMETRIC PARTICLE TRACKING VELOCIMETRY",
+    "URL": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=iocLiGcAAAAJ&cstart=20&pagesize=80&citation_for_view=iocLiGcAAAAJ:IjCSPb-OGe4C",
+    "Authors": "B JOSHI, K OHMI, K NOSE"
   }
 }

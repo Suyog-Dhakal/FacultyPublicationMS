@@ -378,7 +378,7 @@ export class PaperList extends Component {
               fontWeight: "bold",
             }}
           >
-            Profile Summarization
+            Profile Summarization of {this.props.user.profile.full_name}
           </p>
           {this.props.user.profile.post} {this.props.user.profile.full_name} is
           a researcher in the {this.props.user.profile.department} department at
