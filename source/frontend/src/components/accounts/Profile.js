@@ -38,7 +38,7 @@ export class Profile extends Component {
               {this.props.user?.profile?.institute}
             </h6>
             <h6 className="text-secondary">
-              @{this.props.user?.profile?.address}
+              {this.props.user?.profile?.address}
             </h6>
             <h6
               style={{

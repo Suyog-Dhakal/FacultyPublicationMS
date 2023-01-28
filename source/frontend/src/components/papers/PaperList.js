@@ -366,6 +366,11 @@ export class PaperList extends Component {
           </div>
         </div>
 
+        <img
+          className="rounded-circle account-img"
+          style={{ height: 100, width: 100, float: "right" }}
+          src={this.props.user.profile.image}
+        />
         <p
           className="fw-light my-3"
           style={{
