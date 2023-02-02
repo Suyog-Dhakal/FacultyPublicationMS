@@ -36,13 +36,22 @@ export class Header extends Component {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   {user.username === "superadmin" ? (
-                    <a
-                      className="nav-link active text-black"
-                      aria-current="page"
-                      href="#/addPaper"
-                    >
-                      Dashboard
-                    </a>
+                    <>
+                      <a
+                        className="nav-link active text-black"
+                        aria-current="page"
+                        href="#/paper_analytics"
+                      >
+                        Analytics
+                      </a>
+                      <a
+                        className="nav-link active text-black"
+                        aria-current="page"
+                        href="#/addPaper"
+                      >
+                        DashBoard
+                      </a>
+                    </>
                   ) : (
                     <a
                       className="nav-link active text-black"

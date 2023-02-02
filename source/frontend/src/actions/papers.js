@@ -43,7 +43,7 @@ export const getPaper = (id) => (dispatch, getState) => {
 
 export const getAllPapers = () => (dispatch, getState) => {
   axios
-    .get(`/api/getAllPapers/`, tokenConfig(getState))
+    .get(`/api/papers/`, tokenConfig(getState))
     .then((res) => {
       dispatch({
         type: GET_ALL_PAPERS,

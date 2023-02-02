@@ -18,7 +18,7 @@ import Register from "./accounts/Register";
 import Search from "./papers/Search.js";
 
 import PrivateRoute from "./common/PrivateRoute";
-
+import PaperAnalytics from "./PaperAnalytics.jsx";
 import Landing from "./Landing.jsx";
 import AdminApproval from "./papers/adminApproval.js";
 import DetailPaper from "./papers/DetailPaper.js";
@@ -71,6 +71,11 @@ class App extends Component {
                     exact
                     path="/superadmin"
                     component={AdminApproval}
+                  />
+                  <PrivateRoute
+                    exact
+                    path="/paper_analytics"
+                    component={PaperAnalytics}
                   />
                   <Route exact path="/index" component={Landing} />
                 </Switch>

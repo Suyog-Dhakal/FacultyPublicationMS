@@ -17,6 +17,17 @@ def paper_list(request):
     serializer = PaperSerializer(adminviewpapers, many=True)
     return JsonResponse({'paper detail':serializer.data})
 
+
+@api_view(['GET'])
+def paper_analytics(request):
+
+  if request.method == 'GET':
+    allpapers = Paper.objects.all()
+    serializer = PaperSerializer(allpapers, many=True)
+    return JsonResponse(serializer.data)
+
+
+
 @api_view(['GET','PUT', 'DELETE'])
 def paper_detail(request, id):
 
@@ -39,3 +50,11 @@ def paper_detail(request, id):
   elif request.method == 'DELETE':
     paper.delete()
     return Response(status = status.HTTP_204_NO_CONTENT)
+
+    
+@api_view(['GET'])
+def paper_analytics(request):
+  if request.method == 'GET':
+    adminviewpapers = Paper.objects.exclude(approval_status="approved")
+    serializer = PaperSerializer(adminviewpapers, many=True)
+    return JsonResponse({'paper detail':serializer.data})

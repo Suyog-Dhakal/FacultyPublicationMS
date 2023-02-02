@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./layout/Footer";
+import { MenuItem, Select } from "@mui/material";
 
 const Landing = () => {
   return (
@@ -67,36 +68,37 @@ const Landing = () => {
         </div>
       </div>
 
-      <div id="info" class="p-5 bg-dark text-light">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md p-5">
-              <h2>Bachelor</h2>
-              <p class="lead">
-                In each academic year Institute of Engineering (IOE) conducts
-                entrance examination; only those candidate who passes the
-                entrance examination are deemed eligible for the admission.
-                These eligible candidates can get admitted to any of the
-                constituent and affiliated colleges according to the admission
-                process followed by the corresponding college. The admission
-                process practiced by the constituent colleges is the same, but
-                the process followed by the affiliated colleges may differ from
-                one another. Each year IOE publishes an information brochure
-                along with the announcement of entrance examination of that
-                year. This book contains all the required information for an
-                interested candidate to appear in the exam an finally get
-                admitted to any of the constituent or affiliated colleges.
-              </p>
-              <a href="#" class="btn btn-light mt-3">
-                <i class="bi bi-chevron-right"></i>Read More
-              </a>
-            </div>
-            <div class="col-md">
-              <img src="./img/bachelor.svg" class="img-fluid" alt="" />
+      {/* 
+        <div id="info" class="p-5 bg-dark text-light">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-md p-5">
+                <h2>Bachelor</h2>
+                <p class="lead">
+                  In each academic year Institute of Engineering (IOE) conducts
+                  entrance examination; only those candidate who passes the
+                  entrance examination are deemed eligible for the admission.
+                  These eligible candidates can get admitted to any of the
+                  constituent and affiliated colleges according to the admission
+                  process followed by the corresponding college. The admission
+                  process practiced by the constituent colleges is the same, but
+                  the process followed by the affiliated colleges may differ from
+                  one another. Each year IOE publishes an information brochure
+                  along with the announcement of entrance examination of that
+                  year. This book contains all the required information for an
+                  interested candidate to appear in the exam an finally get
+                  admitted to any of the constituent or affiliated colleges.
+                </p>
+                <a href="#" class="btn btn-light mt-3">
+                  <i class="bi bi-chevron-right"></i>Read More
+                </a>
+              </div>
+              <div class="col-md">
+                <img src="./img/bachelor.svg" class="img-fluid" alt="" />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
 
       <div class="p-5">
         <div class="container">
