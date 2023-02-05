@@ -270,7 +270,7 @@ export class DetailPaper extends Component {
                   {
                     <tr>
                       <td>Total Citations</td>
-                      <td style={{ color: "green", fontSize: "20px" }}>
+                      <td style={{ color: "green" }}>
                         {this.props.paper.total_citation >= 0 &&
                         this.props.paper.total_citation < 10
                           ? "less than 10 (Low citations)"
@@ -287,6 +287,18 @@ export class DetailPaper extends Component {
                             this.props.paper.total_citation < 50
                           ? "between 40 and 50"
                           : "greater than 50 (High citations)"}
+                      </td>
+                    </tr>
+                  }
+                  {
+                    <tr>
+                      <td>Source</td>
+                      <td style={{ color: "green" }}>
+                        {capitalize(
+                          this.props.paper?.paper_link?.includes("researchgate")
+                            ? "Research Gate"
+                            : "Google Scholar"
+                        )}
                       </td>
                     </tr>
                   }
