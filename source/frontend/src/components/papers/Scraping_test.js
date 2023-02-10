@@ -9,10 +9,38 @@ async function getCitation() {
   let driver = new Builder().forBrowser("chrome").build();
 
   await driver.get(
-    "https://scholar.google.com/citations?hl=en&user=d8u63qcAAAAJ"
+    "https://scholar.google.com/citations?user=iXxUjc8AAAAJ&hl=en"
   );
 
   await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  await driver.findElement(By.css("button#gsc_bpf_more")).click();
+  await driver.sleep(5000);
+  // await driver.findElement(By.css("button#gsc_bpf_more")).click();
   await driver.wait(until.elementLocated(By.css("span#gsc_a_nn")), 5000);
   const iframe = await driver.findElement(By.css("span#gsc_a_nn"));
   await driver.actions().scroll(0, 0, 0, 0, iframe).perform();

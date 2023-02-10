@@ -1,3 +1,4 @@
+import { ResetTvRounded } from "@mui/icons-material";
 import { InputLabel, MenuItem, Select } from "@mui/material";
 import React, { useEffect } from "react";
 import { PieChart, Pie, Cell } from "recharts";
@@ -13,7 +14,10 @@ import {
 
 const PaperAnalytics = () => {
   const [papers, setPapers] = React.useState([]);
-  const [year, setYear] = React.useState(2023);
+  const [year, setYear] = React.useState(2022);
+  const [department, setDepartment] = React.useState(
+    "Electronics and Computer"
+  );
 
   const departmentAnalytics = {
     Civil: 0,
@@ -68,45 +72,58 @@ const PaperAnalytics = () => {
     0
   );
 
+  const getResearchersCount = (department) => {
+    const researchersSet = new Set();
+    papers.forEach((paper) => {
+      if (paper?.author?.profile?.department === department)
+        researchersSet.add(paper?.author.id);
+    });
+    return researchersSet.size;
+  };
+
   const data = [
     {
       name: "Civil",
-      paper_count: departmentAnalytics.Civil,
+      total_papers: departmentAnalytics.Civil,
+      total_researchers: getResearchersCount("Civil"),
     },
     {
       name: "Architecture",
-      paper_count: departmentAnalytics.Architecture,
+      total_papers: departmentAnalytics.Architecture,
+      total_researchers: getResearchersCount("Architecture"),
     },
 
     {
       name: "Electronics and Computer",
-      paper_count: departmentAnalytics["Electronics and Computer"],
+      total_papers: departmentAnalytics["Electronics and Computer"],
+      total_researchers: getResearchersCount("Electronics and Computer"),
     },
 
     {
       name: "Mechanical",
-      paper_count: departmentAnalytics.Mechanical,
+      total_papers: departmentAnalytics.Mechanical,
+      total_researchers: getResearchersCount("Mechanical"),
     },
 
     {
       name: "Electrical",
-      paper_count: departmentAnalytics.Electrical,
+      total_papers: departmentAnalytics.Electrical,
+      total_researchers: getResearchersCount("Electrical"),
     },
 
     {
       name: "Applied Science and Chemical",
-      paper_count: departmentAnalytics["Applied Science and Chemical"],
+      total_papers: departmentAnalytics["Applied Science and Chemical"],
+      total_researchers: getResearchersCount("Applied Science and Chemical"),
     },
   ];
 
-  const department = new Set();
-
-  papers.forEach((paper) => {
-    department.add(paper?.author?.profile?.department);
-  });
-
   const handleChange = (event) => {
     setYear(event.target.value);
+  };
+
+  const handleChangeDepartment = (event) => {
+    setDepartment(event.target.value);
   };
 
   const getCount = (department) => {
@@ -134,6 +151,16 @@ const PaperAnalytics = () => {
     },
     { name: "Electrical", value: getCount("Electrical") },
   ];
+
+  const getResearchersName = (department) => {
+    const researchers = new Set();
+
+    papers.forEach((paper) => {
+      if (paper.author.profile.department === department)
+        researchers.add(paper.author.username);
+    });
+    return researchers;
+  };
 
   const COLORS = [
     "#0088FE",
@@ -202,12 +229,13 @@ const PaperAnalytics = () => {
               bottom: 5,
             }}
           >
-            <CartesianGrid strokeDasharray="3 3" />
+            <CartesianGrid strokeDasharray="2 2" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="paper_count" fill="#036bfc" />
+            <Bar dataKey="total_papers" fill="#036bfc" />
+            <Bar dataKey="total_researchers" fill="pink" />
           </BarChart>
         </div>
       </div>
@@ -220,7 +248,7 @@ const PaperAnalytics = () => {
             marginLeft: "20px",
           }}
         >
-          Last 5 years history
+          Last 6 years history
         </h1>
         <div
           style={{
@@ -255,7 +283,7 @@ const PaperAnalytics = () => {
               width={800}
               height={800}
               style={{
-                marginLeft: "180px",
+                marginLeft: "300px",
               }}
             >
               <Legend layout="vertical" verticalAlign="right" align="right" />
@@ -278,6 +306,59 @@ const PaperAnalytics = () => {
               </Pie>
             </PieChart>
           </div>
+        </div>
+      </div>
+      <div>
+        <h1
+          style={{
+            color: "black",
+            fontFamily: "cursive",
+            fontSize: "20px",
+            marginLeft: "20px",
+          }}
+        >
+          List of Researchers
+        </h1>
+        <div
+          style={{
+            marginLeft: "20px",
+          }}
+        >
+          <InputLabel>Department</InputLabel>
+          <Select
+            value={department}
+            label="Department"
+            onChange={handleChangeDepartment}
+            style={{
+              fontSize: "10px",
+            }}
+          >
+            <MenuItem value={"Civil"}>Civil</MenuItem>
+            <MenuItem value={"Architecture"}>Architecture</MenuItem>
+            <MenuItem value={"Applied Science and Chemical"}>
+              Applied Science and Chemical
+            </MenuItem>
+            <MenuItem value={"Mechanical"}>Mechanical</MenuItem>
+            <MenuItem value={"Electronics and Computer"}>
+              Electronics and Computer
+            </MenuItem>
+            <MenuItem value={"Electrical"}>Electrical</MenuItem>
+          </Select>
+        </div>
+        <div
+          style={{
+            marginLeft: "150px",
+          }}
+        >
+          <ol
+            style={{
+              fontSize: "15px",
+            }}
+          >
+            {Array.from(getResearchersName(department)).map((researcher) => (
+              <li>{researcher}</li>
+            ))}
+          </ol>
         </div>
       </div>
     </div>
