@@ -192,7 +192,7 @@ const PaperAnalytics = () => {
           }}
         >
           <BarChart
-            width={1000}
+            width={1300}
             height={500}
             data={data}
             margin={{
