@@ -551,7 +551,13 @@ export class Papers extends Component {
                     ))}
                   </tbody>
                 </table>
-                <div style={{ display: "flex", justifyContent: "center" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                  }}
+                >
                   {renderPageNumbers}
                 </div>
               </div>
