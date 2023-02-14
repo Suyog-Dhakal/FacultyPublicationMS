@@ -1,5 +1,6 @@
 export const GET_PAPERS = "GET_PAPERS";
 export const GET_ALL_PAPERS = "GET_ALL_PAPERS";
+export const GET_DEPARTMENT_PAPERS = "GET_DEPARTMENT_PAPERS";
 export const GET_PAPER = "GET_PAPER";
 export const PUT_PAPERS = "PUT_PAPERS";
 export const DELETE_PAPERS = "DELETE_PAPERS";

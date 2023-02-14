@@ -78,6 +78,7 @@ export class Search extends Component {
               placeholder="Search for..."
               onChange={this.onChange}
               value={this.state.search}
+              style={{ fontStyle: "italic" }}
             />
 
             <span className="input-group-btn">
@@ -97,6 +98,7 @@ export class Search extends Component {
                 onChange={this.onChange}
                 style={{
                   color: "green",
+                  fontStyle: "italic",
                 }}
               />{" "}
               Authors
@@ -108,6 +110,7 @@ export class Search extends Component {
                 name="searchTitle"
                 checked={this.state.searchTitle}
                 onChange={this.onChange}
+                style={{ fontStyle: "italic" }}
               />{" "}
               Title
             </label>

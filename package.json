@@ -42,6 +42,8 @@
     "google-search-results-nodejs": "^2.0.1",
     "immer": "^9.0.16",
     "jquery": "^3.6.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.28",
     "multiselect-react-dropdown": "^2.0.25",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",

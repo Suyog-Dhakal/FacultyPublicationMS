@@ -9,6 +9,7 @@ import {
   SEARCH_PAPERS,
   GET_PAPER,
   PUT_PAPERS,
+  GET_DEPARTMENT_PAPERS,
 } from "./types";
 
 import { tokenConfig } from "./auth";
@@ -47,6 +48,20 @@ export const getAllPapers = () => (dispatch, getState) => {
     .then((res) => {
       dispatch({
         type: GET_ALL_PAPERS,
+        payload: res.data,
+      });
+    })
+    .catch((err) =>
+      dispatch(returnErrors(err.response.data, err.response.status))
+    );
+};
+
+export const getDepartmentPapers = (department) => (dispatch, getState) => {
+  axios
+    .get(`/api/papers/${department}`, tokenConfig(getState))
+    .then((res) => {
+      dispatch({
+        type: GET_DEPARTMENT_PAPERS,
         payload: res.data,
       });
     })

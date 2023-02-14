@@ -58,3 +58,10 @@ def paper_analytics(request):
     adminviewpapers = Paper.objects.exclude(approval_status="approved")
     serializer = PaperSerializer(adminviewpapers, many=True)
     return JsonResponse({'paper detail':serializer.data})
+
+@api_view(['GET'])
+def paper_department(request, department):
+  if request.method == 'GET':
+    departmentpapers = Paper.objects.get(department)
+    serializer = PaperSerializer(departmentpapers, many=True)
+    return JsonResponse({'paper department':serializer.data})

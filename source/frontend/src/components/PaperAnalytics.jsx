@@ -2,6 +2,8 @@ import { ResetTvRounded } from "@mui/icons-material";
 import { InputLabel, MenuItem, Select } from "@mui/material";
 import React, { useEffect } from "react";
 import { PieChart, Pie, Cell } from "recharts";
+import DepartmentPapers from "./DepartmentPapers.jsx";
+import { Link, Redirect } from "react-router-dom";
 import {
   Bar,
   BarChart,
@@ -19,6 +21,34 @@ const PaperAnalytics = () => {
     "Electronics and Computer"
   );
 
+  const initialDepartmentPapers = {
+    Civil: [],
+    Architecture: [],
+    "Applied Science and Chemical": [],
+    "Electronics and Computer": [],
+    Mechanical: [],
+    Electrical: [],
+  };
+
+  const departmentPapers = (papers) => {
+    papers.forEach((paper) => {
+      if (paper.author.profile.department === "Civil")
+        initialDepartmentPapers.Civil.push(paper);
+      if (paper.author.profile.department === "Architecture")
+        initialDepartmentPapers.Architecture.push(paper);
+      if (paper.author.profile.department === "Electronics and Computer")
+        initialDepartmentPapers["Electronics and Computer"].push(paper);
+      if (paper.author.profile.department === "Applied Science and Chemical")
+        initialDepartmentPapers["Applied Science and Chemical"].push(paper);
+      if (paper.author.profile.department === "Electrical")
+        initialDepartmentPapers.Electrical.push(paper);
+      if (paper.author.profile.department === "Mechanical")
+        initialDepartmentPapers.Mechanical.push(paper);
+    });
+  };
+
+  console.log({ initialDepartmentPapers });
+
   const departmentAnalytics = {
     Civil: 0,
     Architecture: 0,
@@ -29,13 +59,15 @@ const PaperAnalytics = () => {
   };
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/papers/")
+    fetch("http://127.0.0.1:8000/api/papers/", { cache: "force-cache" })
       .then((response) => response.json())
       .then((papers) => {
         console.log(papers, "here");
         setPapers(papers);
       });
   }, []);
+
+  departmentPapers(papers);
 
   departmentAnalytics.Civil = papers.reduce(
     (count, paper) =>
@@ -157,7 +189,7 @@ const PaperAnalytics = () => {
 
     papers.forEach((paper) => {
       if (paper.author.profile.department === department)
-        researchers.add(paper.author.username);
+        researchers.add(paper.author.profile.full_name);
     });
     return researchers;
   };
@@ -345,21 +377,11 @@ const PaperAnalytics = () => {
             <MenuItem value={"Electrical"}>Electrical</MenuItem>
           </Select>
         </div>
-        <div
-          style={{
-            marginLeft: "150px",
-          }}
-        >
-          <ol
-            style={{
-              fontSize: "15px",
-            }}
-          >
-            {Array.from(getResearchersName(department)).map((researcher) => (
-              <li>{researcher}</li>
-            ))}
-          </ol>
-        </div>
+        <DepartmentPapers
+          departmentPapers={initialDepartmentPapers[department]}
+          departmentName={department}
+          researchersName={Array.from(getResearchersName(department))}
+        />
       </div>
     </div>
   );

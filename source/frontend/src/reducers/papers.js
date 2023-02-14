@@ -6,6 +6,7 @@ import {
   SEARCH_PAPERS,
   GET_PAPER,
   PUT_PAPERS,
+  GET_DEPARTMENT_PAPERS,
 } from "../actions/types.js";
 
 const initialState = {
@@ -30,6 +31,12 @@ export default function (state = initialState, action) {
       };
 
     case GET_ALL_PAPERS:
+      return {
+        ...state,
+        paper: {},
+        papers: action.payload,
+      };
+    case GET_DEPARTMENT_PAPERS:
       return {
         ...state,
         paper: {},
