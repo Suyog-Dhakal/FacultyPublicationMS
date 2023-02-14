@@ -267,7 +267,7 @@ const PaperAnalytics = () => {
             <Tooltip />
             <Legend />
             <Bar dataKey="total_papers" fill="#036bfc" />
-            <Bar dataKey="total_researchers" fill="pink" />
+            <Bar dataKey="total_researchers" fill="#f0079a" />
           </BarChart>
         </div>
       </div>
