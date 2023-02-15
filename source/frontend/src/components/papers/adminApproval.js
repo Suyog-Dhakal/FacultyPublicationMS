@@ -166,7 +166,7 @@ const AdminApproval = () => {
   const [papers, setPapers] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/getAllPapers/")
+    fetch("http://127.0.0.1:8000/api/getAllPapers/", { cache: "force-cache" })
       .then((response) => response.json())
       .then((papers) => {
         console.log(papers, "here");
