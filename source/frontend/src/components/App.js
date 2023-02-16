@@ -20,6 +20,7 @@ import Search from "./papers/Search.js";
 import PrivateRoute from "./common/PrivateRoute";
 import PaperAnalytics from "./PaperAnalytics.jsx";
 import Landing from "./Landing.jsx";
+import Evaluation from "./Evaluation.jsx";
 import AdminApproval from "./papers/adminApproval.js";
 import DetailPaper from "./papers/DetailPaper.js";
 import DetailUser from "./papers/DetailUser";
@@ -61,6 +62,7 @@ class App extends Component {
                   <PrivateRoute exact path="/user/:id" component={DetailUser} />
                   <Route exact path="/register" component={Register} />
                   <Route exact path="/login" component={Login} />
+                  <Route exact path="/evaluation" component={Evaluation} />
                   <Route
                     exact
                     path="/password-reset"

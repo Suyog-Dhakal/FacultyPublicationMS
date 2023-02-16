@@ -103,11 +103,21 @@ export class Header extends Component {
                   <a
                     className="nav-link active text-black"
                     aria-current="page"
+                    href="#/evaluation"
+                  >
+                    Evaluation
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link active text-black"
+                    aria-current="page"
                     href="#/register"
                   >
                     Register
                   </a>
                 </li>
+                
                 <li className="nav-item">
                   <a
                     className="nav-link active text-black"
