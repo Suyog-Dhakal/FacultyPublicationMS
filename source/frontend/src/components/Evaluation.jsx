@@ -1,6 +1,22 @@
 import React from "react";
 import { InputLabel, MenuItem, Select } from "@mui/material";
 
+const styles = {
+  table: {
+    borderCollapse: "collapse",
+  },
+  th: {
+    border: "1px solid grey",
+    padding: "10px",
+    textAlign: "left",
+  },
+  td: {
+    border: "1px solid grey",
+    padding: "10px",
+    textAlign: "left",
+  },
+};
+
 const Evaluation = () => {
   const [department, setDepartment] = React.useState(
     "Electronics and Computer"
@@ -37,6 +53,7 @@ const Evaluation = () => {
 
   return (
     <>
+      <h1>Evaluation Criteria for Researcher</h1>
       <div style={{ display: "flex", gap: "1rem", padding: "10px" }}>
         <div
           style={{
@@ -130,6 +147,47 @@ const Evaluation = () => {
             <MenuItem value={"More than 20"}> More than 20</MenuItem>
           </Select>
         </div>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "75vh",
+        }}
+      >
+        <table style={styles.table}>
+          <thead>
+            <tr>
+              <th style={styles.th}>Areas Of Activity</th>
+              <th style={styles.th}>Targeted Score</th>
+              <th style={styles.th}>Obtained Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={styles.td}>Research</td>
+              <td style={styles.td}>40</td>
+              <td style={styles.td}></td>
+            </tr>
+            <tr>
+              <td style={styles.td}>Teaching</td>
+              <td style={styles.td}>30</td>
+              <td style={styles.td}></td>
+            </tr>
+            <tr>
+              <td style={styles.td}>Year Of Service</td>
+              <td style={styles.td}>30</td>
+              <td style={styles.td}></td>
+            </tr>
+            <tr>
+              <td style={styles.td}>Total</td>
+              <td style={styles.td}>100</td>
+              <td style={styles.td}></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   );
