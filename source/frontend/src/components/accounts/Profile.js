@@ -56,6 +56,8 @@ export class Profile extends Component {
                 Go to Personal Website
               </a>
             </h6>
+            <h5 style={{ fontFamily: "italic" }}>Teaching subjects</h5>
+            {Object.values(this.props.user.profile?.teaching_courses).join(",")}
           </div>
         </div>
 

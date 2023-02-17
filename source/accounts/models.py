@@ -29,6 +29,7 @@ class Profile(models.Model):
     institute = models.CharField(max_length=200, null=True, blank=True)
     address = models.CharField(max_length=200, null=True, blank=True)
     website = models.CharField(max_length=500,null=True,blank=True)
+    teaching_courses =  models.JSONField(default=list())
 
     def __str__(self):
         return f"{self.full_name} Profile"
