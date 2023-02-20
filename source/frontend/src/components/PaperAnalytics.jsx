@@ -241,7 +241,7 @@ const PaperAnalytics = () => {
             marginLeft: "20px",
           }}
         >
-          Department wise paper count
+          Publications per Department
         </h1>
         <div
           style={{
@@ -267,10 +267,51 @@ const PaperAnalytics = () => {
             <Tooltip />
             <Legend />
             <Bar dataKey="total_papers" fill="#036bfc" />
+          </BarChart>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className="form-group mt-2">
+        <h1
+          style={{
+            color: "black",
+            fontFamily: "cursive",
+            fontSize: "20px",
+            marginLeft: "20px",
+          }}
+        >
+          Researchers per Department
+        </h1>
+        <div
+          style={{
+            display: "center",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <BarChart
+            width={1300}
+            height={500}
+            data={data}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 180,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="2 2" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
             <Bar dataKey="total_researchers" fill="#f0079a" />
           </BarChart>
         </div>
       </div>
+      <br />
+      <br />
       <div className="form-group mt-2">
         <h1
           style={{
@@ -313,7 +354,7 @@ const PaperAnalytics = () => {
           >
             <PieChart
               width={800}
-              height={800}
+              height={500}
               style={{
                 marginLeft: "300px",
               }}
@@ -349,7 +390,7 @@ const PaperAnalytics = () => {
             marginLeft: "20px",
           }}
         >
-          List of Researchers
+          List of Researchers and Publications
         </h1>
         <div
           style={{
@@ -362,7 +403,8 @@ const PaperAnalytics = () => {
             label="Department"
             onChange={handleChangeDepartment}
             style={{
-              fontSize: "10px",
+              fontSize: "12px",
+              width: "300px",
             }}
           >
             <MenuItem value={"Civil"}>Civil</MenuItem>

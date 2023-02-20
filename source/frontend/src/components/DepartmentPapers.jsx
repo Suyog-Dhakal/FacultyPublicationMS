@@ -17,6 +17,8 @@ const DepartmentPapers = ({
 
   return (
     <div>
+      <br />
+      <br />
       <button
         onClick={downloadPDF}
         style={{
@@ -38,6 +40,7 @@ const DepartmentPapers = ({
           style={{
             fontStyle: "cursive",
             color: "black",
+            fontSize: "20px",
           }}
         >
           Total Researchers:{researchersName.length}
@@ -46,6 +49,7 @@ const DepartmentPapers = ({
           style={{
             fontStyle: "cursive",
             color: "black",
+            fontSize: "20px",
           }}
         >
           All Researchers Name:
