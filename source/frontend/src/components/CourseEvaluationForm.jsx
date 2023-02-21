@@ -34,6 +34,16 @@ const CourseEvaluationForm = () => {
     <form onSubmit={handleSubmit}>
       <FormControl component="fieldset">
         <div style={{ display: "inline-block" }}>
+          <label for="email">Enter your college email:</label>
+          <input
+            style={{ width: "300px" }}
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <br />
+          <br />
           <FormLabel component="legend" style={hStyle}>
             1. How satisfied were you with the course content?
           </FormLabel>

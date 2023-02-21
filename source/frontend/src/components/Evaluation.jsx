@@ -56,7 +56,7 @@ const Evaluation = () => {
   return (
     <>
       <h1 style={{ color: "green" }}>Course Evaluation Portal</h1>
-      <div style={{ display: "flex", gap: "1rem", marginBottom: "100px" }}>
+      <div style={{ display: "flex", gap: "5rem", marginBottom: "100px" }}>
         <div
           style={{
             marginLeft: "20px",
@@ -129,7 +129,9 @@ const Evaluation = () => {
           </Select>
         </div>
       </div>
-      <CourseEvaluationForm />
+      <div style={{ display: "center", marginLeft: "400px" }}>
+        <CourseEvaluationForm />
+      </div>
     </>
   );
 };
