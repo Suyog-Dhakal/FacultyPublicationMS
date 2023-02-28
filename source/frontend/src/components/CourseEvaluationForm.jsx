@@ -6,9 +6,15 @@ import {
   RadioGroup,
   Radio,
   Button,
-  TextField,
 } from "@material-ui/core";
 
+const scoreMap = {
+  verysatisfied: 5,
+  satisfied: 4,
+  neutral: 3,
+  dissatisfied: 2,
+  verydissatisfied: 1,
+};
 const CourseEvaluationForm = () => {
   const [courseContent, setCourseContent] = useState("");
   const [knowledge, setKnowledge] = useState("");
@@ -17,15 +23,21 @@ const CourseEvaluationForm = () => {
   const [respond, setRespond] = useState("");
   const [relation, setRelation] = useState("");
   const [courseMaterial, setCourseMaterial] = useState("");
-  const [likedMost, setLikedMost] = useState("");
-  const [likedLeast, setLikedLeast] = useState("");
-  const [suggestions, setSuggestions] = useState("");
-  const [wouldRecommend, setWouldRecommend] = useState("");
+
+  let totalScore = 0;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // handle form submission here
-    alert("Your answers have been recorded!");
+
+    totalScore += courseContent === "" ? 0 : scoreMap[courseContent];
+    totalScore += knowledge === "" ? 0 : scoreMap[knowledge];
+    totalScore += preparedness === "" ? 0 : scoreMap[preparedness];
+    totalScore += communication === "" ? 0 : scoreMap[communication];
+    totalScore += respond === "" ? 0 : scoreMap[respond];
+    totalScore += relation === "" ? 0 : scoreMap[relation];
+    totalScore += courseMaterial === "" ? 0 : scoreMap[courseMaterial];
+
+    console.log(totalScore);
   };
   const hStyle = { color: "black" };
   const smallFont = { fontSize: "5px" };
@@ -52,13 +64,16 @@ const CourseEvaluationForm = () => {
             style={{ display: "inline-block", marginRight: "10px" }}
             name="courseContent"
             value={courseContent}
-            onChange={(e) => setCourseContent(e.target.value)}
+            onChange={(e) => {
+              setCourseContent(e.target.value);
+            }}
           >
             <FormControlLabel
-              value="verySatisfied"
+              value="verysatisfied"
               control={<Radio required />}
               label="Very satisfied"
             />
+
             <FormControlLabel
               value="satisfied"
               control={<Radio required />}
@@ -75,12 +90,13 @@ const CourseEvaluationForm = () => {
               label="Dissatisfied"
             />
             <FormControlLabel
-              value="veryDissatisfied"
+              value="verydissatisfied"
               control={<Radio required />}
               label="Very dissatisfied"
             />
           </RadioGroup>
         </div>
+        <br></br>
 
         <FormLabel component="legend" style={hStyle}>
           2. How was the knowledge of the instructor about the subject matter?
@@ -89,10 +105,12 @@ const CourseEvaluationForm = () => {
           style={{ display: "inline-block", marginRight: "10px" }}
           name="knowledge"
           value={knowledge}
-          onChange={(e) => setKnowledge(e.target.value)}
+          onChange={(e) => {
+            setKnowledge(e.target.value);
+          }}
         >
           <FormControlLabel
-            value="verySatisfied"
+            value="verysatisfied"
             control={<Radio required />}
             label="Very satisfied"
           />
@@ -112,11 +130,12 @@ const CourseEvaluationForm = () => {
             label="Dissatisfied"
           />
           <FormControlLabel
-            value="veryDissatisfied"
+            value="verydissatisfied"
             control={<Radio required />}
             label="Very dissatisfied"
           />
         </RadioGroup>
+        <br></br>
 
         <FormLabel component="legend" style={hStyle}>
           3. How prepared the instructor was for each class?
@@ -125,10 +144,12 @@ const CourseEvaluationForm = () => {
           style={{ display: "inline-block", marginRight: "10px" }}
           name="preparedness"
           value={preparedness}
-          onChange={(e) => setPreparedness(e.target.value)}
+          onChange={(e) => {
+            setPreparedness(e.target.value);
+          }}
         >
           <FormControlLabel
-            value="verySatisfied"
+            value="verysatisfied"
             control={<Radio required />}
             label="Very satisfied"
           />
@@ -148,11 +169,12 @@ const CourseEvaluationForm = () => {
             label="Dissatisfied"
           />
           <FormControlLabel
-            value="veryDissatisfied"
+            value="verydissatisfied"
             control={<Radio required />}
             label="Very dissatisfied"
           />
         </RadioGroup>
+        <br></br>
 
         <FormLabel component="legend" style={hStyle}>
           4. How effective was the communication in the classroom?
@@ -161,10 +183,12 @@ const CourseEvaluationForm = () => {
           style={{ display: "inline-block", marginRight: "10px" }}
           name="communication"
           value={communication}
-          onChange={(e) => setCommunication(e.target.value)}
+          onChange={(e) => {
+            setCommunication(e.target.value);
+          }}
         >
           <FormControlLabel
-            value="verySatisfied"
+            value="verysatisfied"
             control={<Radio required />}
             label="Very satisfied"
           />
@@ -184,11 +208,12 @@ const CourseEvaluationForm = () => {
             label="Dissatisfied"
           />
           <FormControlLabel
-            value="veryDissatisfied"
+            value="verydissatisfied"
             control={<Radio required />}
             label="Very dissatisfied"
           />
         </RadioGroup>
+        <br></br>
 
         <FormLabel component="legend" style={hStyle}>
           5. How well the instructor responded to the students'questions?
@@ -197,10 +222,12 @@ const CourseEvaluationForm = () => {
           style={{ display: "inline-block", marginRight: "10px" }}
           name="respond"
           value={respond}
-          onChange={(e) => setRespond(e.target.value)}
+          onChange={(e) => {
+            setRespond(e.target.value);
+          }}
         >
           <FormControlLabel
-            value="verySatisfied"
+            value="verysatisfied"
             control={<Radio required />}
             label="Very satisfied"
           />
@@ -220,11 +247,12 @@ const CourseEvaluationForm = () => {
             label="Dissatisfied"
           />
           <FormControlLabel
-            value="veryDissatisfied"
+            value="verydissatisfied"
             control={<Radio required />}
             label="Very dissatisfied"
           />
         </RadioGroup>
+        <br></br>
 
         <FormLabel component="legend" style={hStyle}>
           6. How positive was the relation of instructor with the students?
@@ -233,10 +261,12 @@ const CourseEvaluationForm = () => {
           style={{ display: "inline-block", marginRight: "10px" }}
           name="relation"
           value={relation}
-          onChange={(e) => setRelation(e.target.value)}
+          onChange={(e) => {
+            setRelation(e.target.value);
+          }}
         >
           <FormControlLabel
-            value="verySatisfied"
+            value="verysatisfied"
             control={<Radio required />}
             label="Very satisfied"
           />
@@ -256,12 +286,12 @@ const CourseEvaluationForm = () => {
             label="Dissatisfied"
           />
           <FormControlLabel
-            value="veryDissatisfied"
+            value="verydissatisfied"
             control={<Radio required />}
             label="Very dissatisfied"
           />
         </RadioGroup>
-
+        <br></br>
         <FormLabel component="legend" style={hStyle}>
           7. How well the instuctor provided the course materials that helped
           the students?
@@ -270,10 +300,12 @@ const CourseEvaluationForm = () => {
           style={{ display: "inline-block", marginRight: "10px" }}
           name="courseMaterial"
           value={courseMaterial}
-          onChange={(e) => setCourseMaterial(e.target.value)}
+          onChange={(e) => {
+            setCourseMaterial(e.target.value);
+          }}
         >
           <FormControlLabel
-            value="verySatisfied"
+            value="verysatisfied"
             control={<Radio required />}
             label="Very satisfied"
           />
@@ -293,11 +325,12 @@ const CourseEvaluationForm = () => {
             label="Dissatisfied"
           />
           <FormControlLabel
-            value="veryDissatisfied"
+            value="verydissatisfied"
             control={<Radio required />}
             label="Very dissatisfied"
           />
         </RadioGroup>
+        <br></br>
         <Button
           type="submit"
           variant="contained"

@@ -30,6 +30,7 @@ class Profile(models.Model):
     address = models.CharField(max_length=200, null=True, blank=True)
     website = models.CharField(max_length=500,null=True,blank=True)
     teaching_courses =  models.JSONField(default=list())
+    course_reviews = models.IntegerField(default=0)
 
     def __str__(self):
         return f"{self.full_name} Profile"

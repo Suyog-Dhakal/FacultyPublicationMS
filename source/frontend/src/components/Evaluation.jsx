@@ -11,6 +11,8 @@ const Evaluation = () => {
   const [papers, setPapers] = React.useState([]);
   const [professor, setProfessor] = React.useState("");
 
+  console.log({ professor });
+
   useEffect(() => {
     fetch("http://127.0.0.1:8000/api/papers/", { cache: "force-cache" })
       .then((response) => response.json())
@@ -34,13 +36,15 @@ const Evaluation = () => {
 
   const getSubjectTeachingByProfessor = (professor) => {
     console.log({ professor });
-    const firstPaper = papers.find(({ full_name }) => full_name === professor);
-
+    const firstPaper = papers.find((paper) =>
+      professor.includes(paper.author.profile.full_name.split(" ")[0])
+    );
     console.log({ firstPaper });
+    const teaching_courses = firstPaper?.author?.profile?.teaching_courses;
+    console.log({ teaching_courses });
 
-    return firstPaper?.author?.profile?.teaching_course?.values();
+    return Object.keys(teaching_courses ?? {});
   };
-
   console.log({ professor });
 
   const getResearchersName = (department) => {
@@ -73,15 +77,21 @@ const Evaluation = () => {
             }}
           >
             <MenuItem value={"Civil"}>Civil</MenuItem>
+            <br></br>
             <MenuItem value={"Architecture"}>Architecture</MenuItem>
+            <br></br>
             <MenuItem value={"Applied Science and Chemical"}>
               Applied Science and Chemical
             </MenuItem>
+            <br></br>
             <MenuItem value={"Mechanical"}>Mechanical</MenuItem>
+            <br></br>
             <MenuItem value={"Electronics and Computer"}>
               Electronics and Computer
             </MenuItem>
+            <br></br>
             <MenuItem value={"Electrical"}>Electrical</MenuItem>
+            <br></br>
           </Select>
         </div>
 
@@ -102,7 +112,9 @@ const Evaluation = () => {
           >
             {Array.from(getResearchersName(department))?.map(
               (currentProfessor) => (
-                <MenuItem value={currentProfessor}>{currentProfessor}</MenuItem>
+                <MenuItem value={currentProfessor}>
+                  {currentProfessor},
+                </MenuItem>
               )
             )}
           </Select>
@@ -124,7 +136,7 @@ const Evaluation = () => {
             }}
           >
             {getSubjectTeachingByProfessor(professor)?.map((currentSubject) => (
-              <MenuItem value={currentSubject}>{currentSubject}</MenuItem>
+              <MenuItem value={currentSubject}>{currentSubject},</MenuItem>
             ))}
           </Select>
         </div>

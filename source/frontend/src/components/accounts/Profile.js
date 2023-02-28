@@ -53,11 +53,11 @@ export class Profile extends Component {
                   color: "green",
                 }}
               >
-                Go to Personal Website
+                Go to Personal Website from here
               </a>
             </h6>
             <h5 style={{ fontFamily: "italic" }}>Teaching subjects</h5>
-            {Object.values(this.props.user.profile?.teaching_courses).join(",")}
+            {Object.keys(this.props.user.profile?.teaching_courses).join(",")}
           </div>
         </div>
 

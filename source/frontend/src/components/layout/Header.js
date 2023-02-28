@@ -62,6 +62,13 @@ export class Header extends Component {
                       >
                         DashBoard
                       </a>
+                      <a
+                        className="nav-link active text-black"
+                        aria-current="page"
+                        href="#/professor_performance"
+                      >
+                        Professor Performance
+                      </a>
                     </>
                   ) : (
                     <a
@@ -117,7 +124,7 @@ export class Header extends Component {
                     Register
                   </a>
                 </li>
-                
+
                 <li className="nav-item">
                   <a
                     className="nav-link active text-black"
