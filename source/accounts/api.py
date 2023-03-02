@@ -81,6 +81,11 @@ class GetUserAPI(generics.RetrieveAPIView):
     serializer_class = UserSerializer
 
 
+class CourseEvaluation(generics.RetrieveAPIView):
+    permission_classes = [permissions.AllowAny]
+    
+
+
 class GetProfileAPI(generics.RetrieveAPIView):
     permission_classes = [permissions.IsAuthenticated | isTheSameUser]
     queryset = Profile.objects.all()

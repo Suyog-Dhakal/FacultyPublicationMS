@@ -38,6 +38,7 @@ const CourseEvaluationForm = () => {
     totalScore += courseMaterial === "" ? 0 : scoreMap[courseMaterial];
 
     console.log(totalScore);
+    location.replace("/#/login");
   };
   const hStyle = { color: "black" };
   const smallFont = { fontSize: "5px" };

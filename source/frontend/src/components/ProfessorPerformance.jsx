@@ -1,6 +1,7 @@
 import React from "react";
 import { InputLabel, MenuItem, Select, OutlinedInput } from "@mui/material";
 import { useEffect } from "react";
+import { update } from "lodash";
 
 const styles = {
   table: {
@@ -25,7 +26,9 @@ const ProfessorPerformance = () => {
   const [subject, setSubject] = React.useState("");
   const [papers, setPapers] = React.useState([]);
   const [professor, setProfessor] = React.useState("");
-
+  const [researchScore, setResearchScore] = React.useState(0);
+  const [teachingScore, setTeachingScore] = React.useState(0);
+  const [teachingCourses, setTeachingCourses] = React.useState([]);
   console.log({ professor });
 
   useEffect(() => {
@@ -35,7 +38,7 @@ const ProfessorPerformance = () => {
         setPapers(papers);
         console.log(papers, "here");
       });
-  }, []);
+  }, [researchScore]);
 
   const handleChangeDepartment = (event) => {
     setDepartment(event.target.value);
@@ -47,6 +50,20 @@ const ProfessorPerformance = () => {
 
   const handleProfessorChange = (event) => {
     setProfessor(event.target.value);
+    updateScore(event.target.value);
+  };
+  console.log("teaching coures from 55", teachingCourses);
+  const updateScore = (professor) => {
+    setResearchScore(
+      papers.reduce(
+        (count, paper) =>
+          professor !== "" &&
+          paper.author.username.includes(professor.split(" ")[0])
+            ? count + 1
+            : count,
+        0
+      )
+    );
   };
 
   const getSubjectTeachingByProfessor = (professor) => {
@@ -59,6 +76,24 @@ const ProfessorPerformance = () => {
     console.log({ teaching_courses });
 
     return Object.keys(teaching_courses ?? {});
+  };
+
+  const getTeachingScore = (professor) => {
+    let sum = 0;
+    let count = 0;
+    const firstPaper = papers.find((paper) =>
+      professor.includes(paper.author.profile.full_name.split(" ")[0])
+    );
+    console.log({ firstPaper });
+    const teaching_courses = firstPaper?.author?.profile?.teaching_courses;
+
+    console.log("values", Object.values(teaching_courses ?? {}));
+    Object.values(teaching_courses ?? {})?.map((score) => {
+      sum += score;
+      count += 1;
+    });
+
+    return Math.floor([sum / (count * 35)] * 35);
   };
   console.log({ professor });
 
@@ -174,23 +209,29 @@ const ProfessorPerformance = () => {
             <tbody>
               <tr>
                 <td style={styles.td}>Research</td>
-                <td style={styles.td}>40</td>
-                <td style={styles.td}></td>
+                <td style={styles.td}>100</td>
+                <td style={styles.td}>
+                  {researchScore >= 100 ? 100 : researchScore}
+                </td>
               </tr>
               <tr>
                 <td style={styles.td}>Teaching</td>
                 <td style={styles.td}>35</td>
-                <td style={styles.td}></td>
+                <td style={styles.td}>{getTeachingScore(professor)}</td>
               </tr>
               <tr>
                 <td style={styles.td}>Year Of Service</td>
                 <td style={styles.td}>25</td>
-                <td style={styles.td}></td>
+                <td style={styles.td}>25</td>
               </tr>
               <tr>
                 <td style={styles.td}>Total</td>
-                <td style={styles.td}>100</td>
-                <td style={styles.td}></td>
+                <td style={styles.td}>160</td>
+                <td style={styles.td}>
+                  {researchScore >= 100
+                    ? 100 + getTeachingScore(professor) + 25
+                    : researchScore + getTeachingScore(professor) + 25}
+                </td>
               </tr>
             </tbody>
           </table>
