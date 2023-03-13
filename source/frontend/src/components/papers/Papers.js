@@ -355,11 +355,12 @@ export class Papers extends Component {
           style={{
             backgroundColor: currentPage === number ? "darkblue" : "lightblue",
             color: currentPage === number ? "white" : "black",
-            borderRadius: "2px",
+            borderRadius: "50%",
             padding: "8px 16px",
             margin: "5px",
             cursor: "pointer",
-            fontSize: "15px",
+            fontSize: "1rem",
+            color: "green",
           }}
         >
           {number}
@@ -384,7 +385,7 @@ export class Papers extends Component {
               >
                 Publications
               </h2>
-              {/* <button onClick={this.saveToDatabase}>Save to Database</button> */}
+              {/* <button onClick={this.saveToDatabase}>Save data</button> */}
               <div
                 className="table-responsive"
                 style={{

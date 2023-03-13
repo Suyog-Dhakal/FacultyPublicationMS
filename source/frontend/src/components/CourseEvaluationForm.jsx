@@ -7,7 +7,6 @@ import {
   Radio,
   Button,
 } from "@material-ui/core";
-
 const scoreMap = {
   verysatisfied: 5,
   satisfied: 4,
@@ -15,6 +14,7 @@ const scoreMap = {
   dissatisfied: 2,
   verydissatisfied: 1,
 };
+import { SnackbarProvider, enqueueSnackbar } from "notistack";
 const CourseEvaluationForm = () => {
   const [courseContent, setCourseContent] = useState("");
   const [knowledge, setKnowledge] = useState("");
@@ -38,7 +38,10 @@ const CourseEvaluationForm = () => {
     totalScore += courseMaterial === "" ? 0 : scoreMap[courseMaterial];
 
     console.log(totalScore);
-    location.replace("/#/login");
+
+    setTimeout(() => {
+      location.replace("/#/login");
+    }, 1000);
   };
   const hStyle = { color: "black" };
   const smallFont = { fontSize: "5px" };
@@ -332,6 +335,12 @@ const CourseEvaluationForm = () => {
           />
         </RadioGroup>
         <br></br>
+        <SnackbarProvider
+          style={{
+            color: "green",
+            backgroundColor: "whitesmoke",
+          }}
+        />
         <Button
           type="submit"
           variant="contained"
@@ -341,6 +350,9 @@ const CourseEvaluationForm = () => {
             padding: "5px 10px",
             width: "100px",
           }}
+          onClick={() =>
+            enqueueSnackbar("Response has been succesfully submitted!")
+          }
         >
           Submit
         </Button>

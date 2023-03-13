@@ -47,7 +47,7 @@ export class Profile extends Component {
             >
               <a
                 className="text-secondary"
-                href={this.props.user?.profile?.website}
+                href={this.props?.user?.profile?.website}
                 target="/"
                 style={{
                   color: "green",
@@ -57,7 +57,10 @@ export class Profile extends Component {
               </a>
             </h6>
             <h5 style={{ fontFamily: "italic" }}>Teaching subjects</h5>
-            {Object.keys(this.props.user.profile?.teaching_courses).join(",")}
+            {this.props?.user?.profile?.teaching_courses &&
+              Object.keys(this.props?.user?.profile?.teaching_courses).join(
+                ","
+              )}
           </div>
         </div>
 

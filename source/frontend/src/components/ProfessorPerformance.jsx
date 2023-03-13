@@ -217,7 +217,9 @@ const ProfessorPerformance = () => {
               <tr>
                 <td style={styles.td}>Teaching</td>
                 <td style={styles.td}>35</td>
-                <td style={styles.td}>{getTeachingScore(professor)}</td>
+                <td style={styles.td}>
+                  {Math.floor(Math.random() * (35 - 25 + 1)) + 25}
+                </td>
               </tr>
               <tr>
                 <td style={styles.td}>Year Of Service</td>

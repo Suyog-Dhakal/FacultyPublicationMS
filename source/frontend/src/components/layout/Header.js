@@ -39,37 +39,49 @@ export class Header extends Component {
             }}
           >
             {isAuthenticated ? (
-              <ul
+              <div
                 className="navbar-nav ms-auto"
                 style={{
                   display: "flex",
                 }}
               >
-                <li className="nav-item">
+                <div className="nav-item">
                   {user.username === "superadmin" ? (
-                    <>
+                    <div style={{ width: "450px", marginTop: "10px" }}>
                       <a
-                        className="nav-link active text-black"
                         aria-current="page"
                         href="#/paper_analytics"
+                        style={{
+                          color: "black",
+                          margin: "20px",
+                          textDecoration: "none",
+                        }}
                       >
                         Analytics
                       </a>
                       <a
-                        className="nav-link active text-black"
                         aria-current="page"
                         href="#/addPaper"
+                        style={{
+                          color: "black",
+                          margin: "20px",
+                          textDecoration: "none",
+                        }}
                       >
                         DashBoard
                       </a>
                       <a
-                        className="nav-link active text-black"
                         aria-current="page"
                         href="#/professor_performance"
+                        style={{
+                          color: "black",
+                          margin: "20px",
+                          textDecoration: "none",
+                        }}
                       >
-                        Professor Performance
+                        Professor Performances
                       </a>
-                    </>
+                    </div>
                   ) : (
                     <a
                       className="nav-link active text-black"
@@ -79,7 +91,7 @@ export class Header extends Component {
                       Add Paper
                     </a>
                   )}
-                </li>
+                </div>
                 <li className="nav-item">
                   {user.username === "superadmin" ? (
                     ""
@@ -103,7 +115,7 @@ export class Header extends Component {
                     Log Out
                   </a>
                 </li>
-              </ul>
+              </div>
             ) : (
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
