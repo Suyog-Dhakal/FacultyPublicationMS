@@ -50,6 +50,7 @@ const ProfessorPerformance = () => {
 
   const handleProfessorChange = (event) => {
     setProfessor(event.target.value);
+    setTeachingScore(Math.floor(Math.random() * (35 - 25 + 1)) + 25);
     updateScore(event.target.value);
   };
   console.log("teaching coures from 55", teachingCourses);
@@ -218,21 +219,21 @@ const ProfessorPerformance = () => {
                 <td style={styles.td}>Teaching</td>
                 <td style={styles.td}>35</td>
                 <td style={styles.td}>
-                  {Math.floor(Math.random() * (35 - 25 + 1)) + 25}
+                  {professor === "" ? 0 : teachingScore}
                 </td>
               </tr>
               <tr>
                 <td style={styles.td}>Year Of Service</td>
                 <td style={styles.td}>25</td>
-                <td style={styles.td}>25</td>
+                <td style={styles.td}>{professor === "" ? 0 : 25}</td>
               </tr>
               <tr>
                 <td style={styles.td}>Total</td>
                 <td style={styles.td}>160</td>
                 <td style={styles.td}>
                   {researchScore >= 100
-                    ? 100 + getTeachingScore(professor) + 25
-                    : researchScore + getTeachingScore(professor) + 25}
+                    ? 100 + teachingScore + 25
+                    : researchScore + teachingScore + 25}
                 </td>
               </tr>
             </tbody>
