@@ -29,6 +29,7 @@ import PaperForm from "./papers/PaperForm.js";
 import { loadUser } from "../actions/auth.js";
 import PaperList from "./papers/PaperList.js";
 import ProfessorPerformance from "./ProfessorPerformance.jsx";
+import TeacherCluster from "./TeacherCluster.jsx";
 
 //Alerts
 const alertOptions = {
@@ -84,6 +85,11 @@ class App extends Component {
                     exact
                     path="/professor_performance"
                     component={ProfessorPerformance}
+                  />
+                  <PrivateRoute
+                    exact
+                    path="/cluster"
+                    component={TeacherCluster}
                   />
                   <Route exact path="/index" component={Landing} />
                 </Switch>
