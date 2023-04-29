@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./layout/Footer";
 import { MenuItem, Select } from "@mui/material";
+import { size } from "lodash";
 
 const Landing = () => {
   return (
@@ -11,56 +12,72 @@ const Landing = () => {
         width: "100%",
       }}
     >
-      <div class="bg-dark text-light  text-center text-sm-start">
-        <div class="container">
-          <div class="d-sm-flex align-items-center justify-content-between">
-            <div>
-              <h1>
-                <span class="text-warning">
-                  Pulchowk Campus Research Repository
-                </span>
-              </h1>
-              <p class="lead my-4">
-                Repository of Researchers of IOE, Pulchowk Campus
-              </p>
-              {/* <button class="btn btn-primary btn-lg">View your Routine</button> */}
-            </div>
-            <img
-              class="img-fluid w-50 d-none d-sm-block"
-              src="./img/showcase.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-secondary text-light ">
+      {/* <div class="bg-secondary text-light ">
         <div class="container">
           <div class="d-md-flex justify-content-between align-items-center">
             <h3 class="mb-3 mb-md-0 text-warning">
-              Register to access the papers ...
+              Register to access the papers
             </h3>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div id="About" class="p-5">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md">
-              <img src="./img/college.jpeg" class="img-fluid" alt="" />
+              <img
+                src="https://i.ibb.co/6Ny57YK/uni-3-1024x576.png"
+                class="img-fluid"
+                alt="Pulchowk Campus"
+                height={600}
+                width={600}
+                padding="10px"
+              />
+              <br />
+              <br />
+              <br />
+              <img
+                src="https://i.ibb.co/pR2vC7T/Pulchowk.png"
+                class="img-fluid"
+                alt="Pulchowk Campus"
+                height={600}
+                width={600}
+              />
             </div>
             <div class="col-md p-5">
-              <h2>More About Pulchowk Campus</h2>
-              <p class="lead">
-                Pulchowk Campus offers bachelors courses, master’s courses, and
-                Ph. D. programs in different areas of engineering. This campus
-                is well equipped with necessary laboratories with great strength
-                of faculties and staffs, separate buildings for academic and
-                administrative purposes has become the center of excellence of
-                engineering education in Nepal.
+              <h2>Pulchowk Campus Research Repository</h2>
+              <h5>Repository of Researchers of IOE, Pulchowk Campus</h5>
+              <p
+                class="lead"
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                Faculty publication management system is an integrated web
+                application software that allows administrators to effectively
+                manage all the faculty publications from record keeping to
+                publication data analytics and visualization. Faculty evaluation
+                system is also a part of the system that allows administrators
+                to evaluate faculty members, lecturers and professors. Due to
+                absence of a unified faculty publication management system,
+                research publications of faculty members were spread across
+                various research publication sites like GoogleScholar,
+                ReserachGate, IEEE, etc and it became a tedious task for
+                administrators to keep track of publications and generate
+                associated reports for administrative purposes.
+                <br /> <br /> Our system scrapes all the relevant data from such
+                websites and presents user with a unified system to add, edit,
+                approve, search, sort and generate reports of such publications
+                as per faculty members or departments. The system additionally
+                allows a user to perform data analytics and visualizations with
+                bar chart and pie chart of research publications across faculty
+                members and even specific departments. Later, the system uses
+                the publication data of faculty members along with other
+                evaluation metrics like years of service and objective feedback
+                form data provided by students for evaluation of the user.
               </p>
-              <a href="#" class="btn btn-light mt-3">
+              <a href="http://pcampus.edu.np/" class="btn btn-light mt-3">
                 <i class="bi bi-chevron-right"></i>Read More
               </a>
             </div>
@@ -102,7 +119,7 @@ const Landing = () => {
 
       <div class="p-5">
         <div class="container">
-          <h2 class="text-center mb-4">Frequently Asked Question</h2>
+          <h2 class="text-center mb-4">Frequently Asked Questions</h2>
           <div class="accordion accordion-flush" id="questions">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -112,7 +129,7 @@ const Landing = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#question-one"
                 >
-                  How effective is the management system?
+                  What is the problem with traditional way of record keeping?
                 </button>
               </h2>
               <div
@@ -121,10 +138,19 @@ const Landing = () => {
                 data-bs-parent="questions"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusantium possimus error magni nemo voluptates facere quis
-                  nam adipisci dolor molestiae sed deleniti debitis, at
-                  quibusdam quaerat aspernatur assumenda quas tenetur.
+                  Till now, the administrators of the associated university have
+                  to manually record or update the information from their
+                  personal account. But such tasks have been heavily relied on
+                  physical printed documents. This became a tedious task for the
+                  administrative members. A new system design is needed to
+                  automate those tedious manual tasks. <br />
+                  Also, for the evaluation of faculty members, a new faculty
+                  evaluation system is to be integrated. The limitation of
+                  currently available system is that despite the availability of
+                  the libraries and frameworks like Selenium, BeautifulSoup etc.
+                  there is a lack of application tailored for the purpose of
+                  tracking publication information using those scraping
+                  frameworks.
                 </div>
               </div>
             </div>
@@ -137,7 +163,7 @@ const Landing = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#question-two"
                 >
-                  What is the history behind it?
+                  What are the main objectives of this system?
                 </button>
               </h2>
               <div
@@ -146,10 +172,20 @@ const Landing = () => {
                 data-bs-parent="questions"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusantium possimus error magni nemo voluptates facere quis
-                  nam adipisci dolor molestiae sed deleniti debitis, at
-                  quibusdam quaerat aspernatur assumenda quas tenetur.
+                  Our primary objective is to develop a new record management
+                  system with web scraping abilities to replace manual record
+                  keeping tasks and integrate the faculty evaluation system.
+                  <br />
+                  The objectives of this project are:
+                  <br />
+                  1. To develop a system for record keeping of all papers of
+                  faculty members present in Internet through web scraping with
+                  feature of adding, searching, editing the papers, user
+                  profiling and report generation.
+                  <br />
+                  2. To integrate a comprehensive faculty evaluation system to
+                  provide a fair evaluation of faculty members through various
+                  metrics.
                 </div>
               </div>
             </div>
@@ -162,7 +198,7 @@ const Landing = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#question-three"
                 >
-                  what is the prerequisite for publishing papers
+                  What is the scope of this system?
                 </button>
               </h2>
               <div
@@ -171,10 +207,19 @@ const Landing = () => {
                 data-bs-parent="questions"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusantium possimus error magni nemo voluptates facere quis
-                  nam adipisci dolor molestiae sed deleniti debitis, at
-                  quibusdam quaerat aspernatur assumenda quas tenetur.
+                  The scope of the Faculty Publication Management is to provide
+                  a comprehensive solution for managing and evaluating research
+                  publications of faculty members in an academic institution.
+                  The system provides a platform for record keeping of all the
+                  publication works of the faculty members, a detailed analysis
+                  and visualizations for tracking the researches and report
+                  generation of either individual faculty member or department.
+                  <br />
+                  Also, the evaluation system is integrated for evaluating and
+                  assessing the faculty members through their publication data
+                  along with other evaluation metrics like years of service and
+                  objective feedback form data provided by students for
+                  evaluation of the courses taught by faculty members.
                 </div>
               </div>
             </div>
