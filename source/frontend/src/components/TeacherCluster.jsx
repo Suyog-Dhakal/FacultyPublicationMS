@@ -24,6 +24,7 @@ const TeacherCluster = () => {
       "Aman Shakya",
       "Dibakar Raj Pant",
       "Suman Sharma",
+      "Sanjivan Satyal",
       "Surendra Shrestha",
     ],
     "Natural Language Processing": [
@@ -32,6 +33,7 @@ const TeacherCluster = () => {
       "Arun Kumar Timalsina",
       "Subarna Shakya",
       "Aman Shakya",
+      "Sanjivan Satyal",
     ],
     "Distributed System": ["Babu R. Dawadi", "Subarna Shakya"],
 
