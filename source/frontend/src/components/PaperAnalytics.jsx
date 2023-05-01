@@ -1,7 +1,7 @@
 import { ResetTvRounded } from "@mui/icons-material";
 import { InputLabel, MenuItem, Select } from "@mui/material";
 import React, { useEffect } from "react";
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, LineChart, Line, Tooltip } from "recharts";
 import DepartmentPapers from "./DepartmentPapers.jsx";
 import { Link, Redirect } from "react-router-dom";
 import {
@@ -57,6 +57,27 @@ const PaperAnalytics = () => {
     Mechanical: 0,
     Electrical: 0,
   };
+
+  const yearWiseData = {
+    2018: 0,
+    2019: 0,
+    2020: 0,
+    2021: 0,
+    2022: 0,
+    2023: 0,
+  };
+
+  yearWiseData["2018"] = papers.reduce(
+    (count, paper) =>
+      paper?.publication_date?.includes("2018") ? count + 1 : count,
+    0
+  );
+
+  yearWiseData["2019"] = papers.reduce(
+    (count, paper) =>
+      paper?.publication_date?.includes("2019") ? count + 1 : count,
+    0
+  );
 
   useEffect(() => {
     fetch("http://127.0.0.1:8000/api/papers/", { cache: "force-cache" })
@@ -203,6 +224,40 @@ const PaperAnalytics = () => {
     "#f0079a",
   ];
 
+  const getPaperCountByYear = (year) => {
+    return papers.reduce(
+      (count, paper) =>
+        paper?.publication_date?.includes(year) ? count + 1 : count,
+      0
+    );
+  };
+
+  const lineData = [
+    {
+      name: "2018",
+      value: getPaperCountByYear("2018"),
+    },
+    {
+      name: "2019",
+      value: getPaperCountByYear("2019"),
+    },
+    {
+      name: "2020",
+      value: getPaperCountByYear("2020"),
+    },
+    {
+      name: "2021",
+      value: getPaperCountByYear("2021"),
+    },
+    {
+      name: "2022",
+      value: getPaperCountByYear("2022"),
+    },
+    {
+      name: "2023",
+      value: getPaperCountByYear("2023"),
+    },
+  ];
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({
     cx,
@@ -232,6 +287,36 @@ const PaperAnalytics = () => {
 
   return (
     <div>
+      <div className="form-group mt-2">
+        <h1
+          style={{
+            color: "black",
+            fontFamily: "cursive",
+            fontSize: "20px",
+            marginLeft: "20px",
+          }}
+        >
+          Publications per Department
+        </h1>
+        <LineChart
+          width={1300}
+          height={500}
+          data={lineData}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 180,
+            bottom: 5,
+          }}
+        >
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <CartesianGrid stroke="grey" strokeDasharray="5 5" />
+          <Line type="monotone" dataKey="value" stroke="black" />
+        </LineChart>
+      </div>
+
       <div className="form-group mt-2">
         <h1
           style={{
