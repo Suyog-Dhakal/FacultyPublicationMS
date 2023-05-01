@@ -1,7 +1,7 @@
 import { ResetTvRounded } from "@mui/icons-material";
 import { InputLabel, MenuItem, Select } from "@mui/material";
 import React, { useEffect } from "react";
-import { PieChart, Pie, Cell, LineChart, Line, Tooltip } from "recharts";
+import { PieChart, Pie, Cell, LineChart, Line } from "recharts";
 import DepartmentPapers from "./DepartmentPapers.jsx";
 import { Link, Redirect } from "react-router-dom";
 import {
