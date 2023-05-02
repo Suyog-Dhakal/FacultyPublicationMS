@@ -17,69 +17,23 @@ const TeacherCluster = () => {
     "Neural Network": [
       "Basanta Joshi",
       "Sanjeeb Prasad Panday",
-      "Santosh Giri",
       "Arun Kumar Timalsina",
       "Subarna Shakya",
-      "Babu R. Dawadi",
       "Aman Shakya",
       "Dibakar Raj Pant",
       "Suman Sharma",
-      "Sanjivan Satyal",
-      "Surendra Shrestha",
-    ],
-    "Natural Language Processing": [
-      "Basanta Joshi",
-      "Sanjeeb Prasad Panday",
-      "Arun Kumar Timalsina",
-      "Subarna Shakya",
-      "Aman Shakya",
-      "Sanjivan Satyal",
-    ],
-    "Distributed System": ["Babu R. Dawadi", "Subarna Shakya"],
-
-    "Internet and Networking": [
-      "Babu R. Dawadi",
-      "Subarna Shakya",
-      "Sharad K. Ghimire",
-      "Shashidhar R. Joshi",
-      "Arun Kumar Timalsina",
-      "Surendra Shrestha",
-    ],
-
-    "Internet Of Things": [
-      "Sanjeeb Prasad Panday",
-      "Subarna Shakya",
-      "Basanta Joshi",
-      "Aman Shakya",
-    ],
-    "Security and Intelligence": [
-      "Babu R. Dawadi",
-      "Subarna Shakya",
-      "Basanta Joshi",
-      "Santosh Giri",
-      "Sanjeeb Prasad Panday",
-      "Surendra Shrestha",
-    ],
-
-    "Cloud and BigData": [
-      "Babu R. Dawadi",
-      "Subarna Shakya",
-      "Basanta Joshi",
-      "Santosh Giri",
-      "Sanjeeb Prasad Panday",
       "Sharad Kumar Ghimire",
-      "Nanda Bikram Adhikari",
-      "Shashidhar R. Joshi",
     ],
-
-    "E-Governance": [
-      "Subarna Shakya",
-      "Babu R. Dawadi",
-      "Basanta Joshi",
-      "Sanjeeb Prasad Panday",
-      "Shashidhar R. Joshi",
+    "Network and Security": [
+      "Anand Kumar Sah",
+      "Daya Sagar Baral",
+      "Nanda Bikram Adhikari",
+      "Sanjivan Satyal",
+      "Santosh Giri",
       "Surendra Shrestha",
     ],
+
+    "IOE news bulletin": ["Babu R. Dawadi", "Shashidhar Ram Joshi"],
   };
 
   return (
@@ -101,26 +55,12 @@ const TeacherCluster = () => {
         >
           <MenuItem value={"Neural Network"}>Neural Network</MenuItem>
           <br></br>
-          <MenuItem value={"Natural Language Processing"}>
-            Natural Language Processing
+          <MenuItem value={"Network and Security"}>
+            Network and Security
           </MenuItem>
           <br></br>
-          <MenuItem value={"Distributed System"}>Distributed System</MenuItem>
+          <MenuItem value={"IOE news bulletin"}>IOE news bulletin</MenuItem>
           <br></br>
-          <MenuItem value={"Internet and Networking"}>
-            Internet and Networking
-          </MenuItem>
-          <br></br>
-          <MenuItem value={"Internet Of Things"}>Internet Of Things</MenuItem>
-          <br></br>
-          <MenuItem value={"Security and Intelligence"}>
-            Security and Intelligence
-          </MenuItem>
-          <br></br>
-          <MenuItem value={"Cloud and BigData"}>Cloud and BigData</MenuItem>
-          <br></br>
-
-          <MenuItem value={"E-Governance"}>E-Governance</MenuItem>
         </Select>
       </div>
 
