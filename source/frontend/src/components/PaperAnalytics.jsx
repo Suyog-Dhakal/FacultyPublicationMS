@@ -296,7 +296,7 @@ const PaperAnalytics = () => {
             marginLeft: "20px",
           }}
         >
-          Publications per Department
+          Total Publications per Year
         </h1>
         <LineChart
           width={1300}

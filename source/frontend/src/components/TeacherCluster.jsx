@@ -14,26 +14,32 @@ const TeacherCluster = () => {
   console.log(subject);
 
   const map = {
-    "Neural Network": [
-      "Basanta Joshi",
-      "Sanjeeb Prasad Panday",
-      "Arun Kumar Timalsina",
-      "Subarna Shakya",
+    "Semantic Analysis": [
       "Aman Shakya",
       "Dibakar Raj Pant",
-      "Suman Sharma",
-      "Sharad Kumar Ghimire",
+      "Arun Kumar Timalsina",
+      "Basanta Joshi",
+      "Subarna Shakya",
     ],
-    "Network and Security": [
-      "Anand Kumar Sah",
-      "Daya Sagar Baral",
-      "Nanda Bikram Adhikari",
-      "Sanjivan Satyal",
-      "Santosh Giri",
+    "Advanced Encryption": [
+      "Subarna Shakya",
       "Surendra Shrestha",
+      "Nanda Bikram Adhikari",
+    ],
+    "Neural Network": [
+      "Aman Shakya",
+      "Subarna Shakya",
+      "Sanjeeb Prasad Panday",
+      "Basanta Joshi",
     ],
 
-    "IOE news bulletin": ["Babu R. Dawadi", "Shashidhar Ram Joshi"],
+    "Data and Language": [
+      "Aman Shakya",
+      "Subarna Shakya",
+      "Basanta Joshi",
+      "Nanda Bikram Adhikari",
+    ],
+    "Nepali Speech Processing": ["Basanta Joshi", "Aman Shakya"],
   };
 
   return (
@@ -53,13 +59,17 @@ const TeacherCluster = () => {
             width: "300px",
           }}
         >
+          <MenuItem value={"Semantic Analysis"}>Semantic Analysis</MenuItem>
+          <br></br>
+          <MenuItem value={"Advanced Encryption"}>Advanced Encryption</MenuItem>
+          <br></br>
           <MenuItem value={"Neural Network"}>Neural Network</MenuItem>
           <br></br>
-          <MenuItem value={"Network and Security"}>
-            Network and Security
-          </MenuItem>
+          <MenuItem value={"Data and Language"}>Data and Language</MenuItem>
           <br></br>
-          <MenuItem value={"IOE news bulletin"}>IOE news bulletin</MenuItem>
+          <MenuItem value={"Nepali Speech Processing"}>
+            Nepali Speech Processing
+          </MenuItem>
           <br></br>
         </Select>
       </div>
