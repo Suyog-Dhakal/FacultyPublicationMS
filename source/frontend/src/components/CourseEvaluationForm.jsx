@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   FormControl,
   FormLabel,
@@ -16,6 +17,12 @@ const scoreMap = {
 };
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
 const CourseEvaluationForm = () => {
+  const validEmail = (email) => {
+    const regex = /^[A-Za-z0-9._%+-]+@pcampus\.edu\.np$/;
+    console.log("test", regex.test(email));
+    return regex.test(email);
+  };
+
   const [courseContent, setCourseContent] = useState("");
   const [knowledge, setKnowledge] = useState("");
   const [preparedness, setPreparedness] = useState("");
@@ -23,11 +30,14 @@ const CourseEvaluationForm = () => {
   const [respond, setRespond] = useState("");
   const [relation, setRelation] = useState("");
   const [courseMaterial, setCourseMaterial] = useState("");
+  const [email, setEmail] = useState("");
 
   let totalScore = 0;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    console.log(e?.data);
 
     totalScore += courseContent === "" ? 0 : scoreMap[courseContent];
     totalScore += knowledge === "" ? 0 : scoreMap[knowledge];
@@ -56,6 +66,7 @@ const CourseEvaluationForm = () => {
             type="email"
             id="email"
             name="email"
+            onChange={(e) => setEmail(e?.target.value)}
             required
           />
           <br />
@@ -350,9 +361,10 @@ const CourseEvaluationForm = () => {
             padding: "5px 10px",
             width: "100px",
           }}
-          onClick={() =>
-            enqueueSnackbar("Response has been succesfully submitted!")
-          }
+          disabled={!validEmail(email)}
+          onClick={() => {
+            enqueueSnackbar("Response has been succesfully submitted!");
+          }}
         >
           Submit
         </Button>

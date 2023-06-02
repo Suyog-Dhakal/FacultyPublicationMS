@@ -220,7 +220,7 @@ const PaperAnalytics = () => {
     "#00C49F",
     "#FFBB28",
     "#FF8042",
-    "cyan",
+    "#37354a",
     "#f0079a",
   ];
 

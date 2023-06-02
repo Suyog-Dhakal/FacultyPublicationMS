@@ -11,7 +11,7 @@ import time
 serv_obj = Service("C:\Program Files (x86)\chromedriver.exe")
 driver = webdriver.Chrome(service=serv_obj)
 
-driver.get("https://www.researchgate.net/profile/Arun_Timalsina/research")
+driver.get("https://www.researchgate.net/profile/Sanjivan-Satyal/research")
 driver.maximize_window()
 
 driver.find_element(By.PARTIAL_LINK_TEXT, "Publications").click()
