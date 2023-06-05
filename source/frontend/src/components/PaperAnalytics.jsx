@@ -1,5 +1,12 @@
 import { ResetTvRounded } from "@mui/icons-material";
-import { InputLabel, MenuItem, Select } from "@mui/material";
+import {
+  InputLabel,
+  MenuItem,
+  Select,
+  OutlinedInput,
+  Box,
+  Chip,
+} from "@mui/material";
 import React, { useEffect } from "react";
 import { PieChart, Pie, Cell, LineChart, Line } from "recharts";
 import DepartmentPapers from "./DepartmentPapers.jsx";
@@ -20,6 +27,7 @@ const PaperAnalytics = () => {
   const [department, setDepartment] = React.useState(
     "Electronics and Computer"
   );
+  const [departments, setDepartments] = React.useState([]);
 
   const initialDepartmentPapers = {
     Civil: [],
@@ -231,6 +239,16 @@ const PaperAnalytics = () => {
       0
     );
   };
+  const getPaperCountByYearAndDept = (year, dept) => {
+    return papers.reduce(
+      (count, paper) =>
+        paper?.author?.profile?.department === dept &&
+        paper?.publication_date?.includes(year)
+          ? count + 1
+          : count,
+      0
+    );
+  };
 
   const lineData = [
     {
@@ -258,6 +276,38 @@ const PaperAnalytics = () => {
       value: getPaperCountByYear("2023"),
     },
   ];
+  const comparisionData = [
+    {
+      name: "2018",
+      dept1: getPaperCountByYearAndDept("2018", departments[0]),
+      dept2: getPaperCountByYearAndDept("2018", departments[1]),
+    },
+    {
+      name: "2019",
+      dept1: getPaperCountByYearAndDept("2019", departments[0]),
+      dept2: getPaperCountByYearAndDept("2019", departments[1]),
+    },
+    {
+      name: "2020",
+      dept1: getPaperCountByYearAndDept("2020", departments[0]),
+      dept2: getPaperCountByYearAndDept("2020", departments[1]),
+    },
+    {
+      name: "2021",
+      dept1: getPaperCountByYearAndDept("2021", departments[0]),
+      dept2: getPaperCountByYearAndDept("2021", departments[1]),
+    },
+    {
+      name: "2022",
+      dept1: getPaperCountByYearAndDept("2022", departments[0]),
+      dept2: getPaperCountByYearAndDept("2022", departments[1]),
+    },
+    {
+      name: "2023",
+      dept1: getPaperCountByYearAndDept("2023", departments[0]),
+      dept2: getPaperCountByYearAndDept("2023", departments[1]),
+    },
+  ];
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({
     cx,
@@ -282,6 +332,27 @@ const PaperAnalytics = () => {
       >
         {`${(percent * 100).toFixed(0)}%`}
       </text>
+    );
+  };
+
+  const ITEM_HEIGHT = 48;
+  const ITEM_PADDING_TOP = 8;
+  const MenuProps = {
+    PaperProps: {
+      style: {
+        maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+        width: 250,
+      },
+    },
+  };
+
+  const handleChangeDepartments = (event) => {
+    const {
+      target: { value },
+    } = event;
+    setDepartments(
+      // On autofill we get a stringified value.
+      typeof value === "string" ? value.split(",") : value
     );
   };
 
@@ -317,6 +388,10 @@ const PaperAnalytics = () => {
         </LineChart>
       </div>
 
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="form-group mt-2">
         <h1
           style={{
@@ -326,7 +401,86 @@ const PaperAnalytics = () => {
             marginLeft: "20px",
           }}
         >
-          Publications per Department
+          Comparision of Two Departments based on paper count
+        </h1>
+        <Select
+          value={departments}
+          label="Department"
+          style={{
+            fontSize: "12px",
+            width: "40%",
+            marginBottom: "20px",
+            marginLeft: "20px",
+          }}
+          multiple
+          onChange={handleChangeDepartments}
+          input={<OutlinedInput id="select-multiple-chip" label="Chip" />}
+          renderValue={(selected) => (
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+              {selected.map((value) => (
+                <Chip key={value} label={value} />
+              ))}
+            </Box>
+          )}
+          MenuProps={MenuProps}
+        >
+          <MenuItem value={"Civil"}>Civil</MenuItem>
+          <MenuItem value={"Architecture"}>Architecture</MenuItem>
+          <MenuItem value={"Applied Science and Chemical"}>
+            Applied Science and Chemical
+          </MenuItem>
+          <MenuItem value={"Mechanical"}>Mechanical</MenuItem>
+          <MenuItem value={"Electronics and Computer"}>
+            Electronics and Computer
+          </MenuItem>
+          <MenuItem value={"Electrical"}>Electrical</MenuItem>
+        </Select>
+
+        <LineChart
+          width={1300}
+          height={500}
+          data={comparisionData}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 180,
+            bottom: 5,
+          }}
+        >
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <CartesianGrid stroke="grey" strokeDasharray="5 5" />
+          <Line
+            type="monotone"
+            dataKey="dept1"
+            stroke="#1a8a0e"
+            name={departments[0]}
+          />
+          <Line
+            type="monotone"
+            dataKey="dept2"
+            stroke="#ba3006"
+            name={departments[1]}
+          />
+        </LineChart>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div className="form-group mt-2">
+        <h1
+          style={{
+            color: "black",
+            fontFamily: "cursive",
+            fontSize: "20px",
+            marginLeft: "20px",
+          }}
+        >
+          Publications and Researchers statistics per Department
         </h1>
         <div
           style={{
@@ -348,13 +502,17 @@ const PaperAnalytics = () => {
           >
             <CartesianGrid strokeDasharray="2 2" />
             <XAxis dataKey="name" />
-            <YAxis />
+            <YAxis yAxisId="left" orientation="left" stroke="#036bfc" />
+            <YAxis yAxisId="right" orientation="right" stroke="#ba3006" />
             <Tooltip />
             <Legend />
-            <Bar dataKey="total_papers" fill="#036bfc" />
+            <Bar yAxisId="left" dataKey="total_papers" fill="#036bfc" />
+            <Bar yAxisId="right" dataKey="total_researchers" fill="#ba3006" />
           </BarChart>
         </div>
       </div>
+      <br />
+      <br />
       <br />
       <br />
       <div className="form-group mt-2">
@@ -366,47 +524,7 @@ const PaperAnalytics = () => {
             marginLeft: "20px",
           }}
         >
-          Researchers per Department
-        </h1>
-        <div
-          style={{
-            display: "center",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <BarChart
-            width={1300}
-            height={500}
-            data={data}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 180,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="2 2" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="total_researchers" fill="#f0079a" />
-          </BarChart>
-        </div>
-      </div>
-      <br />
-      <br />
-      <div className="form-group mt-2">
-        <h1
-          style={{
-            color: "black",
-            fontFamily: "cursive",
-            fontSize: "20px",
-            marginLeft: "20px",
-          }}
-        >
-          Last 6 years history
+          Department Contribution in Research
         </h1>
         <div
           style={{
