@@ -63,14 +63,14 @@ const ProfessorPerformance = () => {
       publisher?.includes("World Scientific") ||
       publisher?.includes("Cambridge")
     )
-      return 0.7;
+      return 0.6;
     else if (
       publisher?.includes("American") ||
       publisher?.includes("Oxford") ||
       publisher?.includes("Taylor")
     )
-      return 0.6;
-    else return 0.5;
+      return 0.4;
+    else return 0.3;
   };
 
   const getCitationPoint = (citation) => {
