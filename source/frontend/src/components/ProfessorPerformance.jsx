@@ -2,6 +2,7 @@ import React from "react";
 import { InputLabel, MenuItem, Select, OutlinedInput } from "@mui/material";
 import { useEffect } from "react";
 import { update } from "lodash";
+import { number } from "prop-types";
 
 const styles = {
   table: {
@@ -29,6 +30,7 @@ const ProfessorPerformance = () => {
   const [researchScore, setResearchScore] = React.useState(0);
   const [teachingScore, setTeachingScore] = React.useState(0);
   const [teachingCourses, setTeachingCourses] = React.useState([]);
+
   console.log({ professor });
 
   useEffect(() => {
@@ -48,6 +50,39 @@ const ProfessorPerformance = () => {
     setSubject(event.target.value);
   };
 
+  const getPaperPoint = (publisher) => {
+    if (
+      publisher?.includes("IEEE") ||
+      publisher?.includes("Elsevier") ||
+      publisher?.includes("Springer")
+    )
+      return 1;
+    else if (publisher?.includes("SAGE") || publisher?.includes("IADIS"))
+      return 0.8;
+    else if (
+      publisher?.includes("World Scientific") ||
+      publisher?.includes("Cambridge")
+    )
+      return 0.7;
+    else if (
+      publisher?.includes("American") ||
+      publisher?.includes("Oxford") ||
+      publisher?.includes("Taylor")
+    )
+      return 0.6;
+    else return 0.5;
+  };
+
+  const getCitationPoint = (citation) => {
+    if (citation >= 20) return 0.5;
+    else if (citation >= 40) return 0.6;
+    else if (citation >= 60) return 0.7;
+    else if (citation >= 80) return 0.8;
+    else if (citation >= 100) return 0.9;
+    else if (citation >= 150) return 1;
+    else return 0.2;
+  };
+
   const handleProfessorChange = (event) => {
     setProfessor(event.target.value);
     setTeachingScore(Math.floor(Math.random() * (35 - 25 + 1)) + 25);
@@ -56,13 +91,17 @@ const ProfessorPerformance = () => {
   console.log("teaching coures from 55", teachingCourses);
   const updateScore = (professor) => {
     setResearchScore(
-      papers.reduce(
-        (count, paper) =>
-          professor !== "" &&
-          paper.author.username.includes(professor.split(" ")[0])
-            ? count + 1
-            : count,
-        0
+      Math.ceil(
+        papers.reduce(
+          (count, paper) =>
+            professor !== "" &&
+            paper.author.profile.full_name.includes(professor)
+              ? count +
+                Number(getPaperPoint(paper?.publisher)) +
+                Number(getCitationPoint(paper?.total_citation))
+              : count,
+          0
+        )
       )
     );
   };
