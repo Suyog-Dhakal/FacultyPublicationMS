@@ -48,7 +48,7 @@ export class Header extends Component {
                 <div className="nav-item">
                   {user.username === "superadmin" ? (
                     <div style={{ width: "700px", marginTop: "10px" }}>
-                      <a
+                      {/* <a
                         aria-current="page"
                         href="#/cluster"
                         style={{
@@ -58,7 +58,7 @@ export class Header extends Component {
                         }}
                       >
                         Teacher Clustering
-                      </a>
+                      </a> */}
                       <a
                         aria-current="page"
                         href="#/paper_analytics"

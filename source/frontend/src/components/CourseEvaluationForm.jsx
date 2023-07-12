@@ -114,7 +114,8 @@ const CourseEvaluationForm = () => {
         <br></br>
 
         <FormLabel component="legend" style={hStyle}>
-          2. How was the knowledge of the instructor about the subject matter?
+          2. How would you evaluate the instructor's level of knowledge
+          regarding the subject matter?
         </FormLabel>
         <RadioGroup
           style={{ display: "inline-block", marginRight: "10px" }}
@@ -231,7 +232,7 @@ const CourseEvaluationForm = () => {
         <br></br>
 
         <FormLabel component="legend" style={hStyle}>
-          5. How well the instructor responded to the students'questions?
+          5. How well the instructor responded to the students' questions?
         </FormLabel>
         <RadioGroup
           style={{ display: "inline-block", marginRight: "10px" }}

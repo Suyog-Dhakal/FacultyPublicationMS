@@ -455,12 +455,14 @@ const PaperAnalytics = () => {
             type="monotone"
             dataKey="dept1"
             stroke="#1a8a0e"
+            strokeWidth="5px"
             name={departments[0]}
           />
           <Line
             type="monotone"
             dataKey="dept2"
             stroke="#ba3006"
+            strokeWidth="5px"
             name={departments[1]}
           />
         </LineChart>

@@ -405,7 +405,7 @@ export class Papers extends Component {
                 <table className="table table-striped table-hover table-sm">
                   <thead
                     style={{
-                      backgroundColor: "black",
+                      backgroundColor: "grey",
                       color: "white",
                       fontStyle: "italic",
                     }}
